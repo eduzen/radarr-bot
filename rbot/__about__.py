@@ -1,4 +1,5 @@
-# SPDX-FileCopyrightText: 2023-present Eduardo Enriquez (eduzen) <eduardo.a.enriquez@gmail.com>
+# SPDX-FileCopyrightText: 2023-present Eduardo Enriquez
+# (eduzen) <eduardo.a.enriquez@gmail.com>
 #
 # SPDX-License-Identifier: MIT
-__version__ = '0.0.1'
+__version__ = "0.0.1"

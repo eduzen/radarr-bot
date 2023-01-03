@@ -23,11 +23,18 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["python-telegram-bot", "httpx"]
+dependencies = ["python-telegram-bot", "httpx", "rich", "python-decouple"]
 dynamic = ["version"]
 
 [project.optional-dependencies]
-dev = ["pytest", "mypy"]
+dev = [
+  "coverage",
+  "ipdb",
+  "ipython",
+  "mypy",
+  "pytest",
+  "pytest-asyncio",
+]
 
 [project.urls]
 Documentation = "https://github.com/eduzen/rbot#readme"
@@ -40,7 +47,6 @@ path = "rbot/__about__.py"
 [tool.hatch.envs.default]
 dependencies = [
   "pytest",
-  "pytest-cov",
 ]
 [tool.hatch.envs.default.scripts]
 cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=rbot --cov=tests {args}"
@@ -62,3 +68,12 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruffus]
+ignore = ["E501"]
