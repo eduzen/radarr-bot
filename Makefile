@@ -5,7 +5,7 @@ compile:
 	pip-compile pyproject.toml --output-file requirements.txt
 
 install:
-	pip install -r requirements.txt -r requirements-dev.txt -e .
+	pip install -r requirements-dev.txt -e .
 
 start:
 	python rbot
