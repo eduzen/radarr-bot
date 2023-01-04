@@ -1,33 +1,54 @@
+import datetime
 import urllib
+from dataclasses import dataclass
 from typing import Any
 
 import httpx
 from decouple import config
 
-client = httpx.AsyncClient()
+client = httpx.Client()
 TMDB_API_KEY = config("TMDB_API_KEY")
 TMDB_BASE_URL = "https://api.themoviedb.org/3/"
 
 
+@dataclass
+class Movie:
+    title: str
+    release_date: str
+    backdrop_path: str
+    vote_average: int
+
+    @property
+    def year(self) -> int:
+        date = datetime.datetime.strptime(self.release_date, "%Y-%m-%d")
+        return date.year
+
+    @property
+    def poster(self) -> str:
+        return f"http://image.tmdb.org/t/p/original{self.backdrop_path}"
+
+
+async def process_movie_search_result(result: dict[str, Any]) -> Movie:
+    movie = Movie(
+        title=result["title"],
+        release_date=result["release_date"],
+        vote_average=result["vote_average"],
+        backdrop_path=result["backdrop_path"],
+    )
+    return movie
+
+
 async def process_movie_search_results(
     search_results: list[dict[Any, Any]]
-) -> list[dict[Any, Any]]:
+) -> list[Movie]:
     movies = []
     for result in search_results:
-        movie = {}
-        movie["title"] = result["title"]
-        movie["year"] = result["year"]
-        movie["imdb_link"] = result["imdb_link"]
-
-        response = client.get(result["poster_url"])
-        if response.status == 200:
-            movie["poster"] = await response.read()
-
+        movie = await process_movie_search_result(result)
         movies.append(movie)
     return movies
 
 
-async def search_movie(query: str) -> dict[Any, Any]:
+async def search_movie(query: str) -> list[Movie]:
     query_params_dict = {
         "query": query,
         "api_key": TMDB_API_KEY,
@@ -35,11 +56,12 @@ async def search_movie(query: str) -> dict[Any, Any]:
     query_params = urllib.parse.urlencode(query_params_dict)
     TMDB_SEARCH_URL = f"{TMDB_BASE_URL}search/movie?{query_params}"
 
-    response = await client.get(TMDB_SEARCH_URL)
-
+    response = client.get(TMDB_SEARCH_URL)
     response.raise_for_status()
 
-    return response.json()
+    movies = await process_movie_search_results(response.json()["results"])
+
+    return movies
 
 
 async def get_movie_detail(movie_id: int) -> dict[Any, Any]:
@@ -50,7 +72,7 @@ async def get_movie_detail(movie_id: int) -> dict[Any, Any]:
 
     TMDB_DETAIL_URL = f"{TMDB_BASE_URL}/movie/{movie_id}/?{query_params}"
 
-    response = await client.get(TMDB_DETAIL_URL)
+    response = client.get(TMDB_DETAIL_URL)
 
     response.raise_for_status()
 

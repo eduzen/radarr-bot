@@ -12,3 +12,9 @@ start:
 
 fmt:
 	pre-commit run --all-files
+
+test:
+	coverage run -m pytest
+	python -m coverage combine
+	python -m coverage report -m --skip-covered
+	python -m coverage json

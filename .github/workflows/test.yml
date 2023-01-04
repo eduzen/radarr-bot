@@ -37,8 +37,8 @@ jobs:
 
     - name: Test
       run: |
-        export EDUZEN_ID=1234 TOKEN=blah
-        coverage run -m pytest --record-mode=none
+        export EDUZEN_ID=1234 TELEGRAM_TOKEN=blah
+        coverage run -m pytest
         python -m coverage combine
         python -m coverage report -m --skip-covered
         python -m coverage json

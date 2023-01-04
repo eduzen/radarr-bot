@@ -77,3 +77,6 @@ ignore_missing_imports = true
 
 [tool.ruffus]
 ignore = ["E501"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
