@@ -1,10 +1,9 @@
 from decouple import config
 from rich import print
-from telegram import Update
+from telegram import Bot, Update
 from telegram.ext import (
     Application,
     ApplicationBuilder,
-    Bot,
     CommandHandler,
     ContextTypes,
 )
@@ -32,7 +31,7 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     try:
         data = await tmdb_api.search_movie(query)
-        await send_message(bot, chat_id, data)
+        await send_message(bot, chat_id, [movie.to_str() for movie in data])
     except Exception as e:
         print("Error while searching movie", e)
         await send_message(bot, chat_id, "Something went wrong")
@@ -50,8 +49,8 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     movie_id = args[0]
 
     try:
-        data = await tmdb_api.get_movie_detail(movie_id)
-        await send_message(bot, chat_id, data)
+        movie = await tmdb_api.get_movie_detail(movie_id)
+        await send_message(bot, chat_id, movie.to_str())
     except Exception as e:
         print("Error while getting movie detail", e)
         await send_message(bot, chat_id, "Something went wrong")

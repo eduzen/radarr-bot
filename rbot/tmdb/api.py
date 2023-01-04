@@ -18,6 +18,9 @@ class Movie:
     backdrop_path: str
     vote_average: int
 
+    def to_str(self) -> str:
+        return self.__str__()
+
     @property
     def year(self) -> int:
         date = datetime.datetime.strptime(self.release_date, "%Y-%m-%d")

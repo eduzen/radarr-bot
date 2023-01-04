@@ -44,6 +44,7 @@ def test_movie_dataclass_year_and_poster():
         backdrop_path="/hEpWvX6Bp79e.l0qAid8z0JFfMG.jpg",
     )
 
+    assert type(movie.to_str()) == str
     assert movie.year == 1999
     assert (
         movie.poster
