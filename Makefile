@@ -14,7 +14,7 @@ fmt:
 	pre-commit run --all-files
 
 test:
-	coverage run -m pytest
+	coverage run -m pytest --record-mode=rewrite
 	python -m coverage combine
 	python -m coverage report -m --skip-covered
 	python -m coverage json

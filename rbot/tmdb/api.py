@@ -64,16 +64,21 @@ async def search_movie(query: str) -> list[Movie]:
     return movies
 
 
-async def get_movie_detail(movie_id: int) -> dict[Any, Any]:
+async def get_movie_detail(movie_id: int) -> Movie:
     query_params_dict = {
         "api_key": TMDB_API_KEY,
     }
     query_params = urllib.parse.urlencode(query_params_dict)
 
-    TMDB_DETAIL_URL = f"{TMDB_BASE_URL}/movie/{movie_id}/?{query_params}"
+    TMDB_DETAIL_URL = f"{TMDB_BASE_URL}movie/{movie_id}?{query_params}"
 
     response = client.get(TMDB_DETAIL_URL)
 
     response.raise_for_status()
 
-    return response.json()
+    try:
+        movie = await process_movie_search_result(response.json())
+        return movie
+    except Exception as e:
+        print("Movie not found", e)
+    return {}
