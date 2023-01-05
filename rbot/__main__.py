@@ -1,9 +1,10 @@
 from decouple import config
 from rich import print
-from telegram import Bot, Update
+from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update, helpers
 from telegram.ext import (
     Application,
     ApplicationBuilder,
+    CallbackQueryHandler,
     CommandHandler,
     ContextTypes,
 )
@@ -56,6 +57,35 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await send_message(bot, chat_id, "Something went wrong")
 
 
+async def show_movie(update, context):
+    # Movie info
+    bot = context.bot
+    url = helpers.create_deep_linked_url(bot.username, "CHECK_THIS_OUT", group=True)
+    movie_title = "Movie Title"
+    movie_description = "Movie Description"
+    movie_year = "2020"
+    message = f"{movie_title} ({movie_year})\n{movie_description}  {url}"
+
+    # Create the inline keyboard
+    confirm_button = InlineKeyboardButton("Confirm", callback_data="confirm")
+    next_button = InlineKeyboardButton("Next", callback_data="next")
+    keyboard = [[confirm_button, next_button]]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+
+    # Send the message with the inline keyboard
+    await update.message.reply_text(message, reply_markup=reply_markup)
+
+
+async def button(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Parses the CallbackQuery and updates the message text."""
+    query = update.callback_query
+
+    # CallbackQueries need to be answered, even if no notification to the user is needed
+    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
+    await query.answer()
+
+    await query.edit_message_text(text=f"Selected option: {query.data}")
+
 async def post_init(application: Application) -> None:
     await send_message(application.bot, TELEGRAM_EDUZEN_ID, "Bot started!")
 
@@ -69,11 +99,18 @@ def main() -> None | int:
     movie_handler = CommandHandler("movie", movie)
     application.add_handler(movie_handler)
 
+    show_movie_handler = CommandHandler("show_movie", show_movie)
+    application.add_handler(show_movie_handler)
+
+    button_callback_handler = CallbackQueryHandler(button)
+    application.add_handler(button_callback_handler)
+
     try:
         application.run_polling()
     except Exception:
         print("Error while polling")
         raise SystemExit(1)
+
 
 
 if __name__ == "__main__":
