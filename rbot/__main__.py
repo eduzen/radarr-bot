@@ -17,6 +17,9 @@ TELEGRAM_EDUZEN_ID = config("TELEGRAM_EDUZEN_ID", cast=int)
 async def send_message(bot: Bot, chat_id: int, text: str) -> None:
     await bot.send_message(chat_id=chat_id, text=text)
 
+async def send_photo(bot: Bot, chat_id: int, photo: str | bytes) -> None:
+    await bot.send_photo(chat_id=chat_id, photo=photo)
+
 
 async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id  # type: ignore
@@ -51,6 +54,7 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     try:
         movie = await tmdb_api.get_movie_detail(movie_id)
+        await send_photo(bot, chat_id, movie.poster)
         await send_message(bot, chat_id, movie.to_str())
     except Exception as e:
         print("Error while getting movie detail", e)
@@ -60,7 +64,6 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def show_movie(update, context):
     # Movie info
     bot = context.bot
-    url = helpers.create_deep_linked_url(bot.username, "CHECK_THIS_OUT", group=True)
     movie_title = "Movie Title"
     movie_description = "Movie Description"
     movie_year = "2020"
