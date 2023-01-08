@@ -20,12 +20,12 @@ interactions:
       drug dealer. Impressed by his extravagant lifestyle and prowess, his young son,
       Kilo, yearns to follow in his footsteps. Kilo resolves to learn how to prosper
       in the drug world, and his new life as a dealer begins. In a world where a man
-      wants everything, he may end up with nothing.","popularity":10.82,"poster_path":"/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg","production_companies":[],"production_countries":[{"iso_3166_1":"US","name":"United
+      wants everything, he may end up with nothing.","popularity":10.518,"poster_path":"/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg","production_companies":[],"production_countries":[{"iso_3166_1":"US","name":"United
       States of America"}],"release_date":"2004-09-27","revenue":0,"runtime":128,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"El
       padrino: The Latin Godfather","video":false,"vote_average":6.75,"vote_count":29}'
     headers:
       Age:
-      - '153'
+      - '64'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
@@ -37,9 +37,9 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Wed, 04 Jan 2023 17:49:27 GMT
+      - Sun, 08 Jan 2023 14:22:19 GMT
       ETag:
-      - W/"1aa9981ed24bb23caac4e6c6246908e0"
+      - W/"fb62a0c374eaf47946ec983cb6d07d0a"
       Server:
       - openresty
       Transfer-Encoding:
@@ -48,19 +48,19 @@ interactions:
       - Accept-Encoding,Accept-Encoding,Accept-Encoding
       - Origin
       Via:
-      - 1.1 edd6d90087c4f2b49e182778a2273adc.cloudfront.net (CloudFront)
+      - 1.1 3ffec0ecfde687fb371812ad42f5cfc2.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - y_a9QcGJal5t9Leu-za_acCjHTofnIxPFoPrMZmAc_nYmv1lE8_7ew==
+      - RyqU6d3NrUd3KLzpEf6O97vLXCHxFS6oZpTjD5IwWUta4MV8YwqB8g==
       X-Amz-Cf-Pop:
-      - AMS54-C1
+      - AMS1-C1
       X-Cache:
       - Hit from cloudfront
       X-Memc:
       - HIT
       X-Memc-Age:
-      - '7528'
+      - '8220'
       X-Memc-Expires:
-      - '6924'
+      - '6897'
       X-Memc-Key:
       - ba78d135326d9e8eed8eca3bda509abc30ba3a6a
     http_version: HTTP/1.1

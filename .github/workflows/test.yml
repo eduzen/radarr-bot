@@ -24,6 +24,11 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
+    - name: pre-commit
+      run: |
+        pip install -U pre-commit
+        pre-commit run --all-files
+
     - name: Install dependencies
       run: pip install -r requirements-dev.txt
 

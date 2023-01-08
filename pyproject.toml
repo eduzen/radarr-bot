@@ -23,7 +23,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["python-telegram-bot", "httpx", "rich", "python-decouple"]
+dependencies = ["python-telegram-bot", "httpx", "rich", "python-decouple", "pydantic" ]
 dynamic = ["version"]
 
 [project.optional-dependencies]
@@ -45,16 +45,6 @@ Source = "https://github.com/eduzen/rbot"
 [tool.hatch.version]
 path = "rbot/__about__.py"
 
-[tool.hatch.envs.default]
-dependencies = [
-  "pytest",
-]
-[tool.hatch.envs.default.scripts]
-cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=rbot --cov=tests {args}"
-no-cov = "cov --no-cov {args}"
-
-[[tool.hatch.envs.test.matrix]]
-python = ["37", "38", "39", "310", "311"]
 
 [tool.coverage.run]
 branch = true

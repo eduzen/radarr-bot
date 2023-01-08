@@ -18,7 +18,7 @@ interactions:
     content: '{"page":1,"results":[],"total_pages":0,"total_results":0}'
     headers:
       Age:
-      - '132'
+      - '63'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
@@ -30,7 +30,7 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Wed, 04 Jan 2023 17:49:48 GMT
+      - Sun, 08 Jan 2023 14:22:20 GMT
       Server:
       - openresty
       Transfer-Encoding:
@@ -39,11 +39,11 @@ interactions:
       - Accept-Encoding,Accept-Encoding
       - Origin
       Via:
-      - 1.1 edd6d90087c4f2b49e182778a2273adc.cloudfront.net (CloudFront)
+      - 1.1 3ffec0ecfde687fb371812ad42f5cfc2.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Sc0zWkNqdwuMk8OsHUgY1836CQQRnNsq2Z-yQVFSqKOVllLLhQ9bwg==
+      - ZGCpTLKYuSnEJ_mlYzZMbqkNssCWsPgNn45TkKWhgevODXKYKHpaDQ==
       X-Amz-Cf-Pop:
-      - AMS54-C1
+      - AMS1-C1
       X-Cache:
       - Hit from cloudfront
     http_version: HTTP/1.1

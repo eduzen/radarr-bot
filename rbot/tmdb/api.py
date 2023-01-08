@@ -1,25 +1,32 @@
 import datetime
+import logging
 import urllib
-from dataclasses import dataclass
 from typing import Any
 
 import httpx
 from decouple import config
+from pydantic import BaseModel
 
 client = httpx.Client()
+log = logging.getLogger(__name__)
 TMDB_API_KEY = config("TMDB_API_KEY")
 TMDB_BASE_URL = "https://api.themoviedb.org/3/"
 
 
-@dataclass
-class Movie:
+class Movie(BaseModel):
     title: str
     release_date: str
-    backdrop_path: str
+    backdrop_path: str | None
+    poster_path: str | None
     vote_average: int
+    poster: str | None
 
-    def to_str(self) -> str:
-        return self.__str__()
+    def __init__(self, **data: dict[str, Any]) -> None:
+        super().__init__(**data)
+        self.poster = self.build_poster_url()
+
+    def __str__(self) -> str:
+        return f"{self.title} ({self.year})\nRating: {self.rating}"
 
     @property
     def year(self) -> int:
@@ -27,8 +34,16 @@ class Movie:
         return date.year
 
     @property
-    def poster(self) -> str:
-        return f"http://image.tmdb.org/t/p/original{self.backdrop_path}"
+    def rating(self) -> str:
+        # vote = str()
+        return f"{round(self.vote_average, 1)}/10"
+
+    def build_poster_url(self) -> str:
+        if self.poster_path is None and self.backdrop_path is None:
+            return "https://image.tmdb.org/"
+        if self.poster_path:
+            return f"https://image.tmdb.org/t/p/original{self.poster_path}"
+        return f"https://image.tmdb.org/t/p/original{self.backdrop_path}"
 
 
 async def process_movie_search_result(result: dict[str, Any]) -> Movie:
@@ -37,6 +52,7 @@ async def process_movie_search_result(result: dict[str, Any]) -> Movie:
         release_date=result["release_date"],
         vote_average=result["vote_average"],
         backdrop_path=result["backdrop_path"],
+        poster_path=result["poster_path"],
     )
     return movie
 
@@ -63,11 +79,11 @@ async def search_movie(query: str) -> list[Movie]:
     response.raise_for_status()
 
     movies = await process_movie_search_results(response.json()["results"])
-
+    log.debug(f"Found {len(movies)} movies")
     return movies
 
 
-async def get_movie_detail(movie_id: int) -> Movie:
+async def get_movie_detail(movie_id: int) -> Movie | dict:
     query_params_dict = {
         "api_key": TMDB_API_KEY,
     }
@@ -82,6 +98,6 @@ async def get_movie_detail(movie_id: int) -> Movie:
     try:
         movie = await process_movie_search_result(response.json())
         return movie
-    except Exception as e:
-        print("Movie not found", e)
+    except Exception:
+        log.exception("Movie not found")
     return {}

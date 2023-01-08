@@ -4,7 +4,16 @@ compile-dev:
 compile:
 	pip-compile pyproject.toml --output-file requirements.txt
 
+upgrade:
+	pip-compile --upgrade pyproject.toml --output-file requirements.txt
+
+upgrade-dev:
+	pip-compile --extra=dev --upgrade pyproject.toml --output-file requirements.txt
+
 install:
+	pip install -r requirements.txt .
+
+install-dev:
 	pip install -r requirements-dev.txt -e .
 
 start:

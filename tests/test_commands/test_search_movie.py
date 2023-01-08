@@ -2,7 +2,7 @@ import asyncio
 
 import pytest
 
-from rbot.tmdb.api import Movie, search_movie, get_movie_detail
+from rbot.tmdb.api import Movie, get_movie_detail, search_movie
 
 
 @pytest.fixture(scope="session")
@@ -28,6 +28,7 @@ async def test_search_movie():
     for movie in movies_result:
         assert "the matrix" in movie.title.lower()
 
+
 @pytest.mark.asyncio
 @pytest.mark.vcr
 async def test_search_invalid_movie():
@@ -44,9 +45,9 @@ def test_movie_dataclass_year_and_poster():
         backdrop_path="/hEpWvX6Bp79e.l0qAid8z0JFfMG.jpg",
     )
 
-    assert type(movie.to_str()) == str
+    assert movie.title in str(movie)
     assert movie.year == 1999
     assert (
         movie.poster
-        == "http://image.tmdb.org/t/p/original/hEpWvX6Bp79e.l0qAid8z0JFfMG.jpg"
+        == "https://image.tmdb.org/t/p/original/hEpWvX6Bp79e.l0qAid8z0JFfMG.jpg"
     )
