@@ -1,9 +1,8 @@
 import logging
 
 from decouple import config
-from rich import print
 from rich.logging import RichHandler
-from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update
+from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update, error
 from telegram.ext import (
     Application,
     ApplicationBuilder,
@@ -29,7 +28,10 @@ async def next_movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 
     # CallbackQueries need to be answered, even if no notification to the user is needed
     # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
-    await query.answer()
+    try:
+        await query.answer()
+    except error.BadRequest as e:
+        log.error("Error while answering callback query %s", str(e))
 
     await query.edit_message_text(text=f"Selected option: {query.data}")
 
@@ -84,14 +86,20 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     try:
         data = await tmdb_api.search_movie(query)
+        if not data:
+            await send_message(bot, chat_id, "No movie found")
+            return
+
         for movie in data:
             log.info(movie.json())
+            try:
+                await send_photo(bot, chat_id, movie.poster, caption=str(movie))
+            except error.BadRequest:
+                log.error("Error while sending photo")
+                await send_message(bot, chat_id, str(movie))
 
-            await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-        else:
-            await send_message(bot, chat_id, "No movie found")
     except Exception as e:
-        print("Error while searching movie", e)
+        log.exception("Error while searching movie")
         await send_message(bot, chat_id, "Something went wrong")
 
 
@@ -110,7 +118,7 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         movie = await tmdb_api.get_movie_detail(movie_id)
         await send_photo(bot, chat_id, movie.poster, caption=str(movie))
     except Exception as e:
-        print("Error while getting movie detail", e)
+        log.exception("Error while getting movie detail")
         await send_message(bot, chat_id, "Something went wrong")
 
 

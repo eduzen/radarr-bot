@@ -5,7 +5,7 @@ from typing import Any
 
 import httpx
 from decouple import config
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 
 client = httpx.Client()
 log = logging.getLogger(__name__)
@@ -18,7 +18,7 @@ class Movie(BaseModel):
     release_date: str
     backdrop_path: str | None
     poster_path: str | None
-    vote_average: int
+    vote_average: float
     poster: str | None
 
     def __init__(self, **data: dict[str, Any]) -> None:
@@ -28,10 +28,24 @@ class Movie(BaseModel):
     def __str__(self) -> str:
         return f"{self.title} ({self.year})\nRating: {self.rating}"
 
+    @validator("vote_average")
+    def validate_vote_average(cls, value: float) -> float:
+        if not value:
+            raise ValueError("vote_average is required")
+        return round(value, 1)
+
+    @validator("release_date")
+    def validate_release_date(cls, value: str) -> str:
+        if not value:
+            raise ValueError("Release date is required")
+        return value
+
     @property
-    def year(self) -> int:
-        date = datetime.datetime.strptime(self.release_date, "%Y-%m-%d")
-        return date.year
+    def year(self) -> int | str:
+        if self.release_date:
+            date = datetime.datetime.strptime(self.release_date, "%Y-%m-%d")
+            return date.year
+        return "N/A"
 
     @property
     def rating(self) -> str:
@@ -47,13 +61,7 @@ class Movie(BaseModel):
 
 
 async def process_movie_search_result(result: dict[str, Any]) -> Movie:
-    movie = Movie(
-        title=result["title"],
-        release_date=result["release_date"],
-        vote_average=result["vote_average"],
-        backdrop_path=result["backdrop_path"],
-        poster_path=result["poster_path"],
-    )
+    movie = Movie(**result)
     return movie
 
 
@@ -62,8 +70,11 @@ async def process_movie_search_results(
 ) -> list[Movie]:
     movies = []
     for result in search_results:
-        movie = await process_movie_search_result(result)
-        movies.append(movie)
+        try:
+            movie = await process_movie_search_result(result)
+            movies.append(movie)
+        except ValueError:
+            log.error("Not valid movie... skipping")
     return movies
 
 
