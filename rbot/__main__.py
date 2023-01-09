@@ -1,4 +1,5 @@
 import logging
+from typing import Any
 
 from decouple import config
 from rich.logging import RichHandler
@@ -52,10 +53,14 @@ async def send_message(bot: Bot, chat_id: int, text: str) -> None:
 
 
 async def send_buttons(
-    bot: Bot, chat_id: int, text: str, buttons: list[list[InlineKeyboardButton]]
+    bot: Bot,
+    chat_id: int,
+    text: str,
+    buttons: list[list[InlineKeyboardButton]],
+    callback_data: str | dict[str, Any],
 ) -> None:
     if not buttons:
-        confirm_button = InlineKeyboardButton("Confirm", callback_data="confirm_movie")
+        confirm_button = InlineKeyboardButton("Confirm", callback_data=callback_data)
         next_button = InlineKeyboardButton("Next", callback_data="next_movie")
         buttons = [[confirm_button, next_button]]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,14 +96,14 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             return
 
         for movie in data:
-            log.info(movie.json())
             try:
                 await send_photo(bot, chat_id, movie.poster, caption=str(movie))
+                await send_buttons(bot, chat_id, "Is this the movie?", movie.imdb_id)
             except error.BadRequest:
                 log.error("Error while sending photo")
                 await send_message(bot, chat_id, str(movie))
 
-    except Exception as e:
+    except Exception:
         log.exception("Error while searching movie")
         await send_message(bot, chat_id, "Something went wrong")
 
@@ -117,7 +122,7 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     try:
         movie = await tmdb_api.get_movie_detail(movie_id)
         await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-    except Exception as e:
+    except Exception:
         log.exception("Error while getting movie detail")
         await send_message(bot, chat_id, "Something went wrong")
 
