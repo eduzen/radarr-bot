@@ -43,7 +43,7 @@ idna==3.4
     #   anyio
     #   rfc3986
     #   yarl
-iniconfig==1.1.1
+iniconfig==2.0.0
     # via pytest
 ipdb==0.13.11
     # via rbot (pyproject.toml)
