@@ -14,8 +14,6 @@ interactions:
       - radarr.huis
       user-agent:
       - python-httpx/0.23.2
-      x-api-key:
-      - 61b2c82ff7c54ada9fbcee283107aeb0
     method: GET
     uri: http://radarr.huis/api/v3/movie/lookup/tmdb?tmdbId=359724
   response:
@@ -81,7 +79,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 10 Jan 2023 09:45:06 GMT
+      - Tue, 10 Jan 2023 11:22:55 GMT
       Expires:
       - '-1'
       Pragma:
@@ -114,64 +112,29 @@ interactions:
       - radarr.huis
       user-agent:
       - python-httpx/0.23.2
-      x-api-key:
-      - 61b2c82ff7c54ada9fbcee283107aeb0
     method: POST
     uri: http://radarr.huis/api/v3/movie
   response:
-    content: "{\n  \"title\": \"Ford v Ferrari\",\n  \"originalTitle\": \"Ford v Ferrari\",\n
-      \ \"originalLanguage\": {\n    \"id\": 1,\n    \"name\": \"English\"\n  },\n
-      \ \"alternateTitles\": [],\n  \"secondaryYearSourceId\": 0,\n  \"sortTitle\":
-      \"ford v ferrari\",\n  \"sizeOnDisk\": 0,\n  \"status\": \"released\",\n  \"overview\":
-      \"American car designer Carroll Shelby and the British-born driver Ken Miles
-      work together to battle corporate interference, the laws of physics, and their
-      own personal demons to build a revolutionary race car for Ford Motor Company
-      and take on the dominating race cars of Enzo Ferrari at the 24 Hours of Le Mans
-      in France in 1966.\",\n  \"inCinemas\": \"2019-11-13T00:00:00Z\",\n  \"physicalRelease\":
-      \"2020-03-11T00:00:00Z\",\n  \"digitalRelease\": \"2020-01-28T00:00:00Z\",\n
-      \ \"images\": [\n    {\n      \"coverType\": \"poster\",\n      \"url\": \"/MediaCover/381/poster.jpg\",\n
-      \     \"remoteUrl\": \"https://image.tmdb.org/t/p/original/dR1Ju50iudrOh3YgfwkAU1g2HZe.jpg\"\n
-      \   },\n    {\n      \"coverType\": \"fanart\",\n      \"url\": \"/MediaCover/381/fanart.jpg\",\n
-      \     \"remoteUrl\": \"https://image.tmdb.org/t/p/original/ydmZIafp66mHABs3QJDwvjRgZfE.jpg\"\n
-      \   }\n  ],\n  \"website\": \"https://www.foxmovies.com/movies/ford-v-ferrari\",\n
-      \ \"year\": 2019,\n  \"hasFile\": false,\n  \"youTubeTrailerId\": \"I3h9Z89U9ZA\",\n
-      \ \"studio\": \"20th Century Fox\",\n  \"path\": \"/media-center/movies/Ford
-      v Ferrari (2019)/Ford v Ferrari (2019)\",\n  \"qualityProfileId\": 1,\n  \"monitored\":
-      true,\n  \"minimumAvailability\": \"released\",\n  \"isAvailable\": true,\n
-      \ \"folderName\": \"/media-center/movies/Ford v Ferrari (2019)/Ford v Ferrari
-      (2019)\",\n  \"runtime\": 153,\n  \"cleanTitle\": \"fordvferrari\",\n  \"imdbId\":
-      \"tt1950186\",\n  \"tmdbId\": 359724,\n  \"titleSlug\": \"359724\",\n  \"certification\":
-      \"PG-13\",\n  \"genres\": [\n    \"Drama\",\n    \"Action\",\n    \"History\"\n
-      \ ],\n  \"tags\": [],\n  \"added\": \"2023-01-10T09:45:06Z\",\n  \"ratings\":
-      {\n    \"imdb\": {\n      \"votes\": 396205,\n      \"value\": 8.1,\n      \"type\":
-      \"user\"\n    },\n    \"tmdb\": {\n      \"votes\": 6296,\n      \"value\":
-      8,\n      \"type\": \"user\"\n    },\n    \"metacritic\": {\n      \"votes\":
-      0,\n      \"value\": 81,\n      \"type\": \"user\"\n    },\n    \"rottenTomatoes\":
-      {\n      \"votes\": 0,\n      \"value\": 92,\n      \"type\": \"user\"\n    }\n
-      \ },\n  \"popularity\": 65.485,\n  \"id\": 381\n}"
+    content: "[\n  {\n    \"propertyName\": \"TmdbId\",\n    \"errorMessage\": \"This
+      movie has already been added\",\n    \"attemptedValue\": 359724,\n    \"severity\":
+      \"error\",\n    \"errorCode\": \"MovieExistsValidator\",\n    \"formattedMessageArguments\":
+      [],\n    \"formattedMessagePlaceholderValues\": {\n      \"propertyName\": \"Tmdb
+      Id\",\n      \"propertyValue\": 359724\n    }\n  }\n]"
     headers:
       Cache-Control:
-      - no-cache, no-store
-      Content-Encoding:
-      - gzip
+      - no-cache,no-store
       Content-Type:
-      - application/json; charset=utf-8
+      - application/json
       Date:
-      - Tue, 10 Jan 2023 09:45:06 GMT
+      - Tue, 10 Jan 2023 11:22:55 GMT
       Expires:
       - '-1'
-      Location:
-      - http://radarr.huis/api/v3/movie/381
       Pragma:
       - no-cache
       Server:
       - Kestrel
       Transfer-Encoding:
       - chunked
-      Vary:
-      - Accept-Encoding
-      X-Application-Version:
-      - 4.3.2.6857
     http_version: HTTP/1.1
-    status_code: 201
+    status_code: 400
 version: 1

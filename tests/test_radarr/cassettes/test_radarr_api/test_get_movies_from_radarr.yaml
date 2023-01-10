@@ -424,7 +424,7 @@ interactions:
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
       \       },\n        \"id\": 63\n      }\n    ],\n    \"secondaryYearSourceId\":
-      0,\n    \"sortTitle\": \"2046\",\n    \"sizeOnDisk\": 839165952,\n    \"status\":
+      0,\n    \"sortTitle\": \"2046\",\n    \"sizeOnDisk\": 436354231,\n    \"status\":
       \"released\",\n    \"overview\": \"Women enter and exit a science fiction author's
       life over the course of a few years after the author loses the woman he considers
       his one true love.\",\n    \"inCinemas\": \"2004-09-29T00:00:00Z\",\n    \"physicalRelease\":
@@ -449,22 +449,22 @@ interactions:
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       78,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
       0,\n        \"value\": 86,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
-      {\n      \"movieId\": 6,\n      \"relativePath\": \"2046 (2004) DVDRip GoGo.avi\",\n
+      {\n      \"movieId\": 6,\n      \"relativePath\": \"2046 (2004) DVDRip GoGo.mp4\",\n
       \     \"path\": \"/media-center/movies/2046 (2004) DVDRip GoGo/2046 (2004) DVDRip
-      GoGo.avi\",\n      \"size\": 839165952,\n      \"dateAdded\": \"2023-01-08T20:26:28Z\",\n
+      GoGo.mp4\",\n      \"size\": 436354231,\n      \"dateAdded\": \"2023-01-09T20:27:31Z\",\n
       \     \"indexerFlags\": 0,\n      \"quality\": {\n        \"quality\": {\n          \"id\":
       2,\n          \"name\": \"DVD\",\n          \"source\": \"dvd\",\n          \"resolution\":
       480,\n          \"modifier\": \"none\"\n        },\n        \"revision\": {\n
       \         \"version\": 1,\n          \"real\": 0,\n          \"isRepack\": false\n
-      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 114936,\n
-      \       \"audioChannels\": 2,\n        \"audioCodec\": \"MP3\",\n        \"audioLanguages\":
-      \"\",\n        \"audioStreamCount\": 1,\n        \"videoBitDepth\": 8,\n        \"videoBitrate\":
-      736921,\n        \"videoCodec\": \"XviD\",\n        \"videoDynamicRangeType\":
+      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 128120,\n
+      \       \"audioChannels\": 2,\n        \"audioCodec\": \"AAC\",\n        \"audioLanguages\":
+      \"und\",\n        \"audioStreamCount\": 1,\n        \"videoBitDepth\": 8,\n
+      \       \"videoBitrate\": 315907,\n        \"videoCodec\": \"x264\",\n        \"videoDynamicRangeType\":
       \"\",\n        \"videoFps\": 23.976,\n        \"resolution\": \"720x272\",\n
-      \       \"runTime\": \"2:09:24\",\n        \"scanType\": \"Progressive\",\n
+      \       \"runTime\": \"2:09:25\",\n        \"scanType\": \"Progressive\",\n
       \       \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\": false,\n
       \     \"languages\": [\n        {\n          \"id\": 10,\n          \"name\":
-      \"Chinese\"\n        }\n      ],\n      \"edition\": \"\",\n      \"id\": 441\n
+      \"Chinese\"\n        }\n      ],\n      \"edition\": \"\",\n      \"id\": 444\n
       \   },\n    \"popularity\": 22.48,\n    \"id\": 6\n  },\n  {\n    \"title\":
       \"3 Idiots\",\n    \"originalTitle\": \"3 Idiots\",\n    \"originalLanguage\":
       {\n      \"id\": 26,\n      \"name\": \"Hindi\"\n    },\n    \"alternateTitles\":
@@ -1289,9 +1289,9 @@ interactions:
       \   \"imdbId\": \"tt0075265\",\n    \"tmdbId\": 19610,\n    \"titleSlug\": \"19610\",\n
       \   \"certification\": \"R\",\n    \"genres\": [\n      \"Drama\",\n      \"Music\",\n
       \     \"Romance\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
-      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 11980,\n        \"value\":
+      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 12054,\n        \"value\":
       6.1,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      180,\n        \"value\": 6,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      182,\n        \"value\": 5.995,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 59,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       35,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -1311,7 +1311,7 @@ interactions:
       \       \"scanType\": \"Progressive\",\n        \"subtitles\": \"\"\n      },\n
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"edition\":
-      \"\",\n      \"id\": 16\n    },\n    \"popularity\": 13.183,\n    \"id\": 15\n
+      \"\",\n      \"id\": 16\n    },\n    \"popularity\": 18.003,\n    \"id\": 15\n
       \ },\n  {\n    \"title\": \"A Star Is Born\",\n    \"originalTitle\": \"A Star
       Is Born\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -2029,8 +2029,8 @@ interactions:
       \"tt5294550\",\n    \"tmdbId\": 446791,\n    \"titleSlug\": \"446791\",\n    \"certification\":
       \"R\",\n    \"genres\": [\n      \"Thriller\",\n      \"Drama\",\n      \"Crime\"\n
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
-      {\n      \"imdb\": {\n        \"votes\": 86099,\n        \"value\": 6.8,\n        \"type\":
-      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 1996,\n        \"value\":
+      {\n      \"imdb\": {\n        \"votes\": 86270,\n        \"value\": 6.8,\n        \"type\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 2004,\n        \"value\":
       6.5,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 72,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 79,\n        \"type\": \"user\"\n
@@ -2051,7 +2051,7 @@ interactions:
       \"Progressive\",\n        \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\":
       false,\n      \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"edition\": \"\",\n      \"id\": 26\n
-      \   },\n    \"popularity\": 16.892,\n    \"id\": 25\n  },\n  {\n    \"title\":
+      \   },\n    \"popularity\": 15.48,\n    \"id\": 25\n  },\n  {\n    \"title\":
       \"Aloft\",\n    \"originalTitle\": \"Aloft\",\n    \"originalLanguage\": {\n
       \     \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -2667,10 +2667,6 @@ interactions:
       Endgame\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
       0,\n        \"language\": {\n          \"id\": 4,\n          \"name\": \"German\"\n
       \       },\n        \"id\": 268\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 39,\n        \"title\": \"04 Avengers
-      - Endgame\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
-      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
-      \       },\n        \"id\": 269\n      },\n      {\n        \"sourceType\":
       \"tmdb\",\n        \"movieMetadataId\": 39,\n        \"title\": \"Avengers:
       H\u1ED3i K\u1EBFt\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
       0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
@@ -2886,7 +2882,7 @@ interactions:
       \       \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\": {\n
       \         \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
       317\n      }\n    ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\":
-      \"avengers endgame\",\n    \"sizeOnDisk\": 3219186473,\n    \"status\": \"released\",\n
+      \"avengers endgame\",\n    \"sizeOnDisk\": 2570346047,\n    \"status\": \"released\",\n
       \   \"overview\": \"After the devastating events of Avengers: Infinity War,
       the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the
       help of remaining allies, the Avengers must assemble once more in order to undo
@@ -2909,32 +2905,33 @@ interactions:
       \     \"Action\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 1130721,\n        \"value\":
       8.4,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      22394,\n        \"value\": 8.3,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      22398,\n        \"value\": 8.274,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 78,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       94,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
-      35,\n      \"relativePath\": \"Avengers Endgame (2019) [WEBRip] [1080p] [YTS.LT]/Avengers.Endgame.2019.1080p.WEBRip.x264-[YTS.LT].mp4\",\n
-      \     \"path\": \"/media-center/movies/Avengers/Avengers Endgame (2019) [WEBRip]
-      [1080p] [YTS.LT]/Avengers.Endgame.2019.1080p.WEBRip.x264-[YTS.LT].mp4\",\n      \"size\":
-      3219186473,\n      \"dateAdded\": \"2023-01-08T20:26:32Z\",\n      \"indexerFlags\":
+      35,\n      \"relativePath\": \"Avengers Infinity War (2018) [WEBRip] [1080p]
+      [YTS.AM]/Avengers.Infinity.War.2018.1080p.WEBRip.x264-[YTS.AM].mp4\",\n      \"path\":
+      \"/media-center/movies/Avengers/Avengers Infinity War (2018) [WEBRip] [1080p]
+      [YTS.AM]/Avengers.Infinity.War.2018.1080p.WEBRip.x264-[YTS.AM].mp4\",\n      \"size\":
+      2570346047,\n      \"dateAdded\": \"2023-01-09T20:27:35Z\",\n      \"indexerFlags\":
       0,\n      \"quality\": {\n        \"quality\": {\n          \"id\": 15,\n          \"name\":
       \"WEBRip-1080p\",\n          \"source\": \"webrip\",\n          \"resolution\":
       1080,\n          \"modifier\": \"none\"\n        },\n        \"revision\": {\n
       \         \"version\": 1,\n          \"real\": 0,\n          \"isRepack\": false\n
-      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 358941,\n
-      \       \"audioChannels\": 5.1,\n        \"audioCodec\": \"AAC\",\n        \"audioLanguages\":
+      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 134657,\n
+      \       \"audioChannels\": 2,\n        \"audioCodec\": \"AAC\",\n        \"audioLanguages\":
       \"und\",\n        \"audioStreamCount\": 1,\n        \"videoBitDepth\": 8,\n
-      \       \"videoBitrate\": 1999998,\n        \"videoCodec\": \"x264\",\n        \"videoDynamicRangeType\":
-      \"\",\n        \"videoFps\": 24,\n        \"resolution\": \"1920x800\",\n        \"runTime\":
-      \"3:01:36\",\n        \"scanType\": \"Progressive\",\n        \"subtitles\":
-      \"\"\n      },\n      \"qualityCutoffNotMet\": false,\n      \"languages\":
-      [\n        {\n          \"id\": 1,\n          \"name\": \"English\"\n        }\n
-      \     ],\n      \"releaseGroup\": \"YTS.LT\",\n      \"edition\": \"\",\n      \"id\":
-      442\n    },\n    \"collection\": {\n      \"title\": \"The Avengers Collection\",\n
+      \       \"videoBitrate\": 2149681,\n        \"videoCodec\": \"x264\",\n        \"videoDynamicRangeType\":
+      \"\",\n        \"videoFps\": 23.976,\n        \"resolution\": \"1920x800\",\n
+      \       \"runTime\": \"2:29:41\",\n        \"scanType\": \"Progressive\",\n
+      \       \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\": false,\n
+      \     \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
+      \"English\"\n        }\n      ],\n      \"edition\": \"\",\n      \"id\": 445\n
+      \   },\n    \"collection\": {\n      \"title\": \"The Avengers Collection\",\n
       \     \"tmdbId\": 86311,\n      \"monitored\": false,\n      \"qualityProfileId\":
       0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\": \"tba\",\n
       \     \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n      \"id\":
-      0\n    },\n    \"popularity\": 137.994,\n    \"id\": 35\n  },\n  {\n    \"title\":
+      0\n    },\n    \"popularity\": 158.467,\n    \"id\": 35\n  },\n  {\n    \"title\":
       \"Bananas\",\n    \"originalTitle\": \"Bananas\",\n    \"originalLanguage\":
       {\n      \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -4273,20 +4270,16 @@ interactions:
       \"tmdb\",\n        \"movieMetadataId\": 59,\n        \"title\": \"Captain America
       III: Civil War\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
       0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
-      \       },\n        \"id\": 437\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 59,\n        \"title\": \"marvel film
-      13 - Captain America Civil War\",\n        \"sourceId\": 0,\n        \"votes\":
-      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 2,\n
-      \         \"name\": \"French\"\n        },\n        \"id\": 3030\n      }\n
-      \   ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"captain america
-      civil war\",\n    \"sizeOnDisk\": 2471744655,\n    \"status\": \"released\",\n
-      \   \"overview\": \"Following the events of Age of Ultron, the collective governments
-      of the world pass an act designed to regulate all superhuman activity. This
-      polarizes opinion amongst the Avengers, causing two factions to side with Iron
-      Man or Captain America, which causes an epic battle between former allies.\",\n
-      \   \"inCinemas\": \"2016-04-27T00:00:00Z\",\n    \"physicalRelease\": \"2016-08-02T00:00:00Z\",\n
-      \   \"digitalRelease\": \"2016-09-02T00:00:00Z\",\n    \"images\": [\n      {\n
-      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/55/poster.jpg?lastWrite=638080282764351875\",\n
+      \       },\n        \"id\": 437\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"captain america civil war\",\n    \"sizeOnDisk\": 2471744655,\n
+      \   \"status\": \"released\",\n    \"overview\": \"Following the events of Age
+      of Ultron, the collective governments of the world pass an act designed to regulate
+      all superhuman activity. This polarizes opinion amongst the Avengers, causing
+      two factions to side with Iron Man or Captain America, which causes an epic
+      battle between former allies.\",\n    \"inCinemas\": \"2016-04-27T00:00:00Z\",\n
+      \   \"physicalRelease\": \"2016-08-02T00:00:00Z\",\n    \"digitalRelease\":
+      \"2016-09-02T00:00:00Z\",\n    \"images\": [\n      {\n        \"coverType\":
+      \"poster\",\n        \"url\": \"/MediaCover/55/poster.jpg?lastWrite=638080282764351875\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg\"\n
       \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/55/fanart.jpg?lastWrite=638063643544938831\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/wdwcOBMkt3zmPQuEMxB3FUtMio2.jpg\"\n
@@ -4302,7 +4295,7 @@ interactions:
       Fiction\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 790117,\n        \"value\":
       7.8,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      20646,\n        \"value\": 7.438,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      20651,\n        \"value\": 7.438,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 75,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       90,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -4327,7 +4320,7 @@ interactions:
       \     \"tmdbId\": 131295,\n      \"monitored\": false,\n      \"qualityProfileId\":
       0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\": \"tba\",\n
       \     \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n      \"id\":
-      0\n    },\n    \"popularity\": 81.256,\n    \"id\": 55\n  },\n  {\n    \"title\":
+      0\n    },\n    \"popularity\": 110.268,\n    \"id\": 55\n  },\n  {\n    \"title\":
       \"Captain America: The First Avenger\",\n    \"originalTitle\": \"Captain America:
       The First Avenger\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -4389,28 +4382,19 @@ interactions:
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
       \       },\n        \"id\": 415\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 60,\n        \"title\": \"Captain America
-      I: The First Avenger\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
-      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
-      \       },\n        \"id\": 416\n      },\n      {\n        \"sourceType\":
       \"tmdb\",\n        \"movieMetadataId\": 60,\n        \"title\": \"\u7F8E\u56FD\u961F\u957F1\",\n
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
-      \       },\n        \"id\": 417\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 60,\n        \"title\": \"marvel film
-      05 - Captain America First Avenger\",\n        \"sourceId\": 0,\n        \"votes\":
-      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 2,\n
-      \         \"name\": \"French\"\n        },\n        \"id\": 3031\n      }\n
-      \   ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"captain america
-      first avenger\",\n    \"sizeOnDisk\": 1713875628,\n    \"status\": \"released\",\n
-      \   \"overview\": \"During World War II, Steve Rogers is a sickly man from Brooklyn
-      who's transformed into super-soldier Captain America to aid in the war effort.
-      Rogers must stop the Red Skull \u2013 Adolf Hitler's ruthless head of weaponry,
-      and the leader of an organization that intends to use a mysterious device of
-      untold powers for world domination.\",\n    \"inCinemas\": \"2011-07-22T00:00:00Z\",\n
-      \   \"physicalRelease\": \"2011-11-23T00:00:00Z\",\n    \"digitalRelease\":
-      \"2012-07-01T00:00:00Z\",\n    \"images\": [\n      {\n        \"coverType\":
-      \"poster\",\n        \"url\": \"/MediaCover/56/poster.jpg?lastWrite=638076830334843215\",\n
+      \       },\n        \"id\": 417\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"captain america first avenger\",\n    \"sizeOnDisk\":
+      1713875628,\n    \"status\": \"released\",\n    \"overview\": \"During World
+      War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier
+      Captain America to aid in the war effort. Rogers must stop the Red Skull \u2013
+      Adolf Hitler's ruthless head of weaponry, and the leader of an organization
+      that intends to use a mysterious device of untold powers for world domination.\",\n
+      \   \"inCinemas\": \"2011-07-22T00:00:00Z\",\n    \"physicalRelease\": \"2011-11-23T00:00:00Z\",\n
+      \   \"digitalRelease\": \"2012-07-01T00:00:00Z\",\n    \"images\": [\n      {\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/56/poster.jpg?lastWrite=638076830334843215\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg\"\n
       \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/56/fanart.jpg?lastWrite=638076830335843201\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg\"\n
@@ -4426,7 +4410,7 @@ interactions:
       \     \"Science Fiction\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 847409,\n        \"value\":
       6.9,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      19397,\n        \"value\": 6.988,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      19404,\n        \"value\": 6.988,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 66,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       79,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -4450,7 +4434,7 @@ interactions:
       \     \"tmdbId\": 131295,\n      \"monitored\": false,\n      \"qualityProfileId\":
       0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\": \"tba\",\n
       \     \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n      \"id\":
-      0\n    },\n    \"popularity\": 45.984,\n    \"id\": 56\n  },\n  {\n    \"title\":
+      0\n    },\n    \"popularity\": 61.015,\n    \"id\": 56\n  },\n  {\n    \"title\":
       \"Live Flesh\",\n    \"originalTitle\": \"Carne tr\xE9mula\",\n    \"originalLanguage\":
       {\n      \"id\": 3,\n      \"name\": \"Spanish\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -5988,12 +5972,12 @@ interactions:
       \"tt3228774\",\n    \"tmdbId\": 337404,\n    \"titleSlug\": \"337404\",\n    \"certification\":
       \"PG-13\",\n    \"genres\": [\n      \"Comedy\",\n      \"Crime\"\n    ],\n
       \   \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
-      {\n      \"imdb\": {\n        \"votes\": 233716,\n        \"value\": 7.3,\n
+      {\n      \"imdb\": {\n        \"votes\": 235797,\n        \"value\": 7.3,\n
       \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      7701,\n        \"value\": 8.1,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      7815,\n        \"value\": 8.1,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 59,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
-      74,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
+      75,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
       75,\n      \"relativePath\": \"Cruella (2021) WEBRip-480p.avi\",\n      \"path\":
       \"/media-center/movies/Cruella (2021)/Cruella (2021) WEBRip-480p.avi\",\n      \"size\":
       1819473586,\n      \"dateAdded\": \"2022-12-11T14:05:58Z\",\n      \"indexerFlags\":
@@ -6013,7 +5997,7 @@ interactions:
       \   },\n    \"collection\": {\n      \"title\": \"Cruella Collection\",\n      \"tmdbId\":
       837007,\n      \"monitored\": false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\":
       false,\n      \"minimumAvailability\": \"tba\",\n      \"images\": [],\n      \"added\":
-      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 138.413,\n
+      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 144.314,\n
       \   \"id\": 75\n  },\n  {\n    \"title\": \"Days of Glory\",\n    \"originalTitle\":
       \"Indig\xE8nes\",\n    \"originalLanguage\": {\n      \"id\": 2,\n      \"name\":
       \"French\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -7391,7 +7375,7 @@ interactions:
       \     \"Adventure\",\n      \"Science Fiction\"\n    ],\n    \"tags\": [],\n
       \   \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\": {\n      \"imdb\":
       {\n        \"votes\": 268569,\n        \"value\": 8.1,\n        \"type\": \"user\"\n
-      \     },\n      \"tmdb\": {\n        \"votes\": 2575,\n        \"value\": 8.1,\n
+      \     },\n      \"tmdb\": {\n        \"votes\": 2597,\n        \"value\": 8.1,\n
       \       \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 81,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 95,\n        \"type\": \"user\"\n
@@ -7412,7 +7396,7 @@ interactions:
       \"Progressive\",\n        \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\":
       false,\n      \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"edition\": \"\",\n      \"id\": 93\n
-      \   },\n    \"popularity\": 256.408,\n    \"id\": 95\n  },\n  {\n    \"title\":
+      \   },\n    \"popularity\": 293.941,\n    \"id\": 95\n  },\n  {\n    \"title\":
       \"Examined Life\",\n    \"originalTitle\": \"Examined Life\",\n    \"originalLanguage\":
       {\n      \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"examined life\",\n
@@ -7815,7 +7799,7 @@ interactions:
       \     \"Thriller\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 76451,\n        \"value\":
       7.5,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      1472,\n        \"value\": 7.3,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      1476,\n        \"value\": 7.3,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 69,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       71,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -7836,7 +7820,7 @@ interactions:
       \       \"subtitles\": \"eng\"\n      },\n      \"qualityCutoffNotMet\": false,\n
       \     \"languages\": [\n        {\n          \"id\": 4,\n          \"name\":
       \"German\"\n        }\n      ],\n      \"releaseGroup\": \"CiNEFiLE\",\n      \"edition\":
-      \"\",\n      \"id\": 100\n    },\n    \"popularity\": 13.962,\n    \"id\": 102\n
+      \"\",\n      \"id\": 100\n    },\n    \"popularity\": 20.276,\n    \"id\": 102\n
       \ },\n  {\n    \"title\": \"Head-On\",\n    \"originalTitle\": \"Gegen die Wand\",\n
       \   \"originalLanguage\": {\n      \"id\": 4,\n      \"name\": \"German\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -8953,9 +8937,9 @@ interactions:
       \   \"tmdbId\": 244267,\n    \"titleSlug\": \"244267\",\n    \"certification\":
       \"R\",\n    \"genres\": [\n      \"Science Fiction\",\n      \"Drama\"\n    ],\n
       \   \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
-      {\n      \"imdb\": {\n        \"votes\": 126652,\n        \"value\": 7.3,\n
+      {\n      \"imdb\": {\n        \"votes\": 126821,\n        \"value\": 7.3,\n
       \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      2863,\n        \"value\": 7.6,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      2871,\n        \"value\": 7.6,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 57,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       52,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -8975,7 +8959,7 @@ interactions:
       \"Progressive\",\n        \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\":
       false,\n      \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"releaseGroup\": \"NESMEURED\",\n      \"edition\":
-      \"\",\n      \"id\": 114\n    },\n    \"popularity\": 13.33,\n    \"id\": 116\n
+      \"\",\n      \"id\": 114\n    },\n    \"popularity\": 12.587,\n    \"id\": 116\n
       \ },\n  {\n    \"title\": \"I'm Your Man\",\n    \"originalTitle\": \"Ich bin
       dein Mensch\",\n    \"originalLanguage\": {\n      \"id\": 4,\n      \"name\":
       \"German\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -10038,9 +10022,9 @@ interactions:
       \"tt0816692\",\n    \"tmdbId\": 157336,\n    \"titleSlug\": \"157336\",\n    \"certification\":
       \"PG-13\",\n    \"genres\": [\n      \"Adventure\",\n      \"Drama\",\n      \"Science
       Fiction\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
-      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 1824217,\n        \"value\":
+      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 1830052,\n        \"value\":
       8.6,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      30154,\n        \"value\": 8.4,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      30211,\n        \"value\": 8.4,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 74,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       73,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -10060,7 +10044,7 @@ interactions:
       \       \"scanType\": \"Progressive\",\n        \"subtitles\": \"\"\n      },\n
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"edition\":
-      \"\",\n      \"id\": 126\n    },\n    \"popularity\": 148.928,\n    \"id\":
+      \"\",\n      \"id\": 126\n    },\n    \"popularity\": 141.657,\n    \"id\":
       126\n  },\n  {\n    \"title\": \"Irrational Man\",\n    \"originalTitle\": \"Irrational
       Man\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -12414,9 +12398,9 @@ interactions:
       have to work together to uncover what's really going on when their simple job
       goes completely sideways.\",\n    \"inCinemas\": \"2021-06-24T00:00:00Z\",\n
       \   \"digitalRelease\": \"2021-06-24T00:00:00Z\",\n    \"images\": [\n      {\n
-      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/163/poster.jpg?lastWrite=638071643213151370\",\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/163/poster.jpg?lastWrite=638088928692778248\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/34BmdJkdvRweC3xJJFlOFQ2IbYc.jpg\"\n
-      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/163/fanart.jpg?lastWrite=638080283607936159\",\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/163/fanart.jpg?lastWrite=638088928693898232\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/ok7RdHhVngnwkvKj09tvtOvypG.jpg\"\n
       \     }\n    ],\n    \"website\": \"https://www.hbomax.com/no-sudden-move\",\n
       \   \"year\": 2021,\n    \"hasFile\": true,\n    \"youTubeTrailerId\": \"7GRDLX3a-IE\",\n
@@ -12429,8 +12413,8 @@ interactions:
       \   \"titleSlug\": \"649409\",\n    \"certification\": \"R\",\n    \"genres\":
       [\n      \"Crime\",\n      \"Drama\",\n      \"Mystery\"\n    ],\n    \"tags\":
       [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\": {\n      \"imdb\":
-      {\n        \"votes\": 35345,\n        \"value\": 6.4,\n        \"type\": \"user\"\n
-      \     },\n      \"tmdb\": {\n        \"votes\": 483,\n        \"value\": 6.4,\n
+      {\n        \"votes\": 35810,\n        \"value\": 6.4,\n        \"type\": \"user\"\n
+      \     },\n      \"tmdb\": {\n        \"votes\": 497,\n        \"value\": 6.4,\n
       \       \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 76,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 92,\n        \"type\": \"user\"\n
@@ -12451,7 +12435,7 @@ interactions:
       \"Progressive\",\n        \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\":
       false,\n      \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"releaseGroup\": \"YTS.MX\",\n      \"edition\":
-      \"\",\n      \"id\": 159\n    },\n    \"popularity\": 26.071,\n    \"id\": 163\n
+      \"\",\n      \"id\": 159\n    },\n    \"popularity\": 44.449,\n    \"id\": 163\n
       \ },\n  {\n    \"title\": \"Distant\",\n    \"originalTitle\": \"Uzak\",\n    \"originalLanguage\":
       {\n      \"id\": 17,\n      \"name\": \"Turkish\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -15537,7 +15521,7 @@ interactions:
       Fiction\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 755245,\n        \"value\":
       8.2,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      16282,\n        \"value\": 8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      16325,\n        \"value\": 8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 71,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       93,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -15561,7 +15545,7 @@ interactions:
       (Avengers) Collection\",\n      \"tmdbId\": 531241,\n      \"monitored\": false,\n
       \     \"qualityProfileId\": 0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\":
       \"tba\",\n      \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n
-      \     \"id\": 0\n    },\n    \"popularity\": 560.783,\n    \"id\": 203\n  },\n
+      \     \"id\": 0\n    },\n    \"popularity\": 592.513,\n    \"id\": 203\n  },\n
       \ {\n    \"title\": \"Spotlight\",\n    \"originalTitle\": \"Spotlight\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -17122,7 +17106,7 @@ interactions:
       Fiction\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 634178,\n        \"value\":
       6.9,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      13612,\n        \"value\": 6.8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      13617,\n        \"value\": 6.8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 84,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       91,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -17147,7 +17131,7 @@ interactions:
       {\n      \"title\": \"Star Wars Collection\",\n      \"tmdbId\": 10,\n      \"monitored\":
       false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\":
       \"tba\",\n      \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n
-      \     \"id\": 0\n    },\n    \"popularity\": 50.639,\n    \"id\": 209\n  },\n
+      \     \"id\": 0\n    },\n    \"popularity\": 52.277,\n    \"id\": 209\n  },\n
       \ {\n    \"title\": \"Star Wars: Episode II - Attack of the Clones\",\n    \"originalTitle\":
       \"Star Wars: Episode II - Attack of the Clones\",\n    \"originalLanguage\":
       {\n      \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
@@ -18539,7 +18523,7 @@ interactions:
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 28,\n          \"name\": \"Thai\"\n
       \       },\n        \"id\": 1987\n      }\n    ],\n    \"secondaryYearSourceId\":
-      0,\n    \"sortTitle\": \"supernova\",\n    \"sizeOnDisk\": 512480158,\n    \"status\":
+      0,\n    \"sortTitle\": \"supernova\",\n    \"sizeOnDisk\": 1426122652,\n    \"status\":
       \"released\",\n    \"overview\": \"Sam and Tusker, partners of 20 years, are
       traveling across England in their old RV visiting friends, family and places
       from their past. Since Tusker was diagnosed with early-onset dementia two years
@@ -18568,23 +18552,23 @@ interactions:
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       73,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
       0,\n        \"value\": 90,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
-      {\n      \"movieId\": 217,\n      \"relativePath\": \"Supernova.2021.HDRip.XviD.AC3-EVO.mp4\",\n
-      \     \"path\": \"/media-center/movies/Supernova.2021.HDRip.XviD.AC3-EVO/Supernova.2021.HDRip.XviD.AC3-EVO.mp4\",\n
-      \     \"size\": 512480158,\n      \"dateAdded\": \"2023-01-08T20:26:59Z\",\n
+      {\n      \"movieId\": 217,\n      \"relativePath\": \"Supernova.2021.HDRip.XviD.AC3-EVO.avi\",\n
+      \     \"path\": \"/media-center/movies/Supernova.2021.HDRip.XviD.AC3-EVO/Supernova.2021.HDRip.XviD.AC3-EVO.avi\",\n
+      \     \"size\": 1426122652,\n      \"dateAdded\": \"2023-01-09T20:27:55Z\",\n
       \     \"indexerFlags\": 0,\n      \"quality\": {\n        \"quality\": {\n          \"id\":
       1,\n          \"name\": \"SDTV\",\n          \"source\": \"tv\",\n          \"resolution\":
       480,\n          \"modifier\": \"none\"\n        },\n        \"revision\": {\n
       \         \"version\": 1,\n          \"real\": 0,\n          \"isRepack\": false\n
-      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 392554,\n
-      \       \"audioChannels\": 6,\n        \"audioCodec\": \"AAC\",\n        \"audioLanguages\":
+      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 384000,\n
+      \       \"audioChannels\": 5.1,\n        \"audioCodec\": \"AC3\",\n        \"audioLanguages\":
       \"eng\",\n        \"audioStreamCount\": 1,\n        \"videoBitDepth\": 8,\n
-      \       \"videoBitrate\": 323920,\n        \"videoCodec\": \"x264\",\n        \"videoDynamicRangeType\":
+      \       \"videoBitrate\": 0,\n        \"videoCodec\": \"x264\",\n        \"videoDynamicRangeType\":
       \"\",\n        \"videoFps\": 23.976,\n        \"resolution\": \"720x392\",\n
       \       \"runTime\": \"1:34:38\",\n        \"scanType\": \"Progressive\",\n
       \       \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\": false,\n
       \     \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"releaseGroup\": \"EVO\",\n      \"edition\":
-      \"\",\n      \"id\": 443\n    },\n    \"popularity\": 16.042,\n    \"id\": 217\n
+      \"\",\n      \"id\": 446\n    },\n    \"popularity\": 16.042,\n    \"id\": 217\n
       \ },\n  {\n    \"title\": \"Sweet Girl\",\n    \"originalTitle\": \"Sweet Girl\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -18977,8 +18961,8 @@ interactions:
       \   \"imdbId\": \"tt0065063\",\n    \"tmdbId\": 11485,\n    \"titleSlug\": \"11485\",\n
       \   \"certification\": \"NR\",\n    \"genres\": [\n      \"Comedy\",\n      \"Crime\"\n
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
-      {\n      \"imdb\": {\n        \"votes\": 30255,\n        \"value\": 7.2,\n        \"type\":
-      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 641,\n        \"value\":
+      {\n      \"imdb\": {\n        \"votes\": 30307,\n        \"value\": 7.2,\n        \"type\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 643,\n        \"value\":
       7.157,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 67,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 91,\n        \"type\": \"user\"\n
@@ -19000,7 +18984,7 @@ interactions:
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
       \"YTS.LT\",\n      \"edition\": \"\",\n      \"id\": 220\n    },\n    \"popularity\":
-      6.986,\n    \"id\": 223\n  },\n  {\n    \"title\": \"Tekkonkinkreet\",\n    \"originalTitle\":
+      10.647,\n    \"id\": 223\n  },\n  {\n    \"title\": \"Tekkonkinkreet\",\n    \"originalTitle\":
       \"\u9244\u30B3\u30F3\u7B4B\u30AF\u30EA\u30FC\u30C8\",\n    \"originalLanguage\":
       {\n      \"id\": 8,\n      \"name\": \"Japanese\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -19680,8 +19664,8 @@ interactions:
       \   \"imdbId\": \"tt0065571\",\n    \"tmdbId\": 8416,\n    \"titleSlug\": \"8416\",\n
       \   \"certification\": \"R\",\n    \"genres\": [\n      \"Drama\"\n    ],\n
       \   \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
-      {\n      \"imdb\": {\n        \"votes\": 31035,\n        \"value\": 7.9,\n        \"type\":
-      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 522,\n        \"value\":
+      {\n      \"imdb\": {\n        \"votes\": 31149,\n        \"value\": 7.9,\n        \"type\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 527,\n        \"value\":
       7.7,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 100,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 98,\n        \"type\": \"user\"\n
@@ -19703,7 +19687,7 @@ interactions:
       false,\n      \"languages\": [\n        {\n          \"id\": 5,\n          \"name\":
       \"Italian\"\n        },\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"releaseGroup\": \"Fra-Mp3\",\n      \"edition\":
-      \"\",\n      \"id\": 230\n    },\n    \"popularity\": 11.152,\n    \"id\": 233\n
+      \"\",\n      \"id\": 230\n    },\n    \"popularity\": 15.536,\n    \"id\": 233\n
       \ },\n  {\n    \"title\": \"The Counselor\",\n    \"originalTitle\": \"The Counselor\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -22113,7 +22097,7 @@ interactions:
       \"R\",\n    \"genres\": [\n      \"Drama\",\n      \"Comedy\",\n      \"Romance\"\n
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
       {\n      \"imdb\": {\n        \"votes\": 69531,\n        \"value\": 7.8,\n        \"type\":
-      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 745,\n        \"value\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 752,\n        \"value\":
       7.6,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 90,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 96,\n        \"type\": \"user\"\n
@@ -22134,7 +22118,7 @@ interactions:
       \       \"scanType\": \"Progressive\",\n        \"subtitles\": \"eng\"\n      },\n
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       15,\n          \"name\": \"Norwegian\"\n        }\n      ],\n      \"edition\":
-      \"\",\n      \"id\": 261\n    },\n    \"popularity\": 34.733,\n    \"id\": 265\n
+      \"\",\n      \"id\": 261\n    },\n    \"popularity\": 27.274,\n    \"id\": 265\n
       \ },\n  {\n    \"title\": \"Spotswood\",\n    \"originalTitle\": \"Spotswood\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -22712,10 +22696,6 @@ interactions:
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
       \       },\n        \"id\": 2353\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 278,\n        \"title\": \"Thor 4 -
-      Thor Love and Thunder\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n
-      \       \"voteCount\": 0,\n        \"language\": {\n          \"id\": 2,\n          \"name\":
-      \"French\"\n        },\n        \"id\": 2354\n      },\n      {\n        \"sourceType\":
       \"tmdb\",\n        \"movieMetadataId\": 278,\n        \"title\": \"Thor: L\xE1ska
       jako hrom\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
       0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
@@ -22732,24 +22712,19 @@ interactions:
       \       \"title\": \"\u0628\u0627\u0648\u06A9\u06CC \u0695\u0648\u062D\u06CC\",\n
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
-      \       },\n        \"id\": 2770\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 278,\n        \"title\": \"marvel film
-      29 - Thor - Love and Thunder\",\n        \"sourceId\": 0,\n        \"votes\":
-      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 2,\n
-      \         \"name\": \"French\"\n        },\n        \"id\": 3038\n      }\n
-      \   ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"thor love thunder\",\n
-      \   \"sizeOnDisk\": 3634558089,\n    \"status\": \"released\",\n    \"overview\":
-      \"After his retirement is interrupted by Gorr the God Butcher, a galactic killer
-      who seeks the extinction of the gods, Thor Odinson enlists the help of King
-      Valkyrie, Korg, and ex-girlfriend Jane Foster, who now wields Mjolnir as the
-      Mighty Thor. Together they embark upon a harrowing cosmic adventure to uncover
-      the mystery of the God Butcher\u2019s vengeance and stop him before it\u2019s
-      too late.\",\n    \"inCinemas\": \"2022-07-06T00:00:00Z\",\n    \"physicalRelease\":
-      \"2022-09-27T00:00:00Z\",\n    \"digitalRelease\": \"2022-09-08T00:00:00Z\",\n
-      \   \"images\": [\n      {\n        \"coverType\": \"poster\",\n        \"url\":
-      \"/MediaCover/274/poster.jpg?lastWrite=638063644057371255\",\n        \"remoteUrl\":
-      \"https://image.tmdb.org/t/p/original/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg\"\n      },\n
-      \     {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/274/fanart.jpg?lastWrite=638063644058731235\",\n
+      \       },\n        \"id\": 2770\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"thor love thunder\",\n    \"sizeOnDisk\": 3634558089,\n
+      \   \"status\": \"released\",\n    \"overview\": \"After his retirement is interrupted
+      by Gorr the God Butcher, a galactic killer who seeks the extinction of the gods,
+      Thor Odinson enlists the help of King Valkyrie, Korg, and ex-girlfriend Jane
+      Foster, who now wields Mjolnir as the Mighty Thor. Together they embark upon
+      a harrowing cosmic adventure to uncover the mystery of the God Butcher\u2019s
+      vengeance and stop him before it\u2019s too late.\",\n    \"inCinemas\": \"2022-07-06T00:00:00Z\",\n
+      \   \"physicalRelease\": \"2022-09-27T00:00:00Z\",\n    \"digitalRelease\":
+      \"2022-09-08T00:00:00Z\",\n    \"images\": [\n      {\n        \"coverType\":
+      \"poster\",\n        \"url\": \"/MediaCover/274/poster.jpg?lastWrite=638063644057371255\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/pIkRyD18kl4FhoCNQuWxWu5cBLM.jpg\"\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/274/fanart.jpg?lastWrite=638063644058731235\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/jsoz1HlxczSuTx0mDl2h0lxy36l.jpg\"\n
       \     }\n    ],\n    \"website\": \"https://www.marvel.com/movies/thor-love-and-thunder\",\n
       \   \"year\": 2022,\n    \"hasFile\": true,\n    \"youTubeTrailerId\": \"Go8nTmfrQd8\",\n
@@ -22763,7 +22738,7 @@ interactions:
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
       {\n      \"imdb\": {\n        \"votes\": 329594,\n        \"value\": 6.3,\n
       \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      5129,\n        \"value\": 6.7,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      5144,\n        \"value\": 6.669,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 57,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       64,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -22788,7 +22763,7 @@ interactions:
       Collection\",\n      \"tmdbId\": 131296,\n      \"monitored\": false,\n      \"qualityProfileId\":
       0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\": \"tba\",\n
       \     \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n      \"id\":
-      0\n    },\n    \"popularity\": 463.503,\n    \"id\": 274\n  },\n  {\n    \"title\":
+      0\n    },\n    \"popularity\": 514.677,\n    \"id\": 274\n  },\n  {\n    \"title\":
       \"Thor: The Dark World\",\n    \"originalTitle\": \"Thor: The Dark World\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -22863,23 +22838,18 @@ interactions:
       \u0E40\u0E17\u0E1E\u0E40\u0E08\u0E49\u0E32\u0E2A\u0E32\u0E22\u0E1F\u0E49\u0E32\u0E42\u0E25\u0E01\u0E32\u0E17\u0E21\u0E34\u0E2C\",\n
       \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
       \       \"language\": {\n          \"id\": 28,\n          \"name\": \"Thai\"\n
-      \       },\n        \"id\": 2650\n      },\n      {\n        \"sourceType\":
-      \"tmdb\",\n        \"movieMetadataId\": 279,\n        \"title\": \"Marvel Film
-      08 - Thor - Le Monde des t\xE9n\xE8bres\",\n        \"sourceId\": 0,\n        \"votes\":
-      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 2,\n
-      \         \"name\": \"French\"\n        },\n        \"id\": 3037\n      }\n
-      \   ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"thor dark world\",\n
-      \   \"sizeOnDisk\": 1875207806,\n    \"status\": \"released\",\n    \"overview\":
-      \"Thor fights to restore order across the cosmos\u2026 but an ancient race led
-      by the vengeful Malekith returns to plunge the universe back into darkness.
-      Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark
-      on his most perilous and personal journey yet, one that will reunite him with
-      Jane Foster and force him to sacrifice everything to save us all.\",\n    \"inCinemas\":
-      \"2013-10-30T00:00:00Z\",\n    \"physicalRelease\": \"2014-02-24T00:00:00Z\",\n
-      \   \"images\": [\n      {\n        \"coverType\": \"poster\",\n        \"url\":
-      \"/MediaCover/275/poster.jpg?lastWrite=638077695180899175\",\n        \"remoteUrl\":
-      \"https://image.tmdb.org/t/p/original/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg\"\n      },\n
-      \     {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/275/fanart.jpg?lastWrite=638077695181979161\",\n
+      \       },\n        \"id\": 2650\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"thor dark world\",\n    \"sizeOnDisk\": 1875207806,\n
+      \   \"status\": \"released\",\n    \"overview\": \"Thor fights to restore order
+      across the cosmos\u2026 but an ancient race led by the vengeful Malekith returns
+      to plunge the universe back into darkness. Faced with an enemy that even Odin
+      and Asgard cannot withstand, Thor must embark on his most perilous and personal
+      journey yet, one that will reunite him with Jane Foster and force him to sacrifice
+      everything to save us all.\",\n    \"inCinemas\": \"2013-10-30T00:00:00Z\",\n
+      \   \"physicalRelease\": \"2014-02-24T00:00:00Z\",\n    \"images\": [\n      {\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/275/poster.jpg?lastWrite=638077695180899175\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/wp6OxE4poJ4G7c0U2ZIXasTSMR7.jpg\"\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/275/fanart.jpg?lastWrite=638077695181979161\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/uhYoytlNaq46dG81wLmHqaSuzWu.jpg\"\n
       \     }\n    ],\n    \"website\": \"https://www.marvel.com/movies/thor-the-dark-world\",\n
       \   \"year\": 2013,\n    \"hasFile\": true,\n    \"youTubeTrailerId\": \"npvJ9FTgZbM\",\n
@@ -22893,7 +22863,7 @@ interactions:
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\":
       {\n      \"imdb\": {\n        \"votes\": 685759,\n        \"value\": 6.8,\n
       \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      15627,\n        \"value\": 6.557,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      15631,\n        \"value\": 6.558,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 54,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       66,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -22917,7 +22887,7 @@ interactions:
       \   },\n    \"collection\": {\n      \"title\": \"Thor Collection\",\n      \"tmdbId\":
       131296,\n      \"monitored\": false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\":
       false,\n      \"minimumAvailability\": \"tba\",\n      \"images\": [],\n      \"added\":
-      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 66.785,\n
+      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 86.565,\n
       \   \"id\": 275\n  },\n  {\n    \"title\": \"Time of the Gypsies\",\n    \"originalTitle\":
       \"Dom za ve\u0161anje\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -23196,7 +23166,7 @@ interactions:
       \     \"tmdbId\": 8650,\n      \"monitored\": false,\n      \"qualityProfileId\":
       0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\": \"tba\",\n
       \     \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n      \"id\":
-      0\n    },\n    \"popularity\": 89.253,\n    \"id\": 279\n  },\n  {\n    \"title\":
+      0\n    },\n    \"popularity\": 100.837,\n    \"id\": 279\n  },\n  {\n    \"title\":
       \"Treasure Island\",\n    \"originalTitle\": \"Treasure Island\",\n    \"originalLanguage\":
       {\n      \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -23690,7 +23660,7 @@ interactions:
       \     \"Action\",\n      \"Thriller\"\n    ],\n    \"tags\": [],\n    \"added\":
       \"2022-12-11T14:05:16Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
       77031,\n        \"value\": 5.7,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
-      {\n        \"votes\": 3267,\n        \"value\": 5.819,\n        \"type\": \"user\"\n
+      {\n        \"votes\": 3268,\n        \"value\": 5.8,\n        \"type\": \"user\"\n
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       23,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
       0,\n        \"value\": 21,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
@@ -23715,7 +23685,7 @@ interactions:
       Collection\",\n      \"tmdbId\": 2326,\n      \"monitored\": false,\n      \"qualityProfileId\":
       0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\": \"tba\",\n
       \     \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n      \"id\":
-      0\n    },\n    \"popularity\": 43.556,\n    \"id\": 286\n  },\n  {\n    \"title\":
+      0\n    },\n    \"popularity\": 46.29,\n    \"id\": 286\n  },\n  {\n    \"title\":
       \"Venom: Let There Be Carnage\",\n    \"originalTitle\": \"Venom: Let There
       Be Carnage\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -23790,9 +23760,9 @@ interactions:
       \"tt7097896\",\n    \"tmdbId\": 580489,\n    \"titleSlug\": \"580489\",\n    \"certification\":
       \"PG-13\",\n    \"genres\": [\n      \"Science Fiction\",\n      \"Action\",\n
       \     \"Adventure\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n
-      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 222729,\n        \"value\":
+      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 225885,\n        \"value\":
       5.9,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      8222,\n        \"value\": 6.9,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      8388,\n        \"value\": 6.9,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 49,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       57,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -23816,7 +23786,7 @@ interactions:
       \   },\n    \"collection\": {\n      \"title\": \"Venom Collection\",\n      \"tmdbId\":
       558216,\n      \"monitored\": false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\":
       false,\n      \"minimumAvailability\": \"tba\",\n      \"images\": [],\n      \"added\":
-      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 247.695,\n
+      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 225.8,\n
       \   \"id\": 287\n  },\n  {\n    \"title\": \"Vivo\",\n    \"originalTitle\":
       \"Vivo\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -24197,7 +24167,7 @@ interactions:
       [\n      \"Drama\",\n      \"Romance\",\n      \"Crime\"\n    ],\n    \"tags\":
       [],\n    \"added\": \"2022-12-11T14:05:16Z\",\n    \"ratings\": {\n      \"imdb\":
       {\n        \"votes\": 84092,\n        \"value\": 7.2,\n        \"type\": \"user\"\n
-      \     },\n      \"tmdb\": {\n        \"votes\": 1155,\n        \"value\": 7.1,\n
+      \     },\n      \"tmdb\": {\n        \"votes\": 1157,\n        \"value\": 7.1,\n
       \       \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 85,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 91,\n        \"type\": \"user\"\n
@@ -24218,7 +24188,7 @@ interactions:
       \       \"subtitles\": \"\"\n      },\n      \"qualityCutoffNotMet\": false,\n
       \     \"languages\": [\n        {\n          \"id\": 1,\n          \"name\":
       \"English\"\n        }\n      ],\n      \"edition\": \"\",\n      \"id\": 287\n
-      \   },\n    \"popularity\": 27.464,\n    \"id\": 292\n  },\n  {\n    \"title\":
+      \   },\n    \"popularity\": 33.269,\n    \"id\": 292\n  },\n  {\n    \"title\":
       \"Whiskey Tango Foxtrot\",\n    \"originalTitle\": \"Whiskey Tango Foxtrot\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -25117,10 +25087,10 @@ interactions:
       \     \"Comedy\",\n      \"Thriller\"\n    ],\n    \"tags\": [],\n    \"added\":
       \"2022-12-11T22:40:22Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
       243437,\n        \"value\": 7.3,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
-      {\n        \"votes\": 2945,\n        \"value\": 7.5,\n        \"type\": \"user\"\n
+      {\n        \"votes\": 3018,\n        \"value\": 7.5,\n        \"type\": \"user\"\n
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       49,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
-      0,\n        \"value\": 53,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
+      0,\n        \"value\": 54,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
       {\n      \"movieId\": 308,\n      \"relativePath\": \"Bullet.Train(2022).mp4\",\n
       \     \"path\": \"/media-center/movies/2022 Bullet Train/Bullet.Train(2022).mp4\",\n
       \     \"size\": 1220621794,\n      \"dateAdded\": \"2022-12-11T22:55:33Z\",\n
@@ -25140,7 +25110,7 @@ interactions:
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
       \"YTS.MX\",\n      \"edition\": \"\",\n      \"id\": 302\n    },\n    \"popularity\":
-      462.269,\n    \"id\": 308\n  },\n  {\n    \"title\": \"All Quiet on the Western
+      488.202,\n    \"id\": 308\n  },\n  {\n    \"title\": \"All Quiet on the Western
       Front\",\n    \"originalTitle\": \"Im Westen nichts Neues\",\n    \"originalLanguage\":
       {\n      \"id\": 4,\n      \"name\": \"German\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -25605,11 +25575,11 @@ interactions:
       \     \"Action\",\n      \"War\"\n    ],\n    \"tags\": [],\n    \"added\":
       \"2022-12-11T22:41:50Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
       2951,\n        \"value\": 6.3,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
-      {\n        \"votes\": 196,\n        \"value\": 7.6,\n        \"type\": \"user\"\n
+      {\n        \"votes\": 197,\n        \"value\": 7.6,\n        \"type\": \"user\"\n
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       54,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
       0,\n        \"value\": 74,\n        \"type\": \"user\"\n      }\n    },\n    \"popularity\":
-      757.416,\n    \"id\": 315\n  },\n  {\n    \"title\": \"The Woman King\",\n    \"originalTitle\":
+      939.566,\n    \"id\": 315\n  },\n  {\n    \"title\": \"The Woman King\",\n    \"originalTitle\":
       \"The Woman King\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
       \"tmdb\",\n        \"movieMetadataId\": 383,\n        \"title\": \"\u0E21\u0E2B\u0E32\u0E28\u0E36\u0E01\u0E27\u0E35\u0E23\u0E2A\u0E15\u0E23\u0E35\u0E40\u0E2B\u0E25\u0E47\u0E01\",\n
@@ -25728,12 +25698,12 @@ interactions:
       \   \"imdbId\": \"tt14275050\",\n    \"tmdbId\": 843093,\n    \"titleSlug\":
       \"843093\",\n    \"genres\": [\n      \"Drama\"\n    ],\n    \"tags\": [],\n
       \   \"added\": \"2022-12-20T20:08:51Z\",\n    \"ratings\": {\n      \"imdb\":
-      {\n        \"votes\": 291,\n        \"value\": 7,\n        \"type\": \"user\"\n
+      {\n        \"votes\": 361,\n        \"value\": 7.1,\n        \"type\": \"user\"\n
       \     },\n      \"tmdb\": {\n        \"votes\": 6,\n        \"value\": 6.8,\n
       \       \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 80,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 100,\n        \"type\": \"user\"\n
-      \     }\n    },\n    \"popularity\": 5.754,\n    \"id\": 317\n  },\n  {\n    \"title\":
+      \     }\n    },\n    \"popularity\": 3.487,\n    \"id\": 317\n  },\n  {\n    \"title\":
       \"Emily\",\n    \"originalTitle\": \"Emily\",\n    \"originalLanguage\": {\n
       \     \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"emily\",\n    \"sizeOnDisk\":
@@ -25779,7 +25749,7 @@ interactions:
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
       \"RARBG\",\n      \"edition\": \"\",\n      \"id\": 359\n    },\n    \"popularity\":
-      16.757,\n    \"id\": 318\n  },\n  {\n    \"title\": \"My Imaginary Country\",\n
+      14.419,\n    \"id\": 318\n  },\n  {\n    \"title\": \"My Imaginary Country\",\n
       \   \"originalTitle\": \"Mi pa\xEDs imaginario\",\n    \"originalLanguage\":
       {\n      \"id\": 3,\n      \"name\": \"Spanish\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -26060,7 +26030,7 @@ interactions:
       the moon Pandora on a unique mission, but becomes torn between following orders
       and protecting an alien civilization.\",\n    \"inCinemas\": \"2009-12-15T00:00:00Z\",\n
       \   \"images\": [\n      {\n        \"coverType\": \"poster\",\n        \"url\":
-      \"/MediaCover/328/poster.jpg?lastWrite=638088063899528539\",\n        \"remoteUrl\":
+      \"/MediaCover/328/poster.jpg?lastWrite=638088928527260557\",\n        \"remoteUrl\":
       \"https://image.tmdb.org/t/p/original/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg\"\n      },\n
       \     {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/328/fanart.jpg?lastWrite=638088063901288518\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/o0s4XsEDfDlvit5pDRKjzXR4pp2.jpg\"\n
@@ -26075,7 +26045,7 @@ interactions:
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-24T18:39:12Z\",\n    \"ratings\":
       {\n      \"imdb\": {\n        \"votes\": 1286971,\n        \"value\": 7.9,\n
       \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      27582,\n        \"value\": 7.6,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      27632,\n        \"value\": 7.6,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 83,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       82,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -26101,7 +26071,7 @@ interactions:
       {\n      \"title\": \"Avatar Collection\",\n      \"tmdbId\": 87096,\n      \"monitored\":
       false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\":
       \"tba\",\n      \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n
-      \     \"id\": 0\n    },\n    \"popularity\": 2373.623,\n    \"id\": 328\n  },\n
+      \     \"id\": 0\n    },\n    \"popularity\": 2911.722,\n    \"id\": 328\n  },\n
       \ {\n    \"title\": \"Avatar: The Way of Water\",\n    \"originalTitle\": \"Avatar:
       The Way of Water\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -26183,7 +26153,7 @@ interactions:
       \     \"Action\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-24T18:39:14Z\",\n
       \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 172397,\n        \"value\":
       7.9,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      3798,\n        \"value\": 7.716,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      3828,\n        \"value\": 7.7,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 67,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       77,\n        \"type\": \"user\"\n      }\n    },\n    \"collection\": {\n      \"title\":
@@ -26407,9 +26377,9 @@ interactions:
       \   \"imdbId\": \"tt9783600\",\n    \"tmdbId\": 615469,\n    \"titleSlug\":
       \"615469\",\n    \"certification\": \"R\",\n    \"genres\": [\n      \"Science
       Fiction\",\n      \"Thriller\"\n    ],\n    \"tags\": [],\n    \"added\": \"2022-12-24T18:40:47Z\",\n
-      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 56663,\n        \"value\":
+      \   \"ratings\": {\n      \"imdb\": {\n        \"votes\": 57200,\n        \"value\":
       5.4,\n        \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
-      1108,\n        \"value\": 5.8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      1129,\n        \"value\": 5.8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
       {\n        \"votes\": 0,\n        \"value\": 54,\n        \"type\": \"user\"\n
       \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
       39,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\": {\n      \"movieId\":
@@ -26432,7 +26402,7 @@ interactions:
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
       \"YTS.MX\",\n      \"edition\": \"\",\n      \"id\": 369\n    },\n    \"popularity\":
-      93.917,\n    \"id\": 332\n  },\n  {\n    \"title\": \"High Life\",\n    \"originalTitle\":
+      108.899,\n    \"id\": 332\n  },\n  {\n    \"title\": \"High Life\",\n    \"originalTitle\":
       \"High Life\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
       \"tmdb\",\n        \"movieMetadataId\": 398,\n        \"title\": \"High Life:
@@ -26534,7 +26504,11 @@ interactions:
       \"tmdb\",\n        \"movieMetadataId\": 399,\n        \"title\": \"\uAE00\uB798\uC2A4
       \uC5B4\uB2C8\uC5B8\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
       0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
-      \       },\n        \"id\": 3032\n      }\n    ],\n    \"secondaryYearSourceId\":
+      \       },\n        \"id\": 3032\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 399,\n        \"title\": \"\u5229\u5203\u51FA\u97982\uFF1A\u62BD\u4E1D\u5265\u8327\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3039\n      }\n    ],\n    \"secondaryYearSourceId\":
       0,\n    \"sortTitle\": \"glass onion knives out mystery\",\n    \"sizeOnDisk\":
       7865391016,\n    \"status\": \"released\",\n    \"overview\": \"World-famous
       detective Benoit Blanc heads to Greece to peel back the layers of a mystery
@@ -26557,7 +26531,7 @@ interactions:
       \     \"Thriller\",\n      \"Comedy\"\n    ],\n    \"tags\": [],\n    \"added\":
       \"2022-12-24T18:44:04Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
       191969,\n        \"value\": 7.3,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
-      {\n        \"votes\": 2287,\n        \"value\": 7.082,\n        \"type\": \"user\"\n
+      {\n        \"votes\": 2386,\n        \"value\": 7.1,\n        \"type\": \"user\"\n
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       81,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
       0,\n        \"value\": 93,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
@@ -26583,7 +26557,7 @@ interactions:
       {\n      \"title\": \"Knives Out Collection\",\n      \"tmdbId\": 722971,\n
       \     \"monitored\": false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\":
       false,\n      \"minimumAvailability\": \"tba\",\n      \"images\": [],\n      \"added\":
-      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 3341.228,\n
+      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 3309.344,\n
       \   \"id\": 334\n  },\n  {\n    \"title\": \"Strange World\",\n    \"originalTitle\":
       \"Strange World\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
       \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
@@ -26648,7 +26622,7 @@ interactions:
       \     \"Science Fiction\",\n      \"Adventure\"\n    ],\n    \"tags\": [],\n
       \   \"added\": \"2022-12-24T18:44:14Z\",\n    \"ratings\": {\n      \"imdb\":
       {\n        \"votes\": 23445,\n        \"value\": 5.5,\n        \"type\": \"user\"\n
-      \     },\n      \"tmdb\": {\n        \"votes\": 520,\n        \"value\": 6.5,\n
+      \     },\n      \"tmdb\": {\n        \"votes\": 530,\n        \"value\": 6.5,\n
       \       \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 65,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 72,\n        \"type\": \"user\"\n
@@ -26671,7 +26645,7 @@ interactions:
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
       \"FLUX\",\n      \"edition\": \"\",\n      \"id\": 366\n    },\n    \"popularity\":
-      1350.889,\n    \"id\": 335\n  },\n  {\n    \"title\": \"Mr. Harrigan's Phone\",\n
+      1473.543,\n    \"id\": 335\n  },\n  {\n    \"title\": \"Mr. Harrigan's Phone\",\n
       \   \"originalTitle\": \"Mr. Harrigan's Phone\",\n    \"originalLanguage\":
       {\n      \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -27450,16 +27424,20 @@ interactions:
       414,\n        \"title\": \"\u6232\u5047\u60C5\u771F\",\n        \"sourceId\":
       0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
       {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
-      2849\n      }\n    ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\":
-      \"purple rose cairo\",\n    \"sizeOnDisk\": 1423383343,\n    \"status\": \"released\",\n
-      \   \"overview\": \"Cecilia is a waitress in New Jersey, living a dreary life
-      during the Great Depression. Her only escape from her mundane reality is the
-      movie theatre. After losing her job, Cecilia goes to see 'The Purple Rose of
-      Cairo' in hopes of raising her spirits, where she watches dashing archaeologist
-      Tom Baxter time and again.\",\n    \"inCinemas\": \"1985-04-19T00:00:00Z\",\n
-      \   \"physicalRelease\": \"2002-03-11T00:00:00Z\",\n    \"digitalRelease\":
-      \"2005-02-04T00:00:00Z\",\n    \"images\": [\n      {\n        \"coverType\":
-      \"poster\",\n        \"url\": \"/MediaCover/347/poster.jpg?lastWrite=638080283739453743\",\n
+      2849\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      414,\n        \"title\": \"\uCE74\uC774\uB85C\uC758 \uBD89\uC740 \uC7A5\uBBF8\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3040\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"purple rose cairo\",\n    \"sizeOnDisk\": 1423383343,\n
+      \   \"status\": \"released\",\n    \"overview\": \"Cecilia is a waitress in
+      New Jersey, living a dreary life during the Great Depression. Her only escape
+      from her mundane reality is the movie theatre. After losing her job, Cecilia
+      goes to see 'The Purple Rose of Cairo' in hopes of raising her spirits, where
+      she watches dashing archaeologist Tom Baxter time and again.\",\n    \"inCinemas\":
+      \"1985-04-19T00:00:00Z\",\n    \"physicalRelease\": \"2002-03-11T00:00:00Z\",\n
+      \   \"digitalRelease\": \"2005-02-04T00:00:00Z\",\n    \"images\": [\n      {\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/347/poster.jpg?lastWrite=638088928708258032\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/ccsint43E44B7NGceEhVimD93Yt.jpg\"\n
       \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/347/fanart.jpg?lastWrite=638078575983033906\",\n
       \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/7lHxbtHThosMRZdp9646K4zygVh.jpg\"\n
@@ -27472,9 +27450,9 @@ interactions:
       \"tt0089853\",\n    \"tmdbId\": 10849,\n    \"titleSlug\": \"10849\",\n    \"certification\":
       \"PG\",\n    \"genres\": [\n      \"Fantasy\",\n      \"Comedy\",\n      \"Romance\"\n
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-28T20:53:12Z\",\n    \"ratings\":
-      {\n      \"imdb\": {\n        \"votes\": 52233,\n        \"value\": 7.7,\n        \"type\":
-      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 847,\n        \"value\":
-      7.4,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
+      {\n      \"imdb\": {\n        \"votes\": 52288,\n        \"value\": 7.7,\n        \"type\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 851,\n        \"value\":
+      7.411,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 75,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 92,\n        \"type\": \"user\"\n
       \     }\n    },\n    \"movieFile\": {\n      \"movieId\": 347,\n      \"relativePath\":
@@ -27495,7 +27473,7 @@ interactions:
       Rose Of Cairo (1985) [BluRay] [1080p] [YTS.AM]/The.Purple.Rose.Of.Cairo.1985.1080p.BluRay.x264-[YTS.AM].mp4\",\n
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"edition\":
-      \"\",\n      \"id\": 378\n    },\n    \"popularity\": 14.751,\n    \"id\": 347\n
+      \"\",\n      \"id\": 378\n    },\n    \"popularity\": 11.609,\n    \"id\": 347\n
       \ },\n  {\n    \"title\": \"Zelig\",\n    \"originalTitle\": \"Zelig\",\n    \"originalLanguage\":
       {\n      \"id\": 1,\n      \"name\": \"English\"\n    },\n    \"alternateTitles\":
       [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
@@ -29327,8 +29305,8 @@ interactions:
       \"R\",\n    \"genres\": [\n      \"Horror\",\n      \"Drama\",\n      \"Mystery\"\n
       \   ],\n    \"tags\": [],\n    \"added\": \"2022-12-30T20:14:01Z\",\n    \"ratings\":
       {\n      \"imdb\": {\n        \"votes\": 34614,\n        \"value\": 7,\n        \"type\":
-      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 395,\n        \"value\":
-      7.4,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 400,\n        \"value\":
+      7.383,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
       0,\n        \"value\": 73,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
       {\n        \"votes\": 0,\n        \"value\": 91,\n        \"type\": \"user\"\n
       \     }\n    },\n    \"movieFile\": {\n      \"movieId\": 376,\n      \"relativePath\":
@@ -29353,7 +29331,7 @@ interactions:
       {\n      \"title\": \"X Collection\",\n      \"tmdbId\": 950289,\n      \"monitored\":
       false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\":
       \"tba\",\n      \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n
-      \     \"id\": 0\n    },\n    \"popularity\": 78.703,\n    \"id\": 376\n  },\n
+      \     \"id\": 0\n    },\n    \"popularity\": 70.923,\n    \"id\": 376\n  },\n
       \ {\n    \"title\": \"The Northman\",\n    \"originalTitle\": \"The Northman\",\n
       \   \"originalLanguage\": {\n      \"id\": 1,\n      \"name\": \"English\"\n
       \   },\n    \"alternateTitles\": [\n      {\n        \"sourceType\": \"tmdb\",\n
@@ -29501,7 +29479,7 @@ interactions:
       \     \"Horror\",\n      \"Romance\"\n    ],\n    \"tags\": [],\n    \"added\":
       \"2023-01-07T16:33:01Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
       24380,\n        \"value\": 7,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
-      {\n        \"votes\": 490,\n        \"value\": 7.5,\n        \"type\": \"user\"\n
+      {\n        \"votes\": 493,\n        \"value\": 7.5,\n        \"type\": \"user\"\n
       \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
       74,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
       0,\n        \"value\": 82,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
@@ -29523,7 +29501,436 @@ interactions:
       \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
       1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
       \"RARBG\",\n      \"edition\": \"\",\n      \"id\": 434\n    },\n    \"popularity\":
-      199.48,\n    \"id\": 378\n  }\n]"
+      233.343,\n    \"id\": 378\n  },\n  {\n    \"title\": \"The Batman\",\n    \"originalTitle\":
+      \"The Batman\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
+      \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 448,\n        \"title\": \"\u0411\u044D\u0442\u043C\u0435\u043D\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3041\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 448,\n        \"title\": \"Betmen\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3042\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 448,\n        \"title\": \"\u09A6\u09CD\u09AF
+      \u09AC\u09CD\u09AF\u09BE\u099F\u09AE\u09CD\u09AF\u09BE\u09A8\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3043\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      448,\n        \"title\": \"\u0926 \u092C\u0948\u091F\u092E\u0948\u0928\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3044\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 448,\n        \"title\": \"\u30D0\u30C3\u30C8\u30DE\u30F3\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3045\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 448,\n        \"title\": \"Batman: V\u1EA1ch
+      Tr\u1EA7n S\u1EF1 Th\u1EADt\",\n        \"sourceId\": 0,\n        \"votes\":
+      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 1,\n
+      \         \"name\": \"English\"\n        },\n        \"id\": 3046\n      },\n
+      \     {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\": 448,\n
+      \       \"title\": \"\u30B6\u30FB\u30D0\u30C3\u30C8\u30DE\u30F3\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3047\n      }\n    ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\":
+      \"batman\",\n    \"sizeOnDisk\": 11910319990,\n    \"status\": \"released\",\n
+      \   \"overview\": \"In his second year of fighting crime, Batman uncovers corruption
+      in Gotham City that connects to his own family while facing a serial killer
+      known as the Riddler.\",\n    \"inCinemas\": \"2022-03-01T00:00:00Z\",\n    \"physicalRelease\":
+      \"2022-05-24T00:00:00Z\",\n    \"digitalRelease\": \"2022-04-17T00:00:00Z\",\n
+      \   \"images\": [\n      {\n        \"coverType\": \"poster\",\n        \"url\":
+      \"/MediaCover/379/poster.jpg?lastWrite=638089003308495623\",\n        \"remoteUrl\":
+      \"https://image.tmdb.org/t/p/original/74xTEgt7R36Fpooo50r9T25onhq.jpg\"\n      },\n
+      \     {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/379/fanart.jpg?lastWrite=638089003309975603\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/b0PlSFdDwbyK0cf5RxwDpaOJQvQ.jpg\"\n
+      \     }\n    ],\n    \"website\": \"https://www.thebatman.com\",\n    \"year\":
+      2022,\n    \"hasFile\": true,\n    \"youTubeTrailerId\": \"vc7_mH2PWHs\",\n
+      \   \"studio\": \"Warner Bros. Pictures\",\n    \"path\": \"/media-center/movies/The
+      Batman (2022)\",\n    \"qualityProfileId\": 1,\n    \"monitored\": true,\n    \"minimumAvailability\":
+      \"announced\",\n    \"isAvailable\": true,\n    \"folderName\": \"/media-center/movies/The
+      Batman (2022)\",\n    \"runtime\": 177,\n    \"cleanTitle\": \"thebatman\",\n
+      \   \"imdbId\": \"tt1877830\",\n    \"tmdbId\": 414906,\n    \"titleSlug\":
+      \"414906\",\n    \"certification\": \"PG-13\",\n    \"genres\": [\n      \"Crime\",\n
+      \     \"Mystery\",\n      \"Thriller\"\n    ],\n    \"tags\": [],\n    \"added\":
+      \"2023-01-09T22:32:10Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
+      645869,\n        \"value\": 7.8,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
+      {\n        \"votes\": 7169,\n        \"value\": 7.7,\n        \"type\": \"user\"\n
+      \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
+      72,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
+      0,\n        \"value\": 85,\n        \"type\": \"user\"\n      }\n    },\n    \"movieFile\":
+      {\n      \"movieId\": 379,\n      \"relativePath\": \"The.Batman (2022).mkv\",\n
+      \     \"path\": \"/media-center/movies/The Batman (2022)/The.Batman (2022).mkv\",\n
+      \     \"size\": 11910319990,\n      \"dateAdded\": \"2023-01-10T05:05:42Z\",\n
+      \     \"sceneName\": \"The.Batman.2022.PROPER.1080p.WEB.H264-PECULATE\",\n      \"indexerFlags\":
+      1,\n      \"quality\": {\n        \"quality\": {\n          \"id\": 3,\n          \"name\":
+      \"WEBDL-1080p\",\n          \"source\": \"webdl\",\n          \"resolution\":
+      1080,\n          \"modifier\": \"none\"\n        },\n        \"revision\": {\n
+      \         \"version\": 2,\n          \"real\": 0,\n          \"isRepack\": false\n
+      \       }\n      },\n      \"mediaInfo\": {\n        \"audioBitrate\": 768000,\n
+      \       \"audioChannels\": 5.1,\n        \"audioCodec\": \"EAC3 Atmos\",\n        \"audioLanguages\":
+      \"eng\",\n        \"audioStreamCount\": 1,\n        \"videoBitDepth\": 8,\n
+      \       \"videoBitrate\": 0,\n        \"videoCodec\": \"x264\",\n        \"videoDynamicRangeType\":
+      \"\",\n        \"videoFps\": 23.976,\n        \"resolution\": \"1920x816\",\n
+      \       \"runTime\": \"2:56:12\",\n        \"scanType\": \"Progressive\",\n
+      \       \"subtitles\": \"eng/spa/spa/spa\"\n      },\n      \"originalFilePath\":
+      \"The.Batman.2022.PROPER.1080p.WEB.H264-PECULATE[rarbg]/The.Batman.2022.PROPER.1080p.WEB.H264-PECULATE.mkv\",\n
+      \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
+      1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
+      \"PECULATE\",\n      \"edition\": \"\",\n      \"id\": 447\n    },\n    \"collection\":
+      {\n      \"title\": \"The Batman Collection\",\n      \"tmdbId\": 948485,\n
+      \     \"monitored\": false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\":
+      false,\n      \"minimumAvailability\": \"tba\",\n      \"images\": [],\n      \"added\":
+      \"0001-01-01T00:00:00Z\",\n      \"id\": 0\n    },\n    \"popularity\": 385.065,\n
+      \   \"id\": 379\n  },\n  {\n    \"title\": \"Emancipation\",\n    \"originalTitle\":
+      \"Emancipation\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
+      \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 450,\n        \"title\": \"Hacia la
+      libertad\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 3,\n          \"name\": \"Spanish\"\n
+      \       },\n        \"id\": 3048\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 450,\n        \"title\": \"Emancipa\xE7\xE3o:
+      Uma Hist\xF3ria de Liberdade\",\n        \"sourceId\": 0,\n        \"votes\":
+      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 1,\n
+      \         \"name\": \"English\"\n        },\n        \"id\": 3049\n      },\n
+      \     {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\": 450,\n
+      \       \"title\": \"\u0631\u0647\u0627\u06CC\u06CC\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3050\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      450,\n        \"title\": \"\uD574\uBC29\",\n        \"sourceId\": 0,\n        \"votes\":
+      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 1,\n
+      \         \"name\": \"English\"\n        },\n        \"id\": 3051\n      },\n
+      \     {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\": 450,\n
+      \       \"title\": \"\u041E\u0441\u0432\u043E\u0431\u043E\u0436\u0434\u0435\u043D\u0438\u0435\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 11,\n          \"name\": \"Russian\"\n
+      \       },\n        \"id\": 3052\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"emancipation\",\n    \"sizeOnDisk\": 1723342493,\n
+      \   \"status\": \"released\",\n    \"overview\": \"Inspired by the gripping
+      true story of a man who would do anything for his family\u2014and for freedom.
+      When Peter, an enslaved man, risks his life to escape and return to his family,
+      he embarks on a perilous journey of love and endurance.\",\n    \"inCinemas\":
+      \"2022-12-02T00:00:00Z\",\n    \"digitalRelease\": \"2022-12-09T00:00:00Z\",\n
+      \   \"images\": [\n      {\n        \"coverType\": \"poster\",\n        \"url\":
+      \"/MediaCover/380/poster.jpg?lastWrite=638089403511462935\",\n        \"remoteUrl\":
+      \"https://image.tmdb.org/t/p/original/s9sUK1vAaOcxJfKzNTszrNkPhkH.jpg\"\n      },\n
+      \     {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/380/fanart.jpg?lastWrite=638089403512302925\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/ypFD4TJ3nLJesou76V59CnweaT0.jpg\"\n
+      \     }\n    ],\n    \"website\": \"https://tv.apple.com/movie/umc.cmc.1j6fdxookwtqml3bd8ivvcbbv\",\n
+      \   \"year\": 2022,\n    \"hasFile\": true,\n    \"youTubeTrailerId\": \"C3yHUpR7yv8\",\n
+      \   \"studio\": \"Escape Artists\",\n    \"path\": \"/media-center/movies/Emancipation
+      (2022)/Emancipation (2022)\",\n    \"qualityProfileId\": 1,\n    \"monitored\":
+      true,\n    \"minimumAvailability\": \"released\",\n    \"isAvailable\": true,\n
+      \   \"folderName\": \"/media-center/movies/Emancipation (2022)/Emancipation
+      (2022)\",\n    \"runtime\": 132,\n    \"cleanTitle\": \"emancipation\",\n    \"imdbId\":
+      \"tt12530246\",\n    \"tmdbId\": 715931,\n    \"titleSlug\": \"715931\",\n    \"certification\":
+      \"R\",\n    \"genres\": [\n      \"History\",\n      \"Drama\",\n      \"Thriller\"\n
+      \   ],\n    \"tags\": [],\n    \"added\": \"2023-01-10T09:39:10Z\",\n    \"ratings\":
+      {\n      \"imdb\": {\n        \"votes\": 15649,\n        \"value\": 6,\n        \"type\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 558,\n        \"value\":
+      8.122,\n        \"type\": \"user\"\n      },\n      \"metacritic\": {\n        \"votes\":
+      0,\n        \"value\": 54,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\":
+      {\n        \"votes\": 0,\n        \"value\": 54,\n        \"type\": \"user\"\n
+      \     }\n    },\n    \"movieFile\": {\n      \"movieId\": 380,\n      \"relativePath\":
+      \"Emancipation (2022).mkv\",\n      \"path\": \"/media-center/movies/Emancipation
+      (2022)/Emancipation (2022)/Emancipation (2022).mkv\",\n      \"size\": 1723342493,\n
+      \     \"dateAdded\": \"2023-01-10T10:36:49Z\",\n      \"sceneName\": \"Emancipation.2022.1080p.ATVP.WEBRip.1600MB.DD5.1.x264-GalaxyRG\",\n
+      \     \"indexerFlags\": 1,\n      \"quality\": {\n        \"quality\": {\n          \"id\":
+      15,\n          \"name\": \"WEBRip-1080p\",\n          \"source\": \"webrip\",\n
+      \         \"resolution\": 1080,\n          \"modifier\": \"none\"\n        },\n
+      \       \"revision\": {\n          \"version\": 1,\n          \"real\": 0,\n
+      \         \"isRepack\": false\n        }\n      },\n      \"mediaInfo\": {\n
+      \       \"audioBitrate\": 320000,\n        \"audioChannels\": 5.1,\n        \"audioCodec\":
+      \"AC3\",\n        \"audioLanguages\": \"eng\",\n        \"audioStreamCount\":
+      1,\n        \"videoBitDepth\": 8,\n        \"videoBitrate\": 0,\n        \"videoCodec\":
+      \"x264\",\n        \"videoDynamicRangeType\": \"\",\n        \"videoFps\": 23.976,\n
+      \       \"resolution\": \"1920x802\",\n        \"runTime\": \"2:12:29\",\n        \"scanType\":
+      \"Progressive\",\n        \"subtitles\": \"eng/eng/eng/ara/bul/chi/chi/cze/dan/ger/gre/spa/spa/est/fin/fre/fre/heb/hin/hun/ind/ita/jpn/kor/lit/lav/may/dut/nor/pol/por/por/rus/slo/slv/swe/tam/tel/tha/tur/ukr/vie/chi\"\n
+      \     },\n      \"originalFilePath\": \"Emancipation.2022.1080p.ATVP.WEBRip.1600MB.DD5.1.x264-GalaxyRG[TGx]/Emancipation.2022.1080p.ATVP.WEBRip.1600MB.DD5.1.x264-GalaxyRG.mkv\",\n
+      \     \"qualityCutoffNotMet\": false,\n      \"languages\": [\n        {\n          \"id\":
+      1,\n          \"name\": \"English\"\n        }\n      ],\n      \"releaseGroup\":
+      \"GalaxyRG\",\n      \"edition\": \"\",\n      \"id\": 448\n    },\n    \"popularity\":
+      663.581,\n    \"id\": 380\n  },\n  {\n    \"title\": \"Ford v Ferrari\",\n    \"originalTitle\":
+      \"Ford v Ferrari\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
+      \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 451,\n        \"title\": \"\u0424\u043E\u0440\u0434
+      \u043F\u0440\u043E\u0442\u0438 \u0424\u0435\u0440\u0440\u0430\u0440\u0456\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3053\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 451,\n        \"title\": \"\u0424\u043E\u0440\u0434
+      \u043F\u0440\u043E\u0442\u0438\u0432 \u0424\u0435\u0440\u0440\u0430\u0440\u0438\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 11,\n          \"name\": \"Russian\"\n
+      \       },\n        \"id\": 3054\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 451,\n        \"title\": \"\u0414\u0435\u0440\u0437\u043A\u0438\u0439
+      \u0432\u044B\u0437\u043E\u0432\",\n        \"sourceId\": 0,\n        \"votes\":
+      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 11,\n
+      \         \"name\": \"Russian\"\n        },\n        \"id\": 3055\n      },\n
+      \     {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\": 451,\n
+      \       \"title\": \"Ford v Ferrari: Cu\u1ED9c \u0110ua L\u1ECBch S\u1EED\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3056\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 451,\n        \"title\": \"FvF\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3057\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 451,\n        \"title\": \"Le Mans '66\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3058\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"ford v ferrari\",\n    \"sizeOnDisk\": 0,\n    \"status\":
+      \"released\",\n    \"overview\": \"American car designer Carroll Shelby and
+      the British-born driver Ken Miles work together to battle corporate interference,
+      the laws of physics, and their own personal demons to build a revolutionary
+      race car for Ford Motor Company and take on the dominating race cars of Enzo
+      Ferrari at the 24 Hours of Le Mans in France in 1966.\",\n    \"inCinemas\":
+      \"2019-11-13T00:00:00Z\",\n    \"physicalRelease\": \"2020-03-11T00:00:00Z\",\n
+      \   \"digitalRelease\": \"2020-01-28T00:00:00Z\",\n    \"images\": [\n      {\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/381/poster.jpg?lastWrite=638089407072220373\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/dR1Ju50iudrOh3YgfwkAU1g2HZe.jpg\"\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/381/fanart.jpg?lastWrite=638089407072900365\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/ydmZIafp66mHABs3QJDwvjRgZfE.jpg\"\n
+      \     }\n    ],\n    \"website\": \"https://www.foxmovies.com/movies/ford-v-ferrari\",\n
+      \   \"year\": 2019,\n    \"hasFile\": false,\n    \"youTubeTrailerId\": \"I3h9Z89U9ZA\",\n
+      \   \"studio\": \"20th Century Fox\",\n    \"path\": \"/media-center/movies/Ford
+      v Ferrari (2019)/Ford v Ferrari (2019)\",\n    \"qualityProfileId\": 1,\n    \"monitored\":
+      true,\n    \"minimumAvailability\": \"released\",\n    \"isAvailable\": true,\n
+      \   \"folderName\": \"/media-center/movies/Ford v Ferrari (2019)/Ford v Ferrari
+      (2019)\",\n    \"runtime\": 153,\n    \"cleanTitle\": \"fordvferrari\",\n    \"imdbId\":
+      \"tt1950186\",\n    \"tmdbId\": 359724,\n    \"titleSlug\": \"359724\",\n    \"certification\":
+      \"PG-13\",\n    \"genres\": [\n      \"Drama\",\n      \"Action\",\n      \"History\"\n
+      \   ],\n    \"tags\": [],\n    \"added\": \"2023-01-10T09:45:06Z\",\n    \"ratings\":
+      {\n      \"imdb\": {\n        \"votes\": 396205,\n        \"value\": 8.1,\n
+      \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
+      6296,\n        \"value\": 8,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      {\n        \"votes\": 0,\n        \"value\": 81,\n        \"type\": \"user\"\n
+      \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
+      92,\n        \"type\": \"user\"\n      }\n    },\n    \"popularity\": 65.485,\n
+      \   \"id\": 381\n  },\n  {\n    \"title\": \"The Whale\",\n    \"originalTitle\":
+      \"The Whale\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
+      \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 452,\n        \"title\": \"Wieloryb\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 12,\n          \"name\": \"Polish\"\n
+      \       },\n        \"id\": 3059\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 452,\n        \"title\": \"Vaal\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3060\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 452,\n        \"title\": \"\u041A\u0438\u0442\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 11,\n          \"name\": \"Russian\"\n
+      \       },\n        \"id\": 3061\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 452,\n        \"title\": \"A Baleia\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 18,\n          \"name\": \"Portuguese\"\n
+      \       },\n        \"id\": 3062\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 452,\n        \"title\": \"\u0648\u0627\u0644\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3063\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 452,\n        \"title\": \"Valis\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 36,\n          \"name\": \"Latvian\"\n
+      \       },\n        \"id\": 3064\n      }\n    ],\n    \"secondaryYearSourceId\":
+      0,\n    \"sortTitle\": \"whale\",\n    \"sizeOnDisk\": 0,\n    \"status\": \"inCinemas\",\n
+      \   \"overview\": \"A reclusive English teacher suffering from severe obesity
+      attempts to reconnect with his estranged teenage daughter for one last chance
+      at redemption.\",\n    \"inCinemas\": \"2022-12-09T00:00:00Z\",\n    \"images\":
+      [\n      {\n        \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/382/poster.jpg?lastWrite=638089414704924865\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/bGlTTHAhLJXIXb1a0zyBEPqtxV9.jpg\"\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/382/fanart.jpg?lastWrite=638089414705364860\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/gSkO9BqdiDR2ltRrsub7AVL75Tq.jpg\"\n
+      \     }\n    ],\n    \"website\": \"https://a24films.com/films/the-whale\",\n
+      \   \"year\": 2022,\n    \"hasFile\": false,\n    \"youTubeTrailerId\": \"nWiQodhMvz4\",\n
+      \   \"studio\": \"Protozoa Pictures\",\n    \"path\": \"/media-center/movies/The
+      Whale (2022)/The Whale (2022)\",\n    \"qualityProfileId\": 1,\n    \"monitored\":
+      true,\n    \"minimumAvailability\": \"released\",\n    \"isAvailable\": false,\n
+      \   \"folderName\": \"/media-center/movies/The Whale (2022)/The Whale (2022)\",\n
+      \   \"runtime\": 117,\n    \"cleanTitle\": \"thewhale\",\n    \"imdbId\": \"tt13833688\",\n
+      \   \"tmdbId\": 785084,\n    \"titleSlug\": \"785084\",\n    \"certification\":
+      \"R\",\n    \"genres\": [\n      \"Drama\"\n    ],\n    \"tags\": [],\n    \"added\":
+      \"2023-01-10T09:57:50Z\",\n    \"ratings\": {\n      \"imdb\": {\n        \"votes\":
+      9896,\n        \"value\": 8.1,\n        \"type\": \"user\"\n      },\n      \"tmdb\":
+      {\n        \"votes\": 22,\n        \"value\": 7.5,\n        \"type\": \"user\"\n
+      \     },\n      \"metacritic\": {\n        \"votes\": 0,\n        \"value\":
+      60,\n        \"type\": \"user\"\n      },\n      \"rottenTomatoes\": {\n        \"votes\":
+      0,\n        \"value\": 67,\n        \"type\": \"user\"\n      }\n    },\n    \"popularity\":
+      144.75,\n    \"id\": 382\n  },\n  {\n    \"title\": \"Hacksaw Ridge\",\n    \"originalTitle\":
+      \"Hacksaw Ridge\",\n    \"originalLanguage\": {\n      \"id\": 1,\n      \"name\":
+      \"English\"\n    },\n    \"alternateTitles\": [\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 453,\n        \"title\": \"\u0413\u0430\u043A\u0441\u043E\u0443
+      \u0420\u0456\u0434\u0436\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n
+      \       \"voteCount\": 0,\n        \"language\": {\n          \"id\": 1,\n          \"name\":
+      \"English\"\n        },\n        \"id\": 3065\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 453,\n        \"title\": \"The Conscientious
+      Objector\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3066\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 453,\n        \"title\": \"Hacksaw Ridge:
+      Zrozen\xED hrdiny\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3067\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 453,\n        \"title\": \"Prze\u0142\u0119cz
+      Ocalonych\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 12,\n          \"name\": \"Polish\"\n
+      \       },\n        \"id\": 3068\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 453,\n        \"title\": \"Hasta el
+      \xFAltimo hombre\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 3,\n          \"name\": \"Spanish\"\n
+      \       },\n        \"id\": 3069\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 453,\n        \"title\": \"\u0413\u0440\u0435\u0431\u0435\u043D
+      \u0441\u043F\u0430\u0441\u0430\",\n        \"sourceId\": 0,\n        \"votes\":
+      0,\n        \"voteCount\": 0,\n        \"language\": {\n          \"id\": 1,\n
+      \         \"name\": \"English\"\n        },\n        \"id\": 3070\n      }\n
+      \   ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\": \"hacksaw ridge\",\n
+      \   \"sizeOnDisk\": 0,\n    \"status\": \"released\",\n    \"overview\": \"WWII
+      American Army Medic Desmond T. Doss, who served during the Battle of Okinawa,
+      refuses to kill people and becomes the first Conscientious Objector in American
+      history to receive the Congressional Medal of Honor.\",\n    \"inCinemas\":
+      \"2016-10-07T00:00:00Z\",\n    \"physicalRelease\": \"2017-02-21T00:00:00Z\",\n
+      \   \"digitalRelease\": \"2017-05-22T00:00:00Z\",\n    \"images\": [\n      {\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/383/poster.jpg?lastWrite=638089424349103561\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/jhWbYeUNOA5zAb6ufK6pXQFXqTX.jpg\"\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/383/fanart.jpg?lastWrite=638089424350103547\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/rshlQ6LfPRSWFhpGL4s5ZkIPR51.jpg\"\n
+      \     }\n    ],\n    \"website\": \"https://www.lionsgate.com/movies/hacksaw-ridge\",\n
+      \   \"year\": 2016,\n    \"hasFile\": false,\n    \"youTubeTrailerId\": \"s2-1hz1juBI\",\n
+      \   \"studio\": \"Permut Presentations\",\n    \"path\": \"/media-center/movies/Hacksaw
+      Ridge (2016)/Hacksaw Ridge (2016)\",\n    \"qualityProfileId\": 1,\n    \"monitored\":
+      true,\n    \"minimumAvailability\": \"released\",\n    \"isAvailable\": true,\n
+      \   \"folderName\": \"/media-center/movies/Hacksaw Ridge (2016)/Hacksaw Ridge
+      (2016)\",\n    \"runtime\": 139,\n    \"cleanTitle\": \"hacksawridge\",\n    \"imdbId\":
+      \"tt2119532\",\n    \"tmdbId\": 324786,\n    \"titleSlug\": \"324786\",\n    \"certification\":
+      \"R\",\n    \"genres\": [\n      \"Drama\",\n      \"History\",\n      \"War\"\n
+      \   ],\n    \"tags\": [],\n    \"added\": \"2023-01-10T10:13:54Z\",\n    \"ratings\":
+      {\n      \"imdb\": {\n        \"votes\": 526670,\n        \"value\": 8.1,\n
+      \       \"type\": \"user\"\n      },\n      \"tmdb\": {\n        \"votes\":
+      11734,\n        \"value\": 8.2,\n        \"type\": \"user\"\n      },\n      \"metacritic\":
+      {\n        \"votes\": 0,\n        \"value\": 71,\n        \"type\": \"user\"\n
+      \     },\n      \"rottenTomatoes\": {\n        \"votes\": 0,\n        \"value\":
+      84,\n        \"type\": \"user\"\n      }\n    },\n    \"popularity\": 155.696,\n
+      \   \"id\": 383\n  },\n  {\n    \"title\": \"Sword Art Online the Movie -Progressive-
+      Aria of a Starless Night\",\n    \"originalTitle\": \"\u5287\u5834\u7248 \u30BD\u30FC\u30C9\u30A2\u30FC\u30C8\u30FB\u30AA\u30F3\u30E9\u30A4\u30F3-\u30D7\u30ED\u30B0\u30EC\u30C3\u30B7\u30D6-
+      \u661F\u306A\u304D\u591C\u306E\u30A2\u30EA\u30A2\",\n    \"originalLanguage\":
+      {\n      \"id\": 8,\n      \"name\": \"Japanese\"\n    },\n    \"alternateTitles\":
+      [\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"Gekij\u014D-ban Sword Art Online: Progressive Hoshi
+      Naki Yoru no Aria\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3071\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"Sword Art
+      Online: Progressive\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3072\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"SAO Progressive\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3073\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"Gekijouban
+      Sword Art Online: Progressive - Hoshinaki Yoru no Ari\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3074\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"S\u014Ddo \u0100to Onrain\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3075\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"Sword Art Online the Movie: The Aria of the Night
+      Without Stars\",\n        \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\":
+      0,\n        \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3076\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"\uADF9\uC7A5\uD310
+      \uC18C\uB4DC \uC544\uD2B8 \uC628\uB77C\uC778 -\uD504\uB85C\uADF8\uB808\uC2DC\uBE0C-:
+      \uBCC4 \uC5C6\uB294 \uBC24\uC758 \uC544\uB9AC\uC544\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3077\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"\uC18C\uB4DC \uC544\uD2B8 \uC628\uB77C\uC778 \uD504\uB85C\uADF8\uB808\uC2DC\uBE0C\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3078\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"Sword Art
+      Online: Progressive - Aria of a Starless Night\",\n        \"sourceId\": 0,\n
+      \       \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\": {\n
+      \         \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3079\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"\u5200\u528D\u795E\u57DF\u5287\u5834\u7248-Progressive-\u7121\u661F\u591C\u7684\u8A60\u5606\u8ABF\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3080\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"\u0E0B\u0E2D\u0E23\u0E4C\u0E14\u0E2D\u0E32\u0E23\u0E4C\u0E15\u0E2D\u0E2D\u0E19\u0E44\u0E25\u0E19\u0E4C
+      \u0E42\u0E1B\u0E23\u0E40\u0E01\u0E23\u0E2A\u0E0B\u0E35\u0E1F \u0E40\u0E14\u0E2D\u0E30\u0E21\u0E39\u0E1F\u0E27\u0E35\u0E48\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 28,\n          \"name\": \"Thai\"\n
+      \       },\n        \"id\": 3081\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"\u5267\u573A\u7248
+      \u5200\u5251\u795E\u57DF \u8FDB\u51FB\u7BC7 \u65E0\u661F\u4E4B\u591C\u7684\u548F\u53F9\u8C03\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3082\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"Sword Art
+      Online Progressive: \xC1ria de Uma Noite Sem Estrelas\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3083\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"\u5200\u5251\u795E\u57DF \u8FDB\u51FB\u7BC7 \u65E0\u661F\u591C\u7684\u548F\u53F9\u8C03\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3084\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"Sword Art
+      Online Progressive Movie: Hoshi Naki Yoru no Aria\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3085\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"\u5200\u5251\u795E\u57DF\uFF1A\u65E0\u661F\u4E4B\u591C\u7684\u548F\u53F9\u8C03\",\n
+      \       \"sourceId\": 0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n
+      \       \"language\": {\n          \"id\": 1,\n          \"name\": \"English\"\n
+      \       },\n        \"id\": 3086\n      },\n      {\n        \"sourceType\":
+      \"tmdb\",\n        \"movieMetadataId\": 454,\n        \"title\": \"Gekijouban
+      Sword Art Online -Progressive- Hoshi naki Yoru no Aria\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3087\n      },\n      {\n        \"sourceType\": \"tmdb\",\n        \"movieMetadataId\":
+      454,\n        \"title\": \"SAO Progressive Aria of a Starless Night\",\n        \"sourceId\":
+      0,\n        \"votes\": 0,\n        \"voteCount\": 0,\n        \"language\":
+      {\n          \"id\": 1,\n          \"name\": \"English\"\n        },\n        \"id\":
+      3088\n      }\n    ],\n    \"secondaryYearSourceId\": 0,\n    \"sortTitle\":
+      \"sword art online movie progressive aria starless night\",\n    \"sizeOnDisk\":
+      0,\n    \"status\": \"released\",\n    \"overview\": \"One month after Kayaba
+      Akihiko's game of death began, the death toll continues to rise, two thousand
+      players having already lost their lives to the ultra-difficult VRMMO world of
+      Sword Art Online. On the day of the strategy meeting to plan out the first-floor
+      boss battle, Kirito, a solo player who vows to fight alone to get stronger,
+      runs into a rare, high-level female player. She gracefully dispatches powerful
+      monsters with a single rapier that flashes like a shooting star in the night...\",\n
+      \   \"inCinemas\": \"2021-10-30T00:00:00Z\",\n    \"physicalRelease\": \"2022-07-08T00:00:00Z\",\n
+      \   \"digitalRelease\": \"2022-11-24T00:00:00Z\",\n    \"images\": [\n      {\n
+      \       \"coverType\": \"poster\",\n        \"url\": \"/MediaCover/384/poster.jpg?lastWrite=638089439911115340\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/yD9RhgIVydQNBK7OLEbCWYcWMUd.jpg\"\n
+      \     },\n      {\n        \"coverType\": \"fanart\",\n        \"url\": \"/MediaCover/384/fanart.jpg?lastWrite=638089439911595332\",\n
+      \       \"remoteUrl\": \"https://image.tmdb.org/t/p/original/2kvl6lcgoyAaf8cSRkzxE611u6T.jpg\"\n
+      \     }\n    ],\n    \"website\": \"\",\n    \"year\": 2021,\n    \"hasFile\":
+      false,\n    \"youTubeTrailerId\": \"Jf6RyZkuVco\",\n    \"studio\": \"Kadokawa\",\n
+      \   \"path\": \"/media-center/movies/Sword Art Online the Movie -Progressive-
+      Aria of a Starless Night (2021)\",\n    \"qualityProfileId\": 1,\n    \"monitored\":
+      true,\n    \"minimumAvailability\": \"announced\",\n    \"isAvailable\": true,\n
+      \   \"folderName\": \"/media-center/movies/Sword Art Online the Movie -Progressive-
+      Aria of a Starless Night (2021)\",\n    \"runtime\": 97,\n    \"cleanTitle\":
+      \"swordartonlinemovieprogressiveariastarlessnight\",\n    \"imdbId\": \"tt13424422\",\n
+      \   \"tmdbId\": 761898,\n    \"titleSlug\": \"761898\",\n    \"certification\":
+      \"PG-13\",\n    \"genres\": [\n      \"Animation\",\n      \"Action\",\n      \"Fantasy\"\n
+      \   ],\n    \"tags\": [],\n    \"added\": \"2023-01-10T10:39:50Z\",\n    \"ratings\":
+      {\n      \"imdb\": {\n        \"votes\": 1325,\n        \"value\": 7.2,\n        \"type\":
+      \"user\"\n      },\n      \"tmdb\": {\n        \"votes\": 139,\n        \"value\":
+      8.3,\n        \"type\": \"user\"\n      }\n    },\n    \"collection\": {\n      \"title\":
+      \"Sword Art Online the Movie -Progressive-\",\n      \"tmdbId\": 893713,\n      \"monitored\":
+      false,\n      \"qualityProfileId\": 0,\n      \"searchOnAdd\": false,\n      \"minimumAvailability\":
+      \"tba\",\n      \"images\": [],\n      \"added\": \"0001-01-01T00:00:00Z\",\n
+      \     \"id\": 0\n    },\n    \"popularity\": 135.804,\n    \"id\": 384\n  }\n]"
     headers:
       Cache-Control:
       - no-cache, no-store
@@ -29532,7 +29939,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 09 Jan 2023 13:00:38 GMT
+      - Tue, 10 Jan 2023 11:24:05 GMT
       Expires:
       - '-1'
       Pragma:

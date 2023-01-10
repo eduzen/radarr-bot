@@ -14,14 +14,14 @@ def event_loop():
 
 
 @pytest.mark.asyncio
-@pytest.mark.vcr
+@pytest.mark.vcr(filter_query_parameters=["api_key"])
 async def test_get_movie_detail():
     movie = await get_movie_detail(movie_id=79026)
     movie.title == "El padrino: The Latin Godfather (2004)"
 
 
 @pytest.mark.asyncio
-@pytest.mark.vcr
+@pytest.mark.vcr(filter_query_parameters=["api_key"])
 async def test_search_movie():
     movies_result = await search_movie("The Matrix")
 
@@ -30,7 +30,7 @@ async def test_search_movie():
 
 
 @pytest.mark.asyncio
-@pytest.mark.vcr
+@pytest.mark.vcr(filter_query_parameters=["api_key"])
 async def test_search_invalid_movie():
     movie_result = await search_movie("das12ad9ds3asdd0d8sda")
 
