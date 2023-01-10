@@ -2,6 +2,7 @@ import logging
 from typing import Any
 
 from decouple import config
+from radarr import api as radarr_api
 from rich.logging import RichHandler
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update, error
 from telegram.ext import (
@@ -13,6 +14,8 @@ from telegram.ext import (
 )
 from tmdb import api as tmdb_api
 
+from rbot.decorators import restricted
+
 TOKEN = config("TELEGRAM_TOKEN")
 TELEGRAM_EDUZEN_ID = config("TELEGRAM_EDUZEN_ID", cast=int)
 FORMAT = "%(message)s"
@@ -23,7 +26,8 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
-async def next_movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+@restricted
+async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Parses the CallbackQuery and updates the message text."""
     query = update.callback_query
 
@@ -31,21 +35,19 @@ async def next_movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
     # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
     try:
         await query.answer()
+        log.info("Callback query answered, data: %s", query.data)
+        tmdb_id = query.data
+
+        if tmdb_id == "next":
+            await query.edit_message_text(text="Next")
+            return
+
+        response = await radarr_api.add_movie_to_radarr(query.data)
+        await query.edit_message_text(text=response)
+
     except error.BadRequest as e:
         log.error("Error while answering callback query %s", str(e))
-
-    await query.edit_message_text(text=f"Selected option: {query.data}")
-
-
-async def confirm_movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Parses the CallbackQuery and updates the message text."""
-    query = update.callback_query
-
-    # CallbackQueries need to be answered, even if no notification to the user is needed
-    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
-    await query.answer()
-
-    await query.edit_message_text(text=f"Selected option: {query.data}")
+        send_message(context.bot, TELEGRAM_EDUZEN_ID, str(e))
 
 
 async def send_message(bot: Bot, chat_id: int, text: str) -> None:
@@ -56,12 +58,12 @@ async def send_buttons(
     bot: Bot,
     chat_id: int,
     text: str,
-    buttons: list[list[InlineKeyboardButton]],
     callback_data: str | dict[str, Any],
+    buttons: list[list[InlineKeyboardButton]] | None = None,
 ) -> None:
     if not buttons:
         confirm_button = InlineKeyboardButton("Confirm", callback_data=callback_data)
-        next_button = InlineKeyboardButton("Next", callback_data="next_movie")
+        next_button = InlineKeyboardButton("Next", callback_data="next")
         buttons = [[confirm_button, next_button]]
     reply_markup = InlineKeyboardMarkup(buttons)
 
@@ -77,6 +79,7 @@ async def send_photo(
     await bot.send_photo(chat_id=chat_id, photo=photo, caption=caption)
 
 
+@restricted
 async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
@@ -95,19 +98,22 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             await send_message(bot, chat_id, "No movie found")
             return
 
-        for movie in data:
+        for movie in data[:1]:
             try:
                 await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-                await send_buttons(bot, chat_id, "Is this the movie?", movie.imdb_id)
-            except error.BadRequest:
+            except Exception:
                 log.error("Error while sending photo")
                 await send_message(bot, chat_id, str(movie))
 
+            await send_buttons(
+                bot, chat_id, "Is this the movie?", callback_data=movie.id
+            )
     except Exception:
         log.exception("Error while searching movie")
         await send_message(bot, chat_id, "Something went wrong")
 
 
+@restricted
 async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
@@ -140,11 +146,8 @@ def main() -> None | int:  # type: ignore
     movie_handler = CommandHandler("movie", movie)
     application.add_handler(movie_handler)
 
-    next_movie_callback_handler = CallbackQueryHandler(next_movie)
-    application.add_handler(next_movie_callback_handler)
-
-    confirm_movie_callback_handler = CallbackQueryHandler(confirm_movie)
-    application.add_handler(confirm_movie_callback_handler)
+    callback_handler = CallbackQueryHandler(callback)
+    application.add_handler(callback_handler)
 
     try:
         return application.run_polling()

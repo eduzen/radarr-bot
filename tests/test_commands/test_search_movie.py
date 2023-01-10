@@ -41,6 +41,7 @@ async def test_search_invalid_movie():
 def test_movie_dataclass_validations(vote_average):
     with pytest.raises(ValueError):
         Movie(
+            id=603,
             title="The Matrix",
             release_date="1999-03-31",
             vote_average=vote_average,
@@ -50,6 +51,7 @@ def test_movie_dataclass_validations(vote_average):
 
 def test_movie_dataclass_year_and_poster():
     movie = Movie(
+        id=603,
         title="The Matrix",
         release_date="1999-03-31",
         vote_average=8.1,

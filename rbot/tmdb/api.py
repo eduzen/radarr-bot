@@ -4,7 +4,7 @@ import urllib
 import httpx
 from decouple import config
 
-from ..models import Movie, process_movie_search_result, process_movie_search_results
+from rbot.models import Movie, process_movie_search_result, process_movie_search_results
 
 client = httpx.Client()
 log = logging.getLogger(__name__)

@@ -2,39 +2,39 @@ import datetime
 import logging
 from typing import Any
 
-from pydantic import BaseModel, validator
+from pydantic import BaseModel
 
 log = logging.getLogger(__name__)
 
 
 class Movie(BaseModel):
     id: int | None
-    tmdbId: int | None
-    imdbId: str | None
     title: str
     release_date: str | None
     backdrop_path: str | None
     poster_path: str | None
     vote_average: float | None
     poster: str | None
-    year: int | str
+    year: int | str | None
     ratings: dict[str, dict[str, Any]] | None
 
     def __init__(self, **data: dict[str, Any]) -> None:
         super().__init__(**data)
-        self.tmdbId = self.id or self.tmdbId
+        self.id = self.build_tmdb_id(data)
         self.poster = self.build_poster_url()
         self.year = self.build_year()
         self.vote_average = self.build_vote_average()
 
     def __str__(self) -> str:
-        return f"{self.title} ({self.year})\nRating: {self.rating}"
+        return f"{self.title} ({self.year})\nRating: {self.rating}\nLink: {self.link}"
 
-    @validator("id")
-    def validate_id(cls, value: int) -> int:
-        if value is None:
-            raise ValueError("id is required")
-        return value
+    def build_tmdb_id(self, data: dict[str, Any]) -> int:
+        if self.id:
+            return self.id
+        try:
+            return self.tmdbId
+        except AttributeError:
+            raise ValueError("TMDB ID is required")
 
     def build_vote_average(self) -> float | None:
         if not self.vote_average and not self.ratings:
@@ -69,6 +69,10 @@ class Movie(BaseModel):
         if self.poster_path:
             return f"https://image.tmdb.org/t/p/original{self.poster_path}"
         return f"https://image.tmdb.org/t/p/original{self.backdrop_path}"
+
+    @property
+    def link(self) -> str:
+        return f"https://www.themoviedb.org/movie/{self.id}"
 
 
 async def process_movie_search_result(result: dict[str, Any]) -> Movie:

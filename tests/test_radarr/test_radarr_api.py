@@ -1,7 +1,7 @@
 import pytest
 
 from rbot.models import Movie
-from rbot.radarr.api import get_movies_from_radarr
+from rbot.radarr.api import add_movie_to_radarr, get_movies_from_radarr
 
 # @pytest.mark.asyncio
 # @pytest.mark.record
@@ -30,3 +30,26 @@ async def test_get_movies_from_radarr():
     result = await get_movies_from_radarr()
     assert len(result) == 373
     assert type(result[0]) == Movie
+
+
+@pytest.mark.asyncio
+@pytest.mark.vcr
+async def test_add_movie_already_in_radarr():
+    tmbdb_id = 715931  # Emancipation (2022)
+    response = await add_movie_to_radarr(tmdb_id=tmbdb_id)
+    assert response == "Movie has not been added!"
+
+
+@pytest.mark.asyncio
+@pytest.mark.vcr
+async def test_add_movie_to_radarr():
+    tmbdb_id = 359724  # Ford vs Ferrari (2019)
+    response = await add_movie_to_radarr(tmdb_id=tmbdb_id)
+    assert response == "Movie has been added!"
+
+
+@pytest.mark.asyncio
+@pytest.mark.vcr
+async def test_add_movie_to_radarr_error():
+    response = await add_movie_to_radarr(tmdb_id="champagne")
+    assert response == "Movie has not been added!"
