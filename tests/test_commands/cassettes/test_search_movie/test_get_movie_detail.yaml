@@ -13,19 +13,19 @@ interactions:
       user-agent:
       - python-httpx/0.23.2
     method: GET
-    uri: https://api.themoviedb.org/3/movie/79026?api_key=cfd9e591806c8cd42d9f35453eefb5b6
+    uri: https://api.themoviedb.org/3/movie/79026
   response:
     content: '{"adult":false,"backdrop_path":null,"belongs_to_collection":null,"budget":0,"genres":[{"id":28,"name":"Action"},{"id":80,"name":"Crime"},{"id":18,"name":"Drama"}],"homepage":"","id":79026,"imdb_id":"tt0325950","original_language":"en","original_title":"El
       padrino","overview":"In the streets of East Los Angeles, Manny is a formidable
       drug dealer. Impressed by his extravagant lifestyle and prowess, his young son,
       Kilo, yearns to follow in his footsteps. Kilo resolves to learn how to prosper
       in the drug world, and his new life as a dealer begins. In a world where a man
-      wants everything, he may end up with nothing.","popularity":10.82,"poster_path":"/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg","production_companies":[],"production_countries":[{"iso_3166_1":"US","name":"United
+      wants everything, he may end up with nothing.","popularity":10.063,"poster_path":"/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg","production_companies":[],"production_countries":[{"iso_3166_1":"US","name":"United
       States of America"}],"release_date":"2004-09-27","revenue":0,"runtime":128,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"El
-      padrino: The Latin Godfather","video":false,"vote_average":6.75,"vote_count":29}'
+      padrino: The Latin Godfather","video":false,"vote_average":6.833,"vote_count":30}'
     headers:
       Age:
-      - '153'
+      - '71'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
@@ -37,9 +37,9 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Wed, 04 Jan 2023 17:49:27 GMT
+      - Tue, 10 Jan 2023 11:22:54 GMT
       ETag:
-      - W/"1aa9981ed24bb23caac4e6c6246908e0"
+      - W/"ac89c3092661d3983dc11e4ff2e051be"
       Server:
       - openresty
       Transfer-Encoding:
@@ -48,19 +48,19 @@ interactions:
       - Accept-Encoding,Accept-Encoding,Accept-Encoding
       - Origin
       Via:
-      - 1.1 edd6d90087c4f2b49e182778a2273adc.cloudfront.net (CloudFront)
+      - 1.1 e13e8f228afcbd0862f27c6ebd714878.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - y_a9QcGJal5t9Leu-za_acCjHTofnIxPFoPrMZmAc_nYmv1lE8_7ew==
+      - 9WbCuYkrTi8U1f5bUswWpfxBidWjnEVKakWp5WscmnulIDX1HJyvtQ==
       X-Amz-Cf-Pop:
-      - AMS54-C1
+      - AMS1-C1
       X-Cache:
       - Hit from cloudfront
       X-Memc:
       - HIT
       X-Memc-Age:
-      - '7528'
+      - '15394'
       X-Memc-Expires:
-      - '6924'
+      - '2288'
       X-Memc-Key:
       - ba78d135326d9e8eed8eca3bda509abc30ba3a6a
     http_version: HTTP/1.1
