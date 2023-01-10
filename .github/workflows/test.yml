@@ -41,8 +41,13 @@ jobs:
           ${{ runner.os }}-pip-
 
     - name: Test
+      env:
+        TELEGRAM_EDUZEN_ID: 1234
+        TELEGRAM_TOKEN: blah
+        LIST_OF_ADMINS: 1234
+        TMDB_API_KEY: blah
+        RADARR_API_KEY: blah
       run: |
-        export EDUZEN_ID=1234 TELEGRAM_TOKEN=blah
         coverage run -m pytest --record-mode=none
         python -m coverage combine
         python -m coverage report -m --skip-covered
