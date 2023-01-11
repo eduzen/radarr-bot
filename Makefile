@@ -8,7 +8,7 @@ upgrade:
 	pip-compile --upgrade pyproject.toml --output-file requirements.txt
 
 upgrade-dev:
-	pip-compile --extra=dev --upgrade pyproject.toml --output-file requirements.txt
+	pip-compile --extra=dev --upgrade pyproject.toml --output-file requirements-dev.txt
 
 install:
 	pip install -r requirements.txt .

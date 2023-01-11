@@ -6,6 +6,8 @@
 #
 anyio==3.6.2
     # via httpcore
+async-timeout==4.0.2
+    # via redis
 certifi==2022.12.7
     # via
     #   httpcore
@@ -28,9 +30,11 @@ pydantic==1.10.4
     # via rbot (pyproject.toml)
 pygments==2.14.0
     # via rich
-python-decouple==3.6
+python-decouple==3.7
     # via rbot (pyproject.toml)
 python-telegram-bot==20.0
+    # via rbot (pyproject.toml)
+redis==4.4.1
     # via rbot (pyproject.toml)
 rfc3986[idna2008]==1.5.0
     # via httpx

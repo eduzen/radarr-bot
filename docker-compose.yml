@@ -1,0 +1,28 @@
+version: "3.9"
+
+volumes:
+  redis-data:
+
+services:
+  redis:
+    image: redis:7.0.7-bullseye
+    expose:
+      - "6379"
+    volumes:
+      - redis-data:/data
+
+  rbot:
+    build:
+      context: .
+      target: development
+      args:
+        BUILDKIT_INLINE_CACHE: 1
+    tty: true
+    links:
+      - redis
+    depends_on:
+      - redis
+    volumes:
+      - ./:/code
+    env_file:
+      - .env

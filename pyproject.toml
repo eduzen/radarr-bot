@@ -23,7 +23,14 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ["python-telegram-bot", "httpx", "rich", "python-decouple", "pydantic" ]
+dependencies = [
+  "httpx",
+  "python-telegram-bot",
+  "python-decouple",
+  "pydantic",
+  "redis",
+  "rich",
+]
 dynamic = ["version"]
 
 [project.optional-dependencies]

@@ -17,11 +17,12 @@ async def get_userdata(user: User) -> tuple[str, str]:
 def restricted(func):
     @wraps(func)
     async def wrapped(update: Update, context: ContextTypes.DEFAULT_TYPE):
+        func_name = func.__name__
         user_id, user_data = await get_userdata(update.effective_user)
         if user_id not in LIST_OF_ADMINS:
-            log.warning(f"Access Denied to: {user_data}")
+            log.warning(f"'{func_name}' Access Denied to: {user_data}")
             return
-        log.info(f"Access Granted to: {user_data}")
+        log.info(f"'{func_name}' Access Granted to: {user_data}")
         return await func(update, context)
 
     return wrapped
