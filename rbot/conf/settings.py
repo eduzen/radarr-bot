@@ -14,6 +14,6 @@ LOG_FORMAT = "%(message)s"
 DATE_FORMAT = "[%Y-%m-%d %X]"
 
 RADARR_API_KEY = config("RADARR_API_KEY", cast=str)
-RADARR_BASE_URL = "http://radarr.huis/api/v3/"
+RADARR_BASE_URL = config("RADARR_URL", cast=str)  # http://radarr.local/api/v3/
 RADARR_ROOT_FOLDER = "/media-center/movies/"
-QUALITY_PROFILE_ANY = 1  # http://radarr.huis/api/v3/qualityprofile
+QUALITY_PROFILE_ANY = 1  # http://radarr.local/api/v3/qualityprofile
