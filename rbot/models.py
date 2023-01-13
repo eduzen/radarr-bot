@@ -1,14 +1,19 @@
 import datetime
+import json
 import logging
 from typing import Any
 
+import redis.asyncio as redis
 from pydantic import BaseModel
+
+from rbot.conf import settings
 
 log = logging.getLogger(__name__)
 
 
 class Movie(BaseModel):
     id: int | None
+    tmdbId: int | None
     title: str
     release_date: str | None
     backdrop_path: str | None
@@ -20,21 +25,12 @@ class Movie(BaseModel):
 
     def __init__(self, **data: dict[str, Any]) -> None:
         super().__init__(**data)
-        self.id = self.build_tmdb_id(data)
         self.poster = self.build_poster_url()
         self.year = self.build_year()
         self.vote_average = self.build_vote_average()
 
     def __str__(self) -> str:
         return f"{self.title} ({self.year})\nRating: {self.rating}\nLink: {self.link}"
-
-    def build_tmdb_id(self, data: dict[str, Any]) -> int:
-        if self.id:
-            return self.id
-        try:
-            return self.tmdbId
-        except AttributeError:
-            raise ValueError("TMDB ID is required")
 
     def build_vote_average(self) -> float | None:
         if not self.vote_average and not self.ratings:
@@ -44,7 +40,7 @@ class Movie(BaseModel):
             try:
                 return self.ratings["imdb"]["value"]
             except KeyError:
-                return 0
+                return None
 
         if self.vote_average:
             return round(self.vote_average, 1)
@@ -91,3 +87,21 @@ async def process_movie_search_results(
         except ValueError as e:
             log.error("Not valid movie... skipping it: %s", e)
     return movies
+
+
+async def write_movies_to_redis(movies: list[Movie]) -> None:
+    client = await redis.from_url(settings.REDIS_URL)
+
+    async with client.pipeline(transaction=True) as pipe:
+        for idx, movie in enumerate(movies):
+            await pipe.set(idx, movie.json()).execute()
+
+
+async def read_one_movie_from_redis(idx: int) -> Movie | None:
+    try:
+        client = await redis.from_url(settings.REDIS_URL)
+        movie = await client.get(idx)
+        movie = json.loads(movie)
+        return Movie(**movie)
+    except Exception:
+        log.exception("Error while reading from redis")

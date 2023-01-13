@@ -11,14 +11,12 @@ interactions:
       host:
       - api.themoviedb.org
       user-agent:
-      - python-httpx/0.23.2
+      - python-httpx/0.23.3
     method: GET
     uri: https://api.themoviedb.org/3/search/movie?query=das12ad9ds3asdd0d8sda
   response:
     content: '{"page":1,"results":[],"total_pages":0,"total_results":0}'
     headers:
-      Age:
-      - '71'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
@@ -30,7 +28,7 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Tue, 10 Jan 2023 11:22:54 GMT
+      - Fri, 13 Jan 2023 20:54:00 GMT
       Server:
       - openresty
       Transfer-Encoding:
@@ -39,13 +37,13 @@ interactions:
       - Accept-Encoding,Accept-Encoding
       - Origin
       Via:
-      - 1.1 e13e8f228afcbd0862f27c6ebd714878.cloudfront.net (CloudFront)
+      - 1.1 df4167ab0949b4d2c15466bdfdc05f94.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - 03fGZiGk4OI9qN8yoZqyvIYeVKRgZbpHzntFxq2y9x1BMZLcbtnfPA==
+      - B-ZHHZWJPisUoSnWO_s8RZ3sA-pmM4RP9hfCTgJ0spY-XRJCiH7Dqw==
       X-Amz-Cf-Pop:
-      - AMS1-C1
+      - AMS54-C1
       X-Cache:
-      - Hit from cloudfront
+      - Miss from cloudfront
     http_version: HTTP/1.1
     status_code: 200
 version: 1

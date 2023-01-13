@@ -42,6 +42,7 @@ dev = [
   "pytest",
   "pytest-asyncio",
   "pytest-recording",
+  "types-redis",
 ]
 
 [project.urls]

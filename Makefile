@@ -27,3 +27,6 @@ test:
 	python -m coverage combine
 	python -m coverage report -m --skip-covered
 	python -m coverage json
+
+mypy:
+	mypy rbot

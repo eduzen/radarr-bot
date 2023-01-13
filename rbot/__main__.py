@@ -1,11 +1,10 @@
 import json
 import logging
 
-import redis.asyncio as redis
-from decouple import config
 from radarr import api as radarr_api
 from rich.logging import RichHandler
 from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update, error
+from telegram.constants import ChatAction
 from telegram.ext import (
     Application,
     ApplicationBuilder,
@@ -15,73 +14,38 @@ from telegram.ext import (
 )
 from tmdb import api as tmdb_api
 
+from rbot.conf import settings
 from rbot.decorators import restricted
-from rbot.models import Movie
-
-TOKEN = config("TELEGRAM_TOKEN")
-TELEGRAM_EDUZEN_ID = config("TELEGRAM_EDUZEN_ID", cast=int)
-REDIS_HOST = config("REDIS_HOST")
-REDIS_URL = config("REDIS_URL")
-FORMAT = "%(message)s"
+from rbot.models import Movie, read_one_movie_from_redis, write_movies_to_redis
 
 logging.basicConfig(
-    level="INFO", format=FORMAT, datefmt="[%X]", handlers=[RichHandler()]
+    level="INFO",
+    format=settings.LOG_FORMAT,
+    datefmt=settings.DATE_FORMAT,
+    handlers=[RichHandler()],
 )
 log = logging.getLogger(__name__)
 
 
-async def write_movies_to_redis(movies: list[Movie]) -> None:
-    client = await redis.from_url(REDIS_URL)
-
-    async with client.pipeline(transaction=True) as pipe:
-        for idx, movie in enumerate(movies):
-            await pipe.set(idx, movie.json()).execute()
+async def send_typing_action(bot: Bot, chat_id: int) -> None:
+    await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
 
 
-async def read_one_movie_from_redis(idx: int) -> Movie | None:
-    try:
-        client = await redis.from_url(REDIS_URL)
-        movie = await client.get(idx)
-        movie = json.loads(movie)
-        return Movie(**movie)
-    except Exception:
-        log.exception("Error while reading from redis")
+async def accepted_movie(data: dict[str, str]) -> str:
+    movie_id = data["movie_id"]
+    response = await radarr_api.add_movie_to_radarr(movie_id)
+    return response
 
 
-@restricted
-async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Parses the CallbackQuery and updates the message text."""
-    query = update.callback_query
-
-    # CallbackQueries need to be answered, even if no notification to the user is needed
-    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
-    try:
-        await query.answer()
-        log.info("Callback query answered, data: %s", query.data)
-        dict_data = json.loads(query.data)
-
-        if "movie_id" in dict_data.keys():
-            movie_id = dict_data["movie_id"]
-            response = await radarr_api.add_movie_to_radarr(movie_id)
-            await query.edit_message_text(text=response)
-        else:
-            idx = dict_data["idx"]
-            movie = await read_one_movie_from_redis(idx)
-            if not movie:
-                await query.edit_message_text(text="No more movies found")
-                return
-
-            log.info(movie)
-            await query.edit_message_text(text=movie.title)
-            return
-
-    except error.BadRequest as e:
-        log.error("Error while answering callback query %s", str(e))
-        send_message(context.bot, TELEGRAM_EDUZEN_ID, str(e))
+async def show_next_movie(data: dict[str, str]) -> tuple[int, Movie] | None:
+    idx = data["idx"]
+    movie = await read_one_movie_from_redis(idx)
+    if movie:
+        return idx + 1, movie
 
 
 async def send_message(bot: Bot, chat_id: int, text: str) -> None:
-    await bot.send_message(chat_id=chat_id, text=text)
+    await bot.send_message(chat_id=chat_id, text=text, disable_notification=True)
 
 
 async def send_buttons(
@@ -102,7 +66,12 @@ async def send_buttons(
         buttons = [[confirm_button, next_button]]
     reply_markup = InlineKeyboardMarkup(buttons)
 
-    await bot.send_message(chat_id=chat_id, text=text, reply_markup=reply_markup)
+    await bot.send_message(
+        chat_id=chat_id,
+        text=text,
+        reply_markup=reply_markup,
+        disable_notification=True,
+    )
 
 
 async def send_photo(
@@ -111,13 +80,66 @@ async def send_photo(
     photo: str | bytes,
     caption: str,
 ) -> None:
-    await bot.send_photo(chat_id=chat_id, photo=photo, caption=caption)
+    await bot.send_photo(
+        chat_id=chat_id, photo=photo, caption=caption, disable_notification=True
+    )
+
+
+async def send_movie(bot: Bot, chat_id: int, movie: Movie, idx: int = 0) -> None:
+    try:
+        await send_photo(
+            bot,
+            chat_id,
+            movie.poster,
+            caption=str(movie),
+        )
+    except Exception:
+        log.exception("Error while sending photo")
+        await send_message(bot, chat_id, str(movie))
+
+    await send_buttons(bot, chat_id, "Is this the movie?", movie_id=movie.id, idx=idx)
+
+
+@restricted
+async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """Parses the CallbackQuery and updates the message text."""
+    query = update.callback_query
+    bot = context.bot
+
+    # CallbackQueries need to be answered, even if no notification to the user is needed
+    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
+    try:
+        await query.answer()
+        chat_id = query.message.chat_id
+
+        await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
+
+        log.info("Callback query answered, data: %s", query.data)
+        dict_data = json.loads(query.data)
+
+        if "movie_id" in dict_data.keys():
+            response = await accepted_movie(dict_data)
+            await query.edit_message_text(text=response)
+        else:
+            data = await show_next_movie(dict_data)
+            if not data:
+                await query.edit_message_text(text="No more movies to show")
+            else:
+                idx, movie = data
+                await query.edit_message_text(text="Loading...")
+
+                await send_movie(bot, chat_id, movie, idx)
+    except error.BadRequest as e:
+        log.exception("Error while answering callback query")
+        await send_message(bot, settings.TELEGRAM_EDUZEN_ID, str(e))
 
 
 @restricted
 async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
+
+    await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
 
     args: list[str] | None = context.args
     if not args:
@@ -135,14 +157,7 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
         movie = data[0]
         await write_movies_to_redis(data)
-
-        try:
-            await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-        except Exception:
-            log.exception("Error while sending photo")
-            await send_message(bot, chat_id, str(movie))
-
-        await send_buttons(bot, chat_id, "Is this the movie?", movie_id=movie.id, idx=0)
+        await send_movie(bot, chat_id, movie)
 
     except Exception:
         log.exception("Error while searching movie")
@@ -153,6 +168,8 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
+
+    await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
 
     args: list[str] | None = context.args
     if not args:
@@ -172,8 +189,9 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 @restricted
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    chat_id = update.effective_chat.id
+    chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
+    await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
 
     help_text = (
         "Hello, I'm RadarrBot. I have the following commands:\n"
@@ -194,13 +212,19 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 async def post_init(application: Application) -> None:
-    await send_message(application.bot, TELEGRAM_EDUZEN_ID, "Bot started!")
+    bot = application.bot
+    await bot.send_chat_action(
+        action=ChatAction.TYPING, chat_id=settings.TELEGRAM_EDUZEN_ID
+    )
+    await send_message(bot, settings.TELEGRAM_EDUZEN_ID, "Bot started!")
 
 
-def main() -> None | int:  # type: ignore
-    application = ApplicationBuilder().token(TOKEN).post_init(post_init).build()
-
+def main() -> int:
+    application = (
+        ApplicationBuilder().token(settings.TELEGRAM_TOKEN).post_init(post_init).build()
+    )
     help_handler = CommandHandler("help", help)
+
     application.add_handler(help_handler)
 
     search_handler = CommandHandler("search", search)
@@ -213,7 +237,7 @@ def main() -> None | int:  # type: ignore
     application.add_handler(callback_handler)
 
     try:
-        return application.run_polling()
+        application.run_polling()
     except Exception:
         log.exception("Error while polling")
         return -1
