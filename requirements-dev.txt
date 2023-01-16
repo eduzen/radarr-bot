@@ -127,7 +127,7 @@ typing-extensions==4.4.0
     #   pydantic
 vcrpy==4.2.1
     # via pytest-recording
-wcwidth==0.2.5
+wcwidth==0.2.6
     # via prompt-toolkit
 wrapt==1.14.1
     # via vcrpy
