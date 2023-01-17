@@ -1,12 +1,8 @@
 import datetime
-import json
 import logging
 from typing import Any
 
-import redis.asyncio as redis
 from pydantic import BaseModel
-
-from rbot.conf import settings
 
 log = logging.getLogger(__name__)
 
@@ -87,21 +83,3 @@ async def process_movie_search_results(
         except ValueError as e:
             log.error("Not valid movie... skipping it: %s", e)
     return movies
-
-
-async def write_movies_to_redis(movies: list[Movie]) -> None:
-    client = await redis.from_url(settings.REDIS_URL)
-
-    async with client.pipeline(transaction=True) as pipe:
-        for idx, movie in enumerate(movies):
-            await pipe.set(idx, movie.json()).execute()
-
-
-async def read_one_movie_from_redis(idx: int) -> Movie | None:
-    try:
-        client = await redis.from_url(settings.REDIS_URL)
-        movie = await client.get(idx)
-        movie = json.loads(movie)
-        return Movie(**movie)
-    except Exception:
-        log.exception("Error while reading from redis")

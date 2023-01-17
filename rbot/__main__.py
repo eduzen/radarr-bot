@@ -16,7 +16,12 @@ from tmdb import api as tmdb_api
 
 from rbot.conf import settings
 from rbot.decorators import restricted
-from rbot.models import Movie, read_one_movie_from_redis, write_movies_to_redis
+from rbot.storage.models import Movie
+from rbot.storage.redis import (
+    clear_redis,
+    read_one_movie_from_redis,
+    write_movies_to_redis,
+)
 
 logging.basicConfig(
     level="INFO",
@@ -140,6 +145,7 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     bot = context.bot
 
     await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
+    await clear_redis()
 
     args: list[str] | None = context.args
     if not args:
