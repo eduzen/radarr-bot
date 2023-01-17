@@ -22,9 +22,9 @@ async def read_one_movie_from_redis(idx: int) -> Movie | None:
     try:
         client = await redis.from_url(settings.REDIS_URL)
         movie = await client.get(idx)
-        movie = json.loads(movie)
-        yield Movie(**movie)
         await client.delete(idx)
+        movie = json.loads(movie)
+        return Movie(**movie)
     except Exception:
         log.exception("Error while reading from redis")
 
