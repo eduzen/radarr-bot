@@ -26,3 +26,5 @@ services:
       - ./:/code
     env_file:
       - .env
+    labels:
+      - "com.centurylinklabs.watchtower.enable=false"
