@@ -4,7 +4,7 @@ from typing import Any
 import httpx
 
 from rbot.conf import settings
-from rbot.models import process_movie_search_results
+from rbot.storage.models import process_movie_search_results
 
 log = logging.getLogger(__name__)
 

@@ -1,7 +1,7 @@
 import pytest
 
-from rbot.models import Movie
 from rbot.radarr.api import add_movie_to_radarr, get_movies_from_radarr
+from rbot.storage.models import Movie
 
 
 @pytest.mark.asyncio
