@@ -47,7 +47,7 @@ iniconfig==2.0.0
     # via pytest
 ipdb==0.13.11
     # via rbot (pyproject.toml)
-ipython==8.8.0
+ipython==8.11.0
     # via
     #   ipdb
     #   rbot (pyproject.toml)
