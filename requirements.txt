@@ -38,7 +38,7 @@ redis==4.4.1
     # via rbot (pyproject.toml)
 rfc3986[idna2008]==1.5.0
     # via httpx
-rich==13.0.1
+rich==13.3.2
     # via rbot (pyproject.toml)
 sniffio==1.3.0
     # via
