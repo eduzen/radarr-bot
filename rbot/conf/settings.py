@@ -1,17 +1,4 @@
-import logging
-
 from decouple import Csv, config
-from rich.logging import RichHandler
-
-from rbot.conf import settings
-
-logging.basicConfig(
-    level="INFO",
-    format=settings.LOG_FORMAT,
-    datefmt=settings.DATE_FORMAT,
-    handlers=[RichHandler()],
-)
-log = logging.getLogger(__name__)
 
 # REDIS_HOST = config("REDIS_HOST", cast=str)
 REDIS_URL = config("REDIS_URL", cast=str)

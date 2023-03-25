@@ -1,10 +1,19 @@
 import logging
 
+from rich.logging import RichHandler
 from telegram.ext import ApplicationBuilder, CallbackQueryHandler, CommandHandler
 
 from rbot.conf import settings
 from rbot.handlers import callback, help, movie, search
 from rbot.utils import post_init
+
+logging.basicConfig(
+    level="INFO",
+    format=settings.LOG_FORMAT,
+    datefmt=settings.DATE_FORMAT,
+    handlers=[RichHandler()],
+)
+
 
 log = logging.getLogger(__name__)
 
