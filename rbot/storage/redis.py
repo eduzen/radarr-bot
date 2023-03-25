@@ -23,10 +23,11 @@ async def read_one_movie_from_redis(idx: int) -> Movie | None:
         client = await redis.from_url(settings.REDIS_URL)
         movie = await client.get(idx)
         movie = json.loads(movie)
-        yield Movie(**movie)
         await client.delete(idx)
+        return Movie(**movie)
     except Exception:
         log.exception("Error while reading from redis")
+    return None
 
 
 async def clear_redis() -> None:

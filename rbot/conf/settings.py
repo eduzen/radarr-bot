@@ -1,6 +1,6 @@
 from decouple import Csv, config
 
-REDIS_HOST = config("REDIS_HOST", cast=str)
+# REDIS_HOST = config("REDIS_HOST", cast=str)
 REDIS_URL = config("REDIS_URL", cast=str)
 
 LIST_OF_ADMINS = config("LIST_OF_ADMINS", cast=Csv(int))

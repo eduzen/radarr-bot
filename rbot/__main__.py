@@ -43,11 +43,11 @@ async def accepted_movie(data: dict[str, str]) -> str:
 
 
 async def show_next_movie(data: dict[str, str]) -> tuple[int, Movie] | None:
-    idx = data["idx"]
+    idx = int(data["idx"])
     movie = await read_one_movie_from_redis(idx)
     if movie:
         return idx + 1, movie
-
+    return None
 
 async def send_message(bot: Bot, chat_id: int, text: str) -> None:
     await bot.send_message(chat_id=chat_id, text=text, disable_notification=True)
@@ -247,6 +247,8 @@ def main() -> int:
     except Exception:
         log.exception("Error while polling")
         return -1
+
+    return 0
 
 
 if __name__ == "__main__":
