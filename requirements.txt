@@ -34,7 +34,7 @@ python-decouple==3.7
     # via rbot (pyproject.toml)
 python-telegram-bot==20.0
     # via rbot (pyproject.toml)
-redis==4.4.1
+redis==4.5.3
     # via rbot (pyproject.toml)
 rfc3986[idna2008]==1.5.0
     # via httpx
