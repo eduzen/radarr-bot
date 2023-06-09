@@ -55,7 +55,7 @@ ipython==8.14.0
     #   rbot (pyproject.toml)
 jedi==0.18.2
     # via ipython
-markdown-it-py==2.2.0
+markdown-it-py==3.0.0
     # via rich
 matplotlib-inline==0.1.6
     # via ipython
