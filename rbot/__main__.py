@@ -149,7 +149,7 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     args: list[str] | None = context.args
     if not args:
-        await send_message(bot, chat_id, "missing query")
+        await send_message(bot, chat_id, "missing the movie that you are looking for")
         return
 
     query = " ".join(args)

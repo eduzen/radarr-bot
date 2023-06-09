@@ -1,20 +1,31 @@
+PIP_COMPILE = pip-compile
+
+# Define a .PHONY rule to avoid conflict with file names
+.PHONY: compile upgrade install start fmt test mypy
+
+compile: compile-prod compile-dev
+
+upgrade: upgrade-prod upgrade-dev
+
 compile-dev:
-	pip-compile --extra=dev pyproject.toml --output-file requirements-dev.txt
+	$(PIP_COMPILE) --extra=dev pyproject.toml --output-file requirements-dev.txt
 
-compile:
-	pip-compile pyproject.toml --output-file requirements.txt
+compile-prod:
+	$(PIP_COMPILE) pyproject.toml --output-file requirements.txt
 
-upgrade:
-	pip-compile --upgrade pyproject.toml --output-file requirements.txt
+upgrade-prod:
+	$(PIP_COMPILE) --upgrade pyproject.toml --output-file requirements.txt
 
 upgrade-dev:
-	pip-compile --extra=dev --upgrade pyproject.toml --output-file requirements-dev.txt
+	$(PIP_COMPILE) --upgrade pyproject.toml --all-extras --output-file requirements-dev.txt
 
 install:
-	pip install -r requirements.txt .
+	pip install -r requirements.txt
+	pip install .
 
 install-dev:
-	pip install -r requirements-dev.txt -e .
+	pip install -r requirements-dev.txt
+	pip install -e .
 
 start:
 	python rbot
