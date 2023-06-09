@@ -23,7 +23,7 @@ repos:
         args: [--autofix]
 
   - repo: https://github.com/psf/black
-    rev: 23.1.0
+    rev: 23.3.0
     hooks:
       - id: black
         args: [--safe, --quiet]
@@ -34,15 +34,19 @@ repos:
       - id: isort
         args: [--profile=black]
 
+  - repo: https://github.com/asottile/blacken-docs
+    rev: 1.13.0
+    hooks:
+      - id: blacken-docs
+
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.4.0
     hooks:
       - id: pyupgrade
-        args: [--py39-plus]
+        args: [--py311-plus]
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: 'v0.0.259'
+    rev: 'v0.0.272'
     hooks:
       - id: ruff
-        # Respect `exclude` and `extend-exclude` settings.
         args: ["--fix"]
