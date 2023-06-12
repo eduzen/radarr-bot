@@ -91,7 +91,7 @@ pygments==2.15.1
     # via
     #   ipython
     #   rich
-pytest==7.3.1
+pytest==7.3.2
     # via
     #   pytest-asyncio
     #   pytest-recording
