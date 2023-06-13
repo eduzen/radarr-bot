@@ -108,7 +108,7 @@ pyyaml==6.0
     # via vcrpy
 redis==4.5.5
     # via rbot (pyproject.toml)
-rich==13.4.1
+rich==13.4.2
     # via rbot (pyproject.toml)
 six==1.16.0
     # via
