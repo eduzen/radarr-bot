@@ -6,8 +6,10 @@ from decouple import config
 
 from rbot.storage.models import (
     Movie,
+    Serie,
     process_movie_search_result,
     process_movie_search_results,
+    process_serie_search_results,
 )
 
 client = httpx.Client()
@@ -21,6 +23,7 @@ async def search_movie(query: str) -> list[Movie]:
         "query": query,
         "api_key": TMDB_API_KEY,
     }
+
     query_params = urllib.parse.urlencode(query_params_dict)
     TMDB_SEARCH_URL = f"{TMDB_BASE_URL}search/movie?{query_params}"
 
@@ -28,6 +31,24 @@ async def search_movie(query: str) -> list[Movie]:
     response.raise_for_status()
 
     movies = await process_movie_search_results(response.json()["results"])
+    log.debug(f"Found {len(movies)} movies")
+    return movies
+
+
+async def search_serie(query: str) -> list[Serie]:
+    query_params_dict = {
+        "query": query,
+        "api_key": TMDB_API_KEY,
+        "include_adult": False,
+    }
+
+    query_params = urllib.parse.urlencode(query_params_dict)
+    TMDB_SEARCH_URL = f"{TMDB_BASE_URL}search/tv?{query_params}"
+
+    response = client.get(TMDB_SEARCH_URL)
+    response.raise_for_status()
+
+    movies = await process_serie_search_results(response.json()["results"])
     log.debug(f"Found {len(movies)} movies")
     return movies
 
