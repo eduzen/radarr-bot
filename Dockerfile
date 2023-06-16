@@ -5,7 +5,7 @@ WORKDIR /code
 RUN echo 'alias ll="ls -l"' >> ~/.bashrc
 
 RUN apt-get update && \
-  apt-get upgrade -y \
+  apt-get upgrade -y && \
   pip install --user --upgrade \
   pip \
   pip-tools \
