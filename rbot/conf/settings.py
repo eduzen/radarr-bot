@@ -17,3 +17,5 @@ RADARR_API_KEY = config("RADARR_API_KEY", cast=str)
 RADARR_BASE_URL = config("RADARR_URL", cast=str)  # http://radarr.local/api/v3/
 RADARR_ROOT_FOLDER = "/media-center/movies/"
 QUALITY_PROFILE_ANY = 1  # http://radarr.local/api/v3/qualityprofile
+
+LOG_LEVEL = config("LOG_LEVEL", default="INFO", cast=str)

@@ -8,7 +8,7 @@ from rbot.handlers import callback, help, movie, search, serie
 from rbot.utils import post_init
 
 logging.basicConfig(
-    level="INFO",
+    level=settings.LOG_LEVEL,
     format=settings.LOG_FORMAT,
     datefmt=settings.DATE_FORMAT,
     handlers=[RichHandler()],

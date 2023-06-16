@@ -5,17 +5,17 @@ import redis.asyncio as redis
 
 from rbot.conf import settings
 
-from .models import Movie
+from .models import Movie, Serie
 
 log = logging.getLogger(__name__)
 
 
-async def write_movies_to_redis(movies: list[Movie]) -> None:
+async def write_movies_to_redis(object_list: list[Movie | Serie]) -> None:
     client = await redis.from_url(settings.REDIS_URL)
 
     async with client.pipeline(transaction=True) as pipe:
-        for idx, movie in enumerate(movies):
-            await pipe.set(idx, movie.json()).execute()
+        for idx, obj in enumerate(object_list):
+            await pipe.set(idx, obj.json()).execute()
 
 
 async def read_one_movie_from_redis(idx: int) -> Movie | None:

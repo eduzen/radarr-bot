@@ -32,6 +32,7 @@ async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     # CallbackQueries need to be answered, even if no notification to the user is needed
     # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
     try:
+        log.info("Callback query received, data: %s", query.data)
         await query.answer()
         chat_id = query.message.chat_id
 
@@ -129,10 +130,11 @@ async def serie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     query_serie = " ".join(args)
-    log.debug(query_serie)
-
+    log.debug(f"Recieved: /serie {query_serie}")
     try:
         data = await tmdb_api.search_serie(query_serie)
+        log.info(locals())
+
         if not data:
             await send_message(bot, chat_id, "No serie found")
             return
