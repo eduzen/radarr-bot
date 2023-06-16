@@ -108,6 +108,27 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         log.exception("Error while getting movie detail")
         await send_message(bot, chat_id, "Something went wrong")
 
+@restricted
+async def serie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    chat_id = update.effective_chat.id  # type: ignore
+    bot = context.bot
+
+    await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
+
+    args: list[str] | None = context.args
+    if not args:
+        await send_message(bot, chat_id, "missing serie id")
+        return
+
+    movie_id = args[0]
+
+    try:
+        movie = await tmdb_api.get_movie_detail(movie_id)
+        await send_photo(bot, chat_id, movie.poster, caption=str(movie))
+        await send_buttons(bot, chat_id, "Is this the movie?", callback_data=movie.id)
+    except Exception:
+        log.exception("Error while getting movie detail")
+        await send_message(bot, chat_id, "Something went wrong")
 
 @restricted
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
