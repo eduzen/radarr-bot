@@ -5,6 +5,8 @@ import httpx
 
 from rbot.conf import settings
 from rbot.storage.models import (
+    Movie,
+    Serie,
     process_movie_search_results,
     process_serie_search_results,
 )
@@ -55,7 +57,7 @@ async def add_movie_to_radarr(tmdb_id: str) -> str:
     return "Movie has not been added!"
 
 
-async def get_movies_from_radarr() -> bool:
+async def get_movies_from_radarr() -> list[Movie]:
     url = f"{settings.RADARR_BASE_URL}movie"
     try:
         async with httpx.AsyncClient() as client:
@@ -111,7 +113,7 @@ async def add_serie_to_radarr(tmdb_id: str) -> str:
     return "Serie has not been added!"
 
 
-async def get_series_from_radarr() -> bool:
+async def get_series_from_radarr() -> list[Serie]:
     url = f"{settings.RADARR_BASE_URL}series"
     try:
         async with httpx.AsyncClient() as client:

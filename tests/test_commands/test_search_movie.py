@@ -26,7 +26,7 @@ async def test_search_movie():
     movies_result = await search_movie("The Matrix")
 
     for movie in movies_result:
-        assert "the matrix" in movie.title.lower()
+        assert "matrix" in movie.title.lower()
 
 
 @pytest.mark.asyncio

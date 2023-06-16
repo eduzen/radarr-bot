@@ -1,10 +1,11 @@
-FROM python:3.11-alpine as production
+FROM python:3.11-slim-bullseye as production
 
 WORKDIR /code
 
 RUN echo 'alias ll="ls -l"' >> ~/.bashrc
 
-RUN apk add --no-cache bash && \
+RUN apt-get update && \
+  apt-get upgrade -y \
   pip install --user --upgrade \
   pip \
   pip-tools \

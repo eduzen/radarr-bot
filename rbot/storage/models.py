@@ -38,6 +38,8 @@ class Movie(BaseModel):
 
     @property
     def alternative_rating(self) -> float:
+        if not self.vote_average:
+            return 0.0
         try:
             value = round(self.vote_average, 1)
         except KeyError:
@@ -68,6 +70,8 @@ class Movie(BaseModel):
 
     @property
     def rating(self) -> str:
+        if not self.vote_average:
+            return "N/A"
         return f"{round(self.vote_average, 1)}/10"
 
     def build_poster_url(self) -> str:
@@ -116,6 +120,8 @@ class Serie(BaseModel):
 
     @property
     def alternative_rating(self) -> float:
+        if not self.vote_average:
+            return 0.0
         try:
             value = round(self.vote_average, 1)
         except KeyError:
@@ -146,6 +152,8 @@ class Serie(BaseModel):
 
     @property
     def rating(self) -> str:
+        if not self.vote_average:
+            return "N/A"
         return f"{round(self.vote_average, 1)}/10"
 
     def build_poster_url(self) -> str:
