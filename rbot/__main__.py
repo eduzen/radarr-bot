@@ -4,7 +4,7 @@ from rich.logging import RichHandler
 from telegram.ext import ApplicationBuilder, CallbackQueryHandler, CommandHandler
 
 from rbot.conf import settings
-from rbot.handlers import callback, help, movie, search
+from rbot.handlers import callback, help, movie, search, serie
 from rbot.utils import post_init
 
 logging.basicConfig(
@@ -31,6 +31,9 @@ def main() -> int:
 
     movie_handler = CommandHandler("movie", movie)
     application.add_handler(movie_handler)
+
+    serie_handler = CommandHandler("serie", serie)
+    application.add_handler(serie_handler)
 
     callback_handler = CallbackQueryHandler(callback)
     application.add_handler(callback_handler)

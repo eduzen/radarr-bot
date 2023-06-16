@@ -7,7 +7,7 @@ from telegram.constants import ChatAction
 from telegram.ext import Application
 
 from rbot.conf import settings
-from rbot.storage.models import Movie
+from rbot.storage.models import Movie, Serie
 from rbot.storage.redis import read_one_movie_from_redis
 
 log = logging.getLogger(__name__)
@@ -20,6 +20,12 @@ async def send_typing_action(bot: Bot, chat_id: int) -> None:
 async def accepted_movie(data: dict[str, str]) -> str:
     movie_id = data["movie_id"]
     response = await radarr_api.add_movie_to_radarr(movie_id)
+    return response
+
+
+async def accepted_serie(data: dict[str, str]) -> str:
+    serie_id = data["serie_id"]
+    response = await radarr_api.add_serie_to_radarr(serie_id)
     return response
 
 
@@ -39,12 +45,16 @@ async def send_buttons(
     bot: Bot,
     chat_id: int,
     text: str,
-    movie_id: str,
     idx: int,
+    movie_id: str | None = None,
+    serie_id: str | None = None,
     buttons: list[list[InlineKeyboardButton]] | None = None,
 ) -> None:
     if not buttons:
-        callback_data_confirm = json.dumps({"movie_id": movie_id})
+        if movie_id:
+            callback_data_confirm = json.dumps({"movie_id": movie_id})
+        else:
+            callback_data_confirm = json.dumps({"serie_id": serie_id})
         callback_data_next = json.dumps({"idx": idx + 1})
         confirm_button = InlineKeyboardButton(
             "Confirm", callback_data=callback_data_confirm
@@ -85,6 +95,21 @@ async def send_movie(bot: Bot, chat_id: int, movie: Movie, idx: int = 0) -> None
         await send_message(bot, chat_id, str(movie))
 
     await send_buttons(bot, chat_id, "Is this the movie?", movie_id=movie.id, idx=idx)
+
+
+async def send_serie(bot: Bot, chat_id: int, serie: Serie, idx: int = 0) -> None:
+    try:
+        await send_photo(
+            bot,
+            chat_id,
+            serie.poster,
+            caption=str(serie),
+        )
+    except Exception:
+        log.exception("Error while sending photo")
+        await send_message(bot, chat_id, str(serie))
+
+    await send_buttons(bot, chat_id, "Is this the serie?", serie_id=serie.id, idx=idx)
 
 
 async def post_init(application: Application) -> None:
