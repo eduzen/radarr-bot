@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.themoviedb.org
+      user-agent:
+      - python-httpx/0.24.1
+    method: GET
+    uri: https://api.themoviedb.org/3/search/tv?include_adult=False&query=das12ad9ds3asdd0d8sda
+  response:
+    content: '{"page":1,"results":[],"total_pages":1,"total_results":0}'
+    headers:
+      Age:
+      - '166'
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Cache-Control:
+      - public, max-age=22731
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 17 Jun 2023 20:52:56 GMT
+      ETag:
+      - W/"0e23279b004381f72a34159d5c7dfd1f"
+      Server:
+      - openresty
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 3542cbb3a5773810405fca7ba271be44.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - I6XHifhLKO0bar2e3UTNPtNnXYI5KtuAXrCAymMhMKUnY22M8RMYGQ==
+      X-Amz-Cf-Pop:
+      - AMS54-C1
+      X-Cache:
+      - Hit from cloudfront
+      X-Memc:
+      - MISS, STORE
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '22731'
+      X-Memc-Key:
+      - 1f4ce8aa847141033be0bf1ba27c1720
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

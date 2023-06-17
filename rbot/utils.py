@@ -7,8 +7,8 @@ from telegram.constants import ChatAction
 from telegram.ext import Application
 
 from rbot.conf import settings
-from rbot.storage.models import Movie, Serie
-from rbot.storage.redis import read_one_movie_from_redis
+from rbot.storage.models import Movie, Series
+from rbot.storage.redis import read_one_result_from_redis
 
 log = logging.getLogger(__name__)
 
@@ -29,11 +29,11 @@ async def accepted_serie(data: dict[str, str]) -> str:
     return response
 
 
-async def show_next_movie(data: dict[str, str]) -> tuple[int, Movie] | None:
+async def show_next_result(data: dict[str, str]) -> tuple[int, Movie | Series] | None:
     idx = int(data["idx"])
-    movie = await read_one_movie_from_redis(idx)
-    if movie:
-        return idx + 1, movie
+    result = await read_one_result_from_redis(idx)
+    if result:
+        return idx + 1, result
     return None
 
 
@@ -97,19 +97,19 @@ async def send_movie(bot: Bot, chat_id: int, movie: Movie, idx: int = 0) -> None
     await send_buttons(bot, chat_id, "Is this the movie?", movie_id=movie.id, idx=idx)
 
 
-async def send_serie(bot: Bot, chat_id: int, serie: Serie, idx: int = 0) -> None:
+async def send_serie(bot: Bot, chat_id: int, series: Series, idx: int = 0) -> None:
     try:
         await send_photo(
             bot,
             chat_id,
-            serie.poster,
-            caption=str(serie),
+            series.poster,
+            caption=str(series),
         )
     except Exception:
         log.exception("Error while sending photo")
-        await send_message(bot, chat_id, str(serie))
+        await send_message(bot, chat_id, str(series))
 
-    await send_buttons(bot, chat_id, "Is this the serie?", serie_id=serie.id, idx=idx)
+    await send_buttons(bot, chat_id, "Is this the series?", serie_id=series.id, idx=idx)
 
 
 async def post_init(application: Application) -> None:
