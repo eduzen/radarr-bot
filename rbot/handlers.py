@@ -26,40 +26,38 @@ log = logging.getLogger(__name__)
 @restricted
 async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Parses the CallbackQuery and updates the message text."""
-    log.warning(
-        "### Callback query received from %s", update.callback_query.from_user.id
-    )
-    log.warning(locals())
+    user_id = update.callback_query.from_user.id  # type: ignore
+    log.warning("### Callback query received from %s", user_id)
     query = update.callback_query
     bot = context.bot
 
     # CallbackQueries need to be answered, even if no notification to the user is needed
-    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
+    # Some clients may have trouble otherwise.
+    # See https://core.telegram.org/bots/api#callbackquery
     try:
-        log.info("Callback query received, data: %s", query.data)
-        await query.answer()
-        chat_id = query.message.chat_id
-        dict_data = json.loads(query.data)
-        log.warning("### Callback query data: %s", dict_data)
+        await query.answer()  # type: ignore
+        chat_id = query.message.chat_id  # type: ignore
+        dict_data = json.loads(query.data)  # type: ignore
 
         if "movie_id" in dict_data.keys():
             log.warning("### Accepted Movie!")
             response = await accepted_movie(dict_data)
-            await query.edit_message_text(text=response)
+            await query.edit_message_text(text=response)  # type: ignore
         elif "serie_id" in dict_data.keys():
             log.warning("### Accepted Series!")
             response = await accepted_serie(dict_data)
-            await query.edit_message_text(text=response)
+            await query.edit_message_text(text=response)  # type: ignore
         else:
             log.warning("### Next result!")
             data = await show_next_result(dict_data)
             if not data:
-                await query.edit_message_text(text="No more movies to show")
+                msg = "No more movies to show"
+                await query.edit_message_text(text=msg)  # type: ignore
             else:
                 idx, movie = data
-                await query.edit_message_text(text="Loading...")
+                await query.edit_message_text(text="Loading...")  # type: ignore
 
-                await send_movie(bot, chat_id, movie, idx)
+                await send_movie(bot, chat_id, movie, idx)  # type: ignore
     except error.BadRequest as e:
         log.exception("Error while answering callback query")
         await send_message(bot, settings.TELEGRAM_EDUZEN_ID, str(e))
@@ -119,7 +117,9 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     try:
         movie = await tmdb_api.get_movie_detail(movie_id)
         await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-        await send_buttons(bot, chat_id, "Is this the movie?", callback_data=movie.id)
+        await send_buttons(
+            bot, chat_id, "Is this the movie?", callback_data=movie.id  # type: ignore
+        )
     except Exception:
         log.exception("Error while getting movie detail")
         await send_message(bot, chat_id, "Something went wrong")

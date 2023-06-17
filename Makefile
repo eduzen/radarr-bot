@@ -43,4 +43,4 @@ test:
 	python -m coverage json
 
 mypy:
-	mypy rbot
+	docker compose run --rm rbot mypy rbot

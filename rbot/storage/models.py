@@ -15,7 +15,7 @@ class Movie(BaseModel):
     backdrop_path: str | None
     poster_path: str | None
     vote_average: float | None
-    poster: str | None
+    poster: str | bytes
     year: int | str | None
     ratings: dict[str, dict[str, Any]] | None
 
@@ -94,7 +94,7 @@ class Series(BaseModel):
     backdrop_path: str | None
     poster_path: str | None
     vote_average: float | None
-    poster: str | None
+    poster: str
     ratings: dict[str, dict[str, Any]] | None
     vote_count: int | None
     year: int | str | None

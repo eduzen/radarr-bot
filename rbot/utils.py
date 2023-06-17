@@ -46,7 +46,7 @@ async def send_buttons(
     chat_id: int,
     text: str,
     idx: int,
-    movie_id: str | None = None,
+    movie_id: str | int | None = None,
     serie_id: str | None = None,
     buttons: list[list[InlineKeyboardButton]] | None = None,
 ) -> None:
@@ -109,7 +109,9 @@ async def send_serie(bot: Bot, chat_id: int, series: Series, idx: int = 0) -> No
         log.exception("Error while sending photo")
         await send_message(bot, chat_id, str(series))
 
-    await send_buttons(bot, chat_id, "Is this the series?", serie_id=series.id, idx=idx)
+    await send_buttons(
+        bot, chat_id, "Is this the series?", serie_id=series.id, idx=idx  # type: ignore
+    )
 
 
 async def post_init(application: Application) -> None:
