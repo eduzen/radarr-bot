@@ -6,7 +6,7 @@ import httpx
 from rbot.conf import settings
 from rbot.storage.models import (
     Movie,
-    Serie,
+    Series,
     process_movie_search_results,
     process_serie_search_results,
 )
@@ -90,8 +90,8 @@ async def add_serie_to_radarr(tmdb_id: str) -> str:
         serie_json = await serie_lookup(tmdb_id)
         serie_title = f"{serie_json['title'].strip()} ({serie_json['year']})"
     except Exception:
-        log.exception("Could not get serie from TMDB")
-        return "Serie has not been added!"
+        log.exception("Could not get series from TMDB")
+        return "Series has not been added!"
 
     try:
         payload = {
@@ -106,14 +106,14 @@ async def add_serie_to_radarr(tmdb_id: str) -> str:
         async with httpx.AsyncClient() as client:
             response = await client.post(url, json=payload, headers=headers)
             response.raise_for_status()
-            return "Serie has been added!"
+            return "Series has been added!"
     except Exception as e:
         log.exception(e)
 
-    return "Serie has not been added!"
+    return "Series has not been added!"
 
 
-async def get_series_from_radarr() -> list[Serie]:
+async def get_series_from_radarr() -> list[Series]:
     url = f"{settings.RADARR_BASE_URL}series"
     try:
         async with httpx.AsyncClient() as client:

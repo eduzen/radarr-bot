@@ -5,6 +5,7 @@ WORKDIR /code
 RUN echo 'alias ll="ls -l"' >> ~/.bashrc
 
 RUN apt-get update && \
+  apt-get install -y iputils-ping && \
   apt-get upgrade -y && \
   pip install --user --upgrade \
   pip \

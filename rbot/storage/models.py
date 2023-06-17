@@ -15,7 +15,7 @@ class Movie(BaseModel):
     backdrop_path: str | None
     poster_path: str | None
     vote_average: float | None
-    poster: str | None
+    poster: str | bytes
     year: int | str | None
     ratings: dict[str, dict[str, Any]] | None
 
@@ -86,7 +86,7 @@ class Movie(BaseModel):
         return f"https://www.themoviedb.org/movie/{self.id}"
 
 
-class Serie(BaseModel):
+class Series(BaseModel):
     id: int | None
     tmdbId: int | None
     name: str
@@ -94,7 +94,7 @@ class Serie(BaseModel):
     backdrop_path: str | None
     poster_path: str | None
     vote_average: float | None
-    poster: str | None
+    poster: str
     ratings: dict[str, dict[str, Any]] | None
     vote_count: int | None
     year: int | str | None
@@ -109,6 +109,10 @@ class Serie(BaseModel):
         return (
             f"{self.name} ({self.year})\nRating: {self.vote_count}\nLink: {self.link}"
         )
+
+    @property
+    def title(self) -> str:
+        return self.name
 
     @property
     def imdb_rating(self) -> float:
@@ -186,19 +190,20 @@ async def process_movie_search_results(
     return movies
 
 
-async def process_serie_search_result(result: dict[str, Any]) -> Serie:
-    serie = Serie(**result)
-    return serie
+async def process_serie_search_result(result: dict[str, Any]) -> Series:
+    log.info("### Processing series: %s", result)
+    series = Series(**result)
+    return series
 
 
 async def process_serie_search_results(
     search_results: list[dict[Any, Any]]
-) -> list[Serie]:
-    series = []
+) -> list[Series]:
+    list_of_series = []
     for result in search_results:
         try:
-            serie = await process_serie_search_result(result)
-            series.append(serie)
+            series = await process_serie_search_result(result)
+            list_of_series.append(series)
         except ValueError as e:
-            log.error("Not valid serie... skipping it: %s", e)
-    return series
+            log.error("Not valid series... skipping it: %s", e)
+    return list_of_series

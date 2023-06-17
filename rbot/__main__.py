@@ -4,11 +4,11 @@ from rich.logging import RichHandler
 from telegram.ext import ApplicationBuilder, CallbackQueryHandler, CommandHandler
 
 from rbot.conf import settings
-from rbot.handlers import callback, help, movie, search, serie
+from rbot.handlers import callback, help, movie, search, series
 from rbot.utils import post_init
 
 logging.basicConfig(
-    level="INFO",
+    level=settings.LOG_LEVEL,
     format=settings.LOG_FORMAT,
     datefmt=settings.DATE_FORMAT,
     handlers=[RichHandler()],
@@ -22,8 +22,8 @@ def main() -> int:
     application = (
         ApplicationBuilder().token(settings.TELEGRAM_TOKEN).post_init(post_init).build()
     )
-    help_handler = CommandHandler("help", help)
 
+    help_handler = CommandHandler("help", help)
     application.add_handler(help_handler)
 
     search_handler = CommandHandler("search", search)
@@ -32,7 +32,7 @@ def main() -> int:
     movie_handler = CommandHandler("movie", movie)
     application.add_handler(movie_handler)
 
-    serie_handler = CommandHandler("serie", serie)
+    serie_handler = CommandHandler("series", series)
     application.add_handler(serie_handler)
 
     callback_handler = CallbackQueryHandler(callback)

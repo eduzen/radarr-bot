@@ -17,7 +17,7 @@ from rbot.utils import (
     send_movie,
     send_photo,
     send_serie,
-    show_next_movie,
+    show_next_result,
 )
 
 log = logging.getLogger(__name__)
@@ -26,35 +26,38 @@ log = logging.getLogger(__name__)
 @restricted
 async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Parses the CallbackQuery and updates the message text."""
+    user_id = update.callback_query.from_user.id  # type: ignore
+    log.warning("### Callback query received from %s", user_id)
     query = update.callback_query
     bot = context.bot
 
     # CallbackQueries need to be answered, even if no notification to the user is needed
-    # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
+    # Some clients may have trouble otherwise.
+    # See https://core.telegram.org/bots/api#callbackquery
     try:
-        await query.answer()
-        chat_id = query.message.chat_id
-
-        await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
-
-        log.info("Callback query answered, data: %s", query.data)
-        dict_data = json.loads(query.data)
+        await query.answer()  # type: ignore
+        chat_id = query.message.chat_id  # type: ignore
+        dict_data = json.loads(query.data)  # type: ignore
 
         if "movie_id" in dict_data.keys():
+            log.warning("### Accepted Movie!")
             response = await accepted_movie(dict_data)
-            await query.edit_message_text(text=response)
+            await query.edit_message_text(text=response)  # type: ignore
         elif "serie_id" in dict_data.keys():
+            log.warning("### Accepted Series!")
             response = await accepted_serie(dict_data)
-            await query.edit_message_text(text=response)
+            await query.edit_message_text(text=response)  # type: ignore
         else:
-            data = await show_next_movie(dict_data)
+            log.warning("### Next result!")
+            data = await show_next_result(dict_data)
             if not data:
-                await query.edit_message_text(text="No more movies to show")
+                msg = "No more movies to show"
+                await query.edit_message_text(text=msg)  # type: ignore
             else:
                 idx, movie = data
-                await query.edit_message_text(text="Loading...")
+                await query.edit_message_text(text="Loading...")  # type: ignore
 
-                await send_movie(bot, chat_id, movie, idx)
+                await send_movie(bot, chat_id, movie, idx)  # type: ignore
     except error.BadRequest as e:
         log.exception("Error while answering callback query")
         await send_message(bot, settings.TELEGRAM_EDUZEN_ID, str(e))
@@ -62,6 +65,7 @@ async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 @restricted
 async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    log.info("# Entering search handler...")
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
 
@@ -70,11 +74,15 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     args: list[str] | None = context.args
     if not args:
-        await send_message(bot, chat_id, "missing query")
-        return
+        await send_message(
+            bot,
+            chat_id,
+            "Probably you missed the search word. Try again with /search <movie name>",
+        )
+        return None
 
     query = " ".join(args)
-    log.debug(query)
+    log.debug(f"# Search parameters {query}")
 
     try:
         data = await tmdb_api.search_movie(query)
@@ -87,7 +95,7 @@ async def search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await send_movie(bot, chat_id, movie)
 
     except Exception:
-        log.exception("Error while searching movie")
+        log.exception("# Error while searching movie")
         await send_message(bot, chat_id, "Something went wrong")
 
 
@@ -109,14 +117,17 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     try:
         movie = await tmdb_api.get_movie_detail(movie_id)
         await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-        await send_buttons(bot, chat_id, "Is this the movie?", callback_data=movie.id)
+        await send_buttons(
+            bot, chat_id, "Is this the movie?", callback_data=movie.id  # type: ignore
+        )
     except Exception:
         log.exception("Error while getting movie detail")
         await send_message(bot, chat_id, "Something went wrong")
 
 
 @restricted
-async def serie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+async def series(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    log.info("### Entering series handler...")
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
 
@@ -124,22 +135,25 @@ async def serie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     args: list[str] | None = context.args
     if not args:
-        error_msg = "Please write the name of the serie you want to search"
-        await send_message(bot, chat_id, error_msg)
-        return
+        await send_message(
+            bot,
+            chat_id,
+            "Probably you missed the search word. Try again with /series <series name>",
+        )
+        return None
 
     query_serie = " ".join(args)
-    log.debug(query_serie)
+    log.info(f"### Search parameters {query_serie}")
 
     try:
-        data = await tmdb_api.search_serie(query_serie)
+        data = await tmdb_api.search_series(query_serie)
         if not data:
-            await send_message(bot, chat_id, "No serie found")
+            await send_message(bot, chat_id, "No series found")
             return
 
-        serie = data[0]
+        series = data[0]
         await write_movies_to_redis(data)
-        await send_serie(bot, chat_id, serie)
+        await send_serie(bot, chat_id, series)
 
     except Exception:
         log.exception("Error while searching movie")
@@ -156,7 +170,7 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         "Hello, I'm RadarrBot. I have the following commands:\n"
         "- /search <name of the movie>: search for a movie in tmdb \n"
         "- /movie <id of the movie>: search a movie based on ids \n"
-        "- /serie <name of the serie>: search for a serie in tmdb \n"
+        "- /series <name of the series>: search for a series in tmdb \n"
     )
     await send_message(bot, chat_id, help_text)
     help_text = "So if you know the id of the movie, use /movie and id of the movie"
