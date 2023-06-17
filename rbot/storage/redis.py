@@ -5,12 +5,12 @@ import redis.asyncio as redis
 
 from rbot.conf import settings
 
-from .models import Movie, Serie
+from .models import Movie, Series
 
 log = logging.getLogger(__name__)
 
 
-async def write_movies_to_redis(object_list: list[Movie | Serie]) -> None:
+async def write_movies_to_redis(object_list: list[Movie | Series]) -> None:
     client = await redis.from_url(settings.REDIS_URL)
 
     async with client.pipeline(transaction=True) as pipe:
@@ -18,13 +18,19 @@ async def write_movies_to_redis(object_list: list[Movie | Serie]) -> None:
             await pipe.set(idx, obj.json()).execute()
 
 
-async def read_one_movie_from_redis(idx: int) -> Movie | None:
+async def read_one_result_from_redis(idx: int) -> Movie | Series | None:
     try:
         client = await redis.from_url(settings.REDIS_URL)
-        movie = await client.get(idx)
-        movie = json.loads(movie)
+        response = await client.get(idx)
+        result = json.loads(response)
         await client.delete(idx)
-        return Movie(**movie)
+        log.warning(f"Read from redis: {result}")
+
+        try:
+            return Movie(**result)
+        except Exception:
+            return Series(**result)
+
     except Exception:
         log.exception("Error while reading from redis")
     return None

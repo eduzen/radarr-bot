@@ -1,0 +1,738 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.themoviedb.org
+      user-agent:
+      - python-httpx/0.24.1
+    method: GET
+    uri: https://api.themoviedb.org/3/search/tv?include_adult=False&query=The+Idol
+  response:
+    content: "{\"page\":1,\"results\":[{\"adult\":false,\"backdrop_path\":\"/boyxwftKk9NvsXBjmzJWrRveeYO.jpg\",\"genre_ids\":[18],\"id\":135251,\"origin_country\":[\"US\"],\"original_language\":\"en\",\"original_name\":\"The
+      Idol\",\"overview\":\"After a nervous breakdown derailed Jocelyn's last tour,
+      she\u2019s determined to claim her rightful status as the greatest and sexiest
+      pop star in America. Her passions are reignited by Tedros, a nightclub impresario
+      with a sordid past. Will her romantic awakening take her to glorious new heights
+      or the deepest and darkest depths of her soul?\",\"popularity\":386.804,\"poster_path\":\"/gO9k7t9jSdkkWVG0deMZDpELZGw.jpg\",\"first_air_date\":\"2023-06-04\",\"name\":\"The
+      Idol\",\"vote_average\":6.727,\"vote_count\":44},{\"adult\":false,\"backdrop_path\":\"/8l7JROm6XBAKT4RMJCjyJ0SfLNY.jpg\",\"genre_ids\":[10765,18],\"id\":202625,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC131\uC2A4\uB7EC\uC6B4
+      \uC544\uC774\uB3CC\",\"overview\":\"Pontifex Lembrary fights against a devil,
+      he gets transferred to a different world possessing the body of Woo Yeon-woo
+      who is a member of an unpopular idol group called Wild Animal. In an entertainment
+      business where overwhelming social skills, trendiness, and talents are highly
+      necessary, it is hard for solemn, holy Lembrary to adapt. Due to his inappropriate
+      says and dos as a celebrity, Lembrary is talked about from the public and receives
+      attention that he did not expect. Using his goodness and love, Lembrary heals
+      this twisted and barren world people live in while going this way and that way
+      to settle himself as an idol.\",\"popularity\":15.623,\"poster_path\":\"/glbtrvaluqaybHnQ7GV3ckHWmpt.jpg\",\"first_air_date\":\"2023-02-15\",\"name\":\"The
+      Heavenly Idol\",\"vote_average\":7.778,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/6ZTZAjlx52gImwbTjP2WqTSMQN2.jpg\",\"genre_ids\":[16],\"id\":216391,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA U149\",\"overview\":\"These
+      small girls are ready to make it big! All 12 or younger and under 149 centimeters
+      tall (4'11\\\"), these aspiring pop idols dream of performing for thousands
+      of people. But with zero experience, they've got a lot of work to do! With the
+      help of their rookie producer, who's almost just as short, can they stay focused
+      and make it to the top?\",\"popularity\":50.691,\"poster_path\":\"/lAMjJGd1Ojwkw7MGj7fWLClzo7q.jpg\",\"first_air_date\":\"2023-04-06\",\"name\":\"THE
+      IDOLM@STER CINDERELLA GIRLS U149\",\"vote_average\":10.0,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/ofw482PXwueS0odWyk6NtIwWzRi.jpg\",\"genre_ids\":[16,35],\"id\":112667,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u2605\u30C1\u30E5\u30A6
+      HALFWAY THROUGH THE IDOL\",\"overview\":\"Youths aiming to become full-fledged
+      idols enroll in the \xC9toile Vio School where the students are called IChu.
+      But soon after they begin, Kuma Kocho gets them off to a rocky start with a
+      single phrase...?! As they each work toward their individual goals, their activities
+      as idols make the IChu begin to wonder... \\\"What is an idol?\\\" In their
+      struggle to find an answer, the springtime of the IChu's lives is whittled out
+      in glittering moments and flashes of brilliance. Their story begins now!\",\"popularity\":7.635,\"poster_path\":\"/qiHi7A3ffLA4wzzlV0cpUJd7qba.jpg\",\"first_air_date\":\"2021-01-06\",\"name\":\"I\u2605Chu:
+      Halfway Through the Idol\",\"vote_average\":4.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/oLlsjeiQ9c7IG8EPr74HrT97lAH.jpg\",\"genre_ids\":[16,18],\"id\":63463,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC\",\"overview\":\"THE
+      IDOLM@STER follows 13 girls from the 765 Production Studio, whose sole goals
+      is to become the top idols in the Japanese entertainment industry. Along with
+      the laughs, struggles and tears that are inherently part of this journey, you
+      will cheer for the girls of iDOLM@STER as they climb their way to the top!\",\"popularity\":16.667,\"poster_path\":\"/q8f6reeyLpnH7EJG870phf4uJBx.jpg\",\"first_air_date\":\"2011-07-08\",\"name\":\"THE
+      iDOLM@STER\",\"vote_average\":5.5,\"vote_count\":11},{\"adult\":false,\"backdrop_path\":\"/pHKgnlIFkJ9IgZSTIHe5Ur1nvOa.jpg\",\"genre_ids\":[18,35],\"id\":71760,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"The
+      iDOLM@STER.KR\",\"overview\":\"THE IDOLM@STER.KR, set in the world of Korean
+      entertainment production, stars Korean idols of course, as well as other Japanese
+      and Thai hopefuls. Like the original game, the drama follows a group of young
+      women as they embark on a career in the entertainment industry, and depicts
+      their sweat and tears, their hopes and dreams.\",\"popularity\":4.429,\"poster_path\":\"/z92d2CK4UZbjmDjYyH3lKpHpU43.jpg\",\"first_air_date\":\"2017-04-28\",\"name\":\"THE
+      iDOLM@STER.KR\",\"vote_average\":6.5,\"vote_count\":6},{\"adult\":false,\"backdrop_path\":\"/hFo8WcMktlZasmnM0tScJVhAjHn.jpg\",\"genre_ids\":[16,35,18],\"id\":63406,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA\",\"overview\":\"There
+      are many idols with long-established talent agency 346 Production. And now the
+      company is starting a new program, the Cinderella Project! Girls leading normal
+      lives are chosen to be aspiring idols and see another world for the first time
+      in this Cinderella story. Can they all climb the stairs that lead to the palace?\\n\\nThe
+      magic begins now...\",\"popularity\":13.256,\"poster_path\":\"/lkItXUa5V2z1WGTBqp2Er1zsNpc.jpg\",\"first_air_date\":\"2015-01-10\",\"name\":\"THE
+      iDOLM@STER Cinderella Girls\",\"vote_average\":5.0,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/3Nshiwum4WKdbc66vkNls2kYO7e.jpg\",\"genre_ids\":[18],\"id\":137215,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"IDOL
+      [\uC544\uC774\uB3CC : The Coup]\",\"overview\":\"Portrays the last story of
+      \u201Cdoomed idols\u201D who need a single \u201Csuccess\u201D in order to \u201Cdisband.\u201D
+      The story of young people who confidently let go of their dreams as they grow
+      through their failures and take courageous steps towards their new goals.\",\"popularity\":2.396,\"poster_path\":\"/r7wfG1EjFVl57xM9MgqcRxBzuYN.jpg\",\"first_air_date\":\"2021-11-08\",\"name\":\"IDOL:
+      The Coup\",\"vote_average\":9.2,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":\"/yI7ryGLFfbE1b5yerR6KKG7hO3q.jpg\",\"genre_ids\":[16,35],\"id\":139551,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u795E\u30AF\u30BA\u2606\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Yuya
+      is part of the idol duo ZINGS, but his laziness and disdain for fans puts him
+      in danger of getting blacklisted. That is, until he meets Asahi, the ghost of
+      a former idol who\u2019s eager to stage her own comeback by possessing Yuya's
+      willing body!\",\"popularity\":5.046,\"poster_path\":\"/IdfV3itweGwvm8se5ct65qKhie.jpg\",\"first_air_date\":\"2022-07-02\",\"name\":\"Phantom
+      of the Idol\",\"vote_average\":5.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/kos8QXOgFQS89j9cR7SoEJtCjhB.jpg\",\"genre_ids\":[16,35],\"id\":91024,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u63A8\u3057\u304C\u6B66\u9053\u9928\u3044\u3063\u3066\u304F\u308C\u305F\u3089\u6B7B\u306C\",\"overview\":\"Passionate
+      music-lover Eripiyo only wants to see her favorite underground pop group, ChamJam,
+      make it to the big stage at Budokan. Because they've enriched her life by their
+      very existence, Eri is willing to dedicate everything she has to see this dream
+      fulfilled\u2014even her health. At their last performance she got a crazy nosebleed.
+      Hey, no one said being a super-fan was easy!\",\"popularity\":6.041,\"poster_path\":\"/kZN99JbpWKvt5Zot6nVmCFeiBJF.jpg\",\"first_air_date\":\"2020-01-09\",\"name\":\"If
+      My Favorite Pop Idol Made It to the Budokan, I Would Die\",\"vote_average\":8.333,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/gdxCwzL3NR2aFWMR7zj0ddxt1jh.jpg\",\"genre_ids\":[18,10765,16,10759],\"id\":46599,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30AD\u30A3\u30FB\u30B6\u30FB\u30E1\u30BF\u30EB\u30FB\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Tokiko
+      Mima, nicknamed \\\"Key,\\\" is a 17-year-old girl living in the Japanese countryside
+      who, despite her human-like appearance, is a robot. When Key's grandfather Dr.
+      Murao Mima passes away, he leaves her a dying message, telling her that she
+      can become a real girl if she is able to make thirty thousand friends. Thus,
+      Key moves from the quiet Mamio Valley to the busy streets of Tokyo, where she
+      soon runs into her childhood friend Sakura Kuriyagawa.\\n\\nKey quickly becomes
+      enamored with idol singer Miho Utsuse and wonders if becoming a singer will
+      allow her to make the amount of friends needed for her to become human. But
+      Miho carries a ominous secret: she is connected to Jinsaku Ajou, an old rival
+      of Dr. Mima trying to make new a breakthrough in robotic weaponry. As Key works
+      to become a real girl, Ajou sets a dangerous plan into action, and it turns
+      out there's much more to Key than meets the eye.\",\"popularity\":5.054,\"poster_path\":\"/nrVPEKGCEzg4mRqGXdRclLUmL0m.jpg\",\"first_air_date\":\"1994-12-16\",\"name\":\"Key
+      the Metal Idol\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/tb0w5OFohHZAv3h5GkT8ajYnanp.jpg\",\"genre_ids\":[10767],\"id\":52823,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC8FC\uAC04
+      \uC544\uC774\uB3CC\",\"overview\":\"Weekly Idol is back with all new hosts.
+      Cho Sae Ho, Hwang Kwang Hee and Nam Chang Hee are sticking together as a new
+      unit group for Weekly Idol, a.k.a CKN Trio, to turn the idol world upside down!
+      Get ready for their hot debut! Cho Sae Ho transforms himself into an idol expert.
+      The hottest entertainer in the show business is marching into the idol world
+      after taking over variety shows and he's more than ready to dominate the show
+      with his amazing look and talents. They say idols understand each other best!
+      As soon as being discharged from military service, Hwang Kwang Hee is reenlisted
+      in Weekly Idol as a senior and a mentor to cheer his fellow idol friends. And
+      lastly, the hidden card of the trio, Nam Chang Hee joins Weekly Idol. With his
+      irresistible charms and talents, Nam Chang Hee becomes the irreplaceable member
+      of Weekly Idol and shows off his amazing chemistry with idols.\",\"popularity\":62.339,\"poster_path\":\"/uZP58JwdBzCwPBh9h3ZbGsVKMAQ.jpg\",\"first_air_date\":\"2011-07-23\",\"name\":\"Weekly
+      Idol\",\"vote_average\":6.6,\"vote_count\":7},{\"adult\":false,\"backdrop_path\":\"/wDmdiHhppZpoF2jZyqf7FokfnCL.jpg\",\"genre_ids\":[10764],\"id\":74742,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC
+      \uB9AC\uBD80\uD305 \uD504\uB85C\uC81D\uD2B8 \uB354 \uC720\uB2DB\",\"overview\":\"Idols
+      who failed to impress the audience after their debut are given another chance
+      to be back on stage in The Unit. Korean top producers will give them a chance
+      to shine in a brand new unit with new members, concepts and content.\",\"popularity\":1.825,\"poster_path\":\"/aC8zjX9CjItauN3xVmG4BcJ3Ul9.jpg\",\"first_air_date\":\"2017-10-28\",\"name\":\"The
+      Unit: Idol Rebooting Project\",\"vote_average\":9.0,\"vote_count\":1},{\"adult\":false,\"backdrop_path\":\"/iC3CHwQGLeOhrARWgS4Ke3REGQH.jpg\",\"genre_ids\":[16],\"id\":82985,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      SideM \u7406\u7531\u3042\u3063\u3066Mini!\",\"overview\":\"\",\"popularity\":1.59,\"poster_path\":\"/c8R4CVY4M5Tfd0iOT7cx4g40qa8.jpg\",\"first_air_date\":\"2018-10-09\",\"name\":\"THE
+      IDOLM@STER SideM Wakeatte Mini!\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/oQdTbWBqRbzTwEFdSiLFv7RKJsq.jpg\",\"genre_ids\":[10764],\"id\":13700,\"origin_country\":[\"IN\"],\"original_language\":\"hi\",\"original_name\":\"Indian
+      Idol\",\"overview\":\"The Indian version of the Pop Idol format.\",\"popularity\":21.375,\"poster_path\":\"/igtVLnrSyMwPYtuWGFRSk3wlPel.jpg\",\"first_air_date\":\"2004-10-28\",\"name\":\"Indian
+      Idol\",\"vote_average\":5.9,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/AkOr6zM4n7XH1qwdh6djR0bW5ye.jpg\",\"genre_ids\":[16],\"id\":74186,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      Side M\",\"overview\":\"315 Production \u2013 a newly set up small talent agency
+      \u2013 has assembled a group of aspiring male idols from various occupational
+      fields. They include a former lawyer, a former doctor, former pilot and so on\u2026
+      Even though everyone hails from different backgrounds, they share a common dream:
+      to be the top idol. And so, the stories of these male idols at 315 Production
+      take centre stage\u2026\",\"popularity\":4.43,\"poster_path\":\"/ss5xyuQWeND2RlAJpJ0BqUEKzef.jpg\",\"first_air_date\":\"2017-10-07\",\"name\":\"THE
+      iDOLM@STER Side M\",\"vote_average\":6.6,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":null,\"genre_ids\":[],\"id\":137480,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uB3CC\uB77C\uC6D0\uC815\uB300
+      : \uB81B\uCE20\uB354\uBCF4\uC774\uC988\",\"overview\":\"The first guest of \u201CIdollive
+      Expedition\u201D is \u201CTHE BOYZ\u201D! THE BOYZ visited Buyeo, where is one
+      of the city in the Republic of Korea with the remains of ancient nation \u201CBaekje\u201D.
+      In Buyeo, How would they find the hint for getting the treasure that IDOLLIVE
+      prepared for?\",\"popularity\":1.208,\"poster_path\":\"/mAHUB2bH6a5tivcY3ZtrhFYczbQ.jpg\",\"first_air_date\":\"2021-08-06\",\"name\":\"IDOLLIVE
+      Expedition: Let\u2019s THE BOYZ\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/wrLfD1Cphjgs6tPtCKFSAJsq5Z.jpg\",\"genre_ids\":[],\"id\":216342,\"origin_country\":[\"JP\",\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uB354
+      \uC544\uC774\uB3CC \uBC34\uB4DC\",\"overview\":\"A survival audition program
+      featuring fierce competition and friendship between various boy bands! The winners
+      will have the chance to debut in a joint Korean/Japanese idol band under FNC
+      Entertainment. Co-produced by Japan/South Korea and featuring established artists
+      from Japan and South Korea as team producers.\",\"popularity\":1.356,\"poster_path\":\"/x6PvIg97OyUcKxOpGmOHumm3RlL.jpg\",\"first_air_date\":\"2022-12-03\",\"name\":\"The
+      Idol Band: Boy's Battle\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/xg83zAm7p21tdKYRyjLJVJSfc2A.jpg\",\"genre_ids\":[35],\"id\":91535,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC,
+      \uC9C0\uAD6C\uB97C \uC9C0\uCF1C\uB77C\",\"overview\":\"Different from the others,
+      Sosa, Eco \\u0026 Bion were born with supernatural powers. Using individual
+      powers, they were told to protect the world. Now, not using their \\\"powers\\\",
+      but through \\\"songs\\\" they will save the world.\",\"popularity\":0.6,\"poster_path\":null,\"first_air_date\":\"2015-11-16\",\"name\":\"Idol,
+      Protect the World\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/599NlZCBY0xET73HH18DcyGZtoX.jpg\",\"genre_ids\":[16],\"id\":105902,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30DF\u30EA\u30AA\u30F3\u30E9\u30A4\u30D6\uFF01\",\"overview\":\"\",\"popularity\":1.126,\"poster_path\":\"/7tAB6EUlWQhzVXRdUK4KNvglHj6.jpg\",\"first_air_date\":\"\",\"name\":\"The
+      iDOLM@STER Million Live!\",\"vote_average\":0.0,\"vote_count\":0}],\"total_pages\":5,\"total_results\":93}"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Cache-Control:
+      - public, max-age=24046
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 17 Jun 2023 20:40:26 GMT
+      ETag:
+      - W/"047ff17a218b222395b89b614182ea90"
+      Server:
+      - openresty
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 b222596b4b3100894e93b364e4a94890.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IwlUj1qTTIzmj_GGCx422JS89dQrgc4Mo-YF1G0ws7FiIdmEsgSoJQ==
+      X-Amz-Cf-Pop:
+      - HAM50-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '23432'
+      X-Memc-Expires:
+      - '4949'
+      X-Memc-Key:
+      - 2ae2b06393e8fdb7f57ee695e4000c67
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.themoviedb.org
+      user-agent:
+      - python-httpx/0.24.1
+    method: GET
+    uri: https://api.themoviedb.org/3/search/tv?include_adult=False&query=The+Idol
+  response:
+    content: "{\"page\":1,\"results\":[{\"adult\":false,\"backdrop_path\":\"/boyxwftKk9NvsXBjmzJWrRveeYO.jpg\",\"genre_ids\":[18],\"id\":135251,\"origin_country\":[\"US\"],\"original_language\":\"en\",\"original_name\":\"The
+      Idol\",\"overview\":\"After a nervous breakdown derailed Jocelyn's last tour,
+      she\u2019s determined to claim her rightful status as the greatest and sexiest
+      pop star in America. Her passions are reignited by Tedros, a nightclub impresario
+      with a sordid past. Will her romantic awakening take her to glorious new heights
+      or the deepest and darkest depths of her soul?\",\"popularity\":386.804,\"poster_path\":\"/gO9k7t9jSdkkWVG0deMZDpELZGw.jpg\",\"first_air_date\":\"2023-06-04\",\"name\":\"The
+      Idol\",\"vote_average\":6.727,\"vote_count\":44},{\"adult\":false,\"backdrop_path\":\"/8l7JROm6XBAKT4RMJCjyJ0SfLNY.jpg\",\"genre_ids\":[10765,18],\"id\":202625,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC131\uC2A4\uB7EC\uC6B4
+      \uC544\uC774\uB3CC\",\"overview\":\"Pontifex Lembrary fights against a devil,
+      he gets transferred to a different world possessing the body of Woo Yeon-woo
+      who is a member of an unpopular idol group called Wild Animal. In an entertainment
+      business where overwhelming social skills, trendiness, and talents are highly
+      necessary, it is hard for solemn, holy Lembrary to adapt. Due to his inappropriate
+      says and dos as a celebrity, Lembrary is talked about from the public and receives
+      attention that he did not expect. Using his goodness and love, Lembrary heals
+      this twisted and barren world people live in while going this way and that way
+      to settle himself as an idol.\",\"popularity\":15.623,\"poster_path\":\"/glbtrvaluqaybHnQ7GV3ckHWmpt.jpg\",\"first_air_date\":\"2023-02-15\",\"name\":\"The
+      Heavenly Idol\",\"vote_average\":7.778,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/6ZTZAjlx52gImwbTjP2WqTSMQN2.jpg\",\"genre_ids\":[16],\"id\":216391,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA U149\",\"overview\":\"These
+      small girls are ready to make it big! All 12 or younger and under 149 centimeters
+      tall (4'11\\\"), these aspiring pop idols dream of performing for thousands
+      of people. But with zero experience, they've got a lot of work to do! With the
+      help of their rookie producer, who's almost just as short, can they stay focused
+      and make it to the top?\",\"popularity\":50.691,\"poster_path\":\"/lAMjJGd1Ojwkw7MGj7fWLClzo7q.jpg\",\"first_air_date\":\"2023-04-06\",\"name\":\"THE
+      IDOLM@STER CINDERELLA GIRLS U149\",\"vote_average\":10.0,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/ofw482PXwueS0odWyk6NtIwWzRi.jpg\",\"genre_ids\":[16,35],\"id\":112667,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u2605\u30C1\u30E5\u30A6
+      HALFWAY THROUGH THE IDOL\",\"overview\":\"Youths aiming to become full-fledged
+      idols enroll in the \xC9toile Vio School where the students are called IChu.
+      But soon after they begin, Kuma Kocho gets them off to a rocky start with a
+      single phrase...?! As they each work toward their individual goals, their activities
+      as idols make the IChu begin to wonder... \\\"What is an idol?\\\" In their
+      struggle to find an answer, the springtime of the IChu's lives is whittled out
+      in glittering moments and flashes of brilliance. Their story begins now!\",\"popularity\":7.635,\"poster_path\":\"/qiHi7A3ffLA4wzzlV0cpUJd7qba.jpg\",\"first_air_date\":\"2021-01-06\",\"name\":\"I\u2605Chu:
+      Halfway Through the Idol\",\"vote_average\":4.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/oLlsjeiQ9c7IG8EPr74HrT97lAH.jpg\",\"genre_ids\":[16,18],\"id\":63463,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC\",\"overview\":\"THE
+      IDOLM@STER follows 13 girls from the 765 Production Studio, whose sole goals
+      is to become the top idols in the Japanese entertainment industry. Along with
+      the laughs, struggles and tears that are inherently part of this journey, you
+      will cheer for the girls of iDOLM@STER as they climb their way to the top!\",\"popularity\":16.667,\"poster_path\":\"/q8f6reeyLpnH7EJG870phf4uJBx.jpg\",\"first_air_date\":\"2011-07-08\",\"name\":\"THE
+      iDOLM@STER\",\"vote_average\":5.5,\"vote_count\":11},{\"adult\":false,\"backdrop_path\":\"/pHKgnlIFkJ9IgZSTIHe5Ur1nvOa.jpg\",\"genre_ids\":[18,35],\"id\":71760,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"The
+      iDOLM@STER.KR\",\"overview\":\"THE IDOLM@STER.KR, set in the world of Korean
+      entertainment production, stars Korean idols of course, as well as other Japanese
+      and Thai hopefuls. Like the original game, the drama follows a group of young
+      women as they embark on a career in the entertainment industry, and depicts
+      their sweat and tears, their hopes and dreams.\",\"popularity\":4.429,\"poster_path\":\"/z92d2CK4UZbjmDjYyH3lKpHpU43.jpg\",\"first_air_date\":\"2017-04-28\",\"name\":\"THE
+      iDOLM@STER.KR\",\"vote_average\":6.5,\"vote_count\":6},{\"adult\":false,\"backdrop_path\":\"/hFo8WcMktlZasmnM0tScJVhAjHn.jpg\",\"genre_ids\":[16,35,18],\"id\":63406,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA\",\"overview\":\"There
+      are many idols with long-established talent agency 346 Production. And now the
+      company is starting a new program, the Cinderella Project! Girls leading normal
+      lives are chosen to be aspiring idols and see another world for the first time
+      in this Cinderella story. Can they all climb the stairs that lead to the palace?\\n\\nThe
+      magic begins now...\",\"popularity\":13.256,\"poster_path\":\"/lkItXUa5V2z1WGTBqp2Er1zsNpc.jpg\",\"first_air_date\":\"2015-01-10\",\"name\":\"THE
+      iDOLM@STER Cinderella Girls\",\"vote_average\":5.0,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/3Nshiwum4WKdbc66vkNls2kYO7e.jpg\",\"genre_ids\":[18],\"id\":137215,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"IDOL
+      [\uC544\uC774\uB3CC : The Coup]\",\"overview\":\"Portrays the last story of
+      \u201Cdoomed idols\u201D who need a single \u201Csuccess\u201D in order to \u201Cdisband.\u201D
+      The story of young people who confidently let go of their dreams as they grow
+      through their failures and take courageous steps towards their new goals.\",\"popularity\":2.396,\"poster_path\":\"/r7wfG1EjFVl57xM9MgqcRxBzuYN.jpg\",\"first_air_date\":\"2021-11-08\",\"name\":\"IDOL:
+      The Coup\",\"vote_average\":9.2,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":\"/yI7ryGLFfbE1b5yerR6KKG7hO3q.jpg\",\"genre_ids\":[16,35],\"id\":139551,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u795E\u30AF\u30BA\u2606\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Yuya
+      is part of the idol duo ZINGS, but his laziness and disdain for fans puts him
+      in danger of getting blacklisted. That is, until he meets Asahi, the ghost of
+      a former idol who\u2019s eager to stage her own comeback by possessing Yuya's
+      willing body!\",\"popularity\":5.046,\"poster_path\":\"/IdfV3itweGwvm8se5ct65qKhie.jpg\",\"first_air_date\":\"2022-07-02\",\"name\":\"Phantom
+      of the Idol\",\"vote_average\":5.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/kos8QXOgFQS89j9cR7SoEJtCjhB.jpg\",\"genre_ids\":[16,35],\"id\":91024,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u63A8\u3057\u304C\u6B66\u9053\u9928\u3044\u3063\u3066\u304F\u308C\u305F\u3089\u6B7B\u306C\",\"overview\":\"Passionate
+      music-lover Eripiyo only wants to see her favorite underground pop group, ChamJam,
+      make it to the big stage at Budokan. Because they've enriched her life by their
+      very existence, Eri is willing to dedicate everything she has to see this dream
+      fulfilled\u2014even her health. At their last performance she got a crazy nosebleed.
+      Hey, no one said being a super-fan was easy!\",\"popularity\":6.041,\"poster_path\":\"/kZN99JbpWKvt5Zot6nVmCFeiBJF.jpg\",\"first_air_date\":\"2020-01-09\",\"name\":\"If
+      My Favorite Pop Idol Made It to the Budokan, I Would Die\",\"vote_average\":8.333,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/gdxCwzL3NR2aFWMR7zj0ddxt1jh.jpg\",\"genre_ids\":[18,10765,16,10759],\"id\":46599,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30AD\u30A3\u30FB\u30B6\u30FB\u30E1\u30BF\u30EB\u30FB\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Tokiko
+      Mima, nicknamed \\\"Key,\\\" is a 17-year-old girl living in the Japanese countryside
+      who, despite her human-like appearance, is a robot. When Key's grandfather Dr.
+      Murao Mima passes away, he leaves her a dying message, telling her that she
+      can become a real girl if she is able to make thirty thousand friends. Thus,
+      Key moves from the quiet Mamio Valley to the busy streets of Tokyo, where she
+      soon runs into her childhood friend Sakura Kuriyagawa.\\n\\nKey quickly becomes
+      enamored with idol singer Miho Utsuse and wonders if becoming a singer will
+      allow her to make the amount of friends needed for her to become human. But
+      Miho carries a ominous secret: she is connected to Jinsaku Ajou, an old rival
+      of Dr. Mima trying to make new a breakthrough in robotic weaponry. As Key works
+      to become a real girl, Ajou sets a dangerous plan into action, and it turns
+      out there's much more to Key than meets the eye.\",\"popularity\":5.054,\"poster_path\":\"/nrVPEKGCEzg4mRqGXdRclLUmL0m.jpg\",\"first_air_date\":\"1994-12-16\",\"name\":\"Key
+      the Metal Idol\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/tb0w5OFohHZAv3h5GkT8ajYnanp.jpg\",\"genre_ids\":[10767],\"id\":52823,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC8FC\uAC04
+      \uC544\uC774\uB3CC\",\"overview\":\"Weekly Idol is back with all new hosts.
+      Cho Sae Ho, Hwang Kwang Hee and Nam Chang Hee are sticking together as a new
+      unit group for Weekly Idol, a.k.a CKN Trio, to turn the idol world upside down!
+      Get ready for their hot debut! Cho Sae Ho transforms himself into an idol expert.
+      The hottest entertainer in the show business is marching into the idol world
+      after taking over variety shows and he's more than ready to dominate the show
+      with his amazing look and talents. They say idols understand each other best!
+      As soon as being discharged from military service, Hwang Kwang Hee is reenlisted
+      in Weekly Idol as a senior and a mentor to cheer his fellow idol friends. And
+      lastly, the hidden card of the trio, Nam Chang Hee joins Weekly Idol. With his
+      irresistible charms and talents, Nam Chang Hee becomes the irreplaceable member
+      of Weekly Idol and shows off his amazing chemistry with idols.\",\"popularity\":62.339,\"poster_path\":\"/uZP58JwdBzCwPBh9h3ZbGsVKMAQ.jpg\",\"first_air_date\":\"2011-07-23\",\"name\":\"Weekly
+      Idol\",\"vote_average\":6.6,\"vote_count\":7},{\"adult\":false,\"backdrop_path\":\"/wDmdiHhppZpoF2jZyqf7FokfnCL.jpg\",\"genre_ids\":[10764],\"id\":74742,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC
+      \uB9AC\uBD80\uD305 \uD504\uB85C\uC81D\uD2B8 \uB354 \uC720\uB2DB\",\"overview\":\"Idols
+      who failed to impress the audience after their debut are given another chance
+      to be back on stage in The Unit. Korean top producers will give them a chance
+      to shine in a brand new unit with new members, concepts and content.\",\"popularity\":1.825,\"poster_path\":\"/aC8zjX9CjItauN3xVmG4BcJ3Ul9.jpg\",\"first_air_date\":\"2017-10-28\",\"name\":\"The
+      Unit: Idol Rebooting Project\",\"vote_average\":9.0,\"vote_count\":1},{\"adult\":false,\"backdrop_path\":\"/iC3CHwQGLeOhrARWgS4Ke3REGQH.jpg\",\"genre_ids\":[16],\"id\":82985,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      SideM \u7406\u7531\u3042\u3063\u3066Mini!\",\"overview\":\"\",\"popularity\":1.59,\"poster_path\":\"/c8R4CVY4M5Tfd0iOT7cx4g40qa8.jpg\",\"first_air_date\":\"2018-10-09\",\"name\":\"THE
+      IDOLM@STER SideM Wakeatte Mini!\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/oQdTbWBqRbzTwEFdSiLFv7RKJsq.jpg\",\"genre_ids\":[10764],\"id\":13700,\"origin_country\":[\"IN\"],\"original_language\":\"hi\",\"original_name\":\"Indian
+      Idol\",\"overview\":\"The Indian version of the Pop Idol format.\",\"popularity\":21.375,\"poster_path\":\"/igtVLnrSyMwPYtuWGFRSk3wlPel.jpg\",\"first_air_date\":\"2004-10-28\",\"name\":\"Indian
+      Idol\",\"vote_average\":5.9,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/AkOr6zM4n7XH1qwdh6djR0bW5ye.jpg\",\"genre_ids\":[16],\"id\":74186,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      Side M\",\"overview\":\"315 Production \u2013 a newly set up small talent agency
+      \u2013 has assembled a group of aspiring male idols from various occupational
+      fields. They include a former lawyer, a former doctor, former pilot and so on\u2026
+      Even though everyone hails from different backgrounds, they share a common dream:
+      to be the top idol. And so, the stories of these male idols at 315 Production
+      take centre stage\u2026\",\"popularity\":4.43,\"poster_path\":\"/ss5xyuQWeND2RlAJpJ0BqUEKzef.jpg\",\"first_air_date\":\"2017-10-07\",\"name\":\"THE
+      iDOLM@STER Side M\",\"vote_average\":6.6,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":null,\"genre_ids\":[],\"id\":137480,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uB3CC\uB77C\uC6D0\uC815\uB300
+      : \uB81B\uCE20\uB354\uBCF4\uC774\uC988\",\"overview\":\"The first guest of \u201CIdollive
+      Expedition\u201D is \u201CTHE BOYZ\u201D! THE BOYZ visited Buyeo, where is one
+      of the city in the Republic of Korea with the remains of ancient nation \u201CBaekje\u201D.
+      In Buyeo, How would they find the hint for getting the treasure that IDOLLIVE
+      prepared for?\",\"popularity\":1.208,\"poster_path\":\"/mAHUB2bH6a5tivcY3ZtrhFYczbQ.jpg\",\"first_air_date\":\"2021-08-06\",\"name\":\"IDOLLIVE
+      Expedition: Let\u2019s THE BOYZ\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/wrLfD1Cphjgs6tPtCKFSAJsq5Z.jpg\",\"genre_ids\":[],\"id\":216342,\"origin_country\":[\"JP\",\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uB354
+      \uC544\uC774\uB3CC \uBC34\uB4DC\",\"overview\":\"A survival audition program
+      featuring fierce competition and friendship between various boy bands! The winners
+      will have the chance to debut in a joint Korean/Japanese idol band under FNC
+      Entertainment. Co-produced by Japan/South Korea and featuring established artists
+      from Japan and South Korea as team producers.\",\"popularity\":1.356,\"poster_path\":\"/x6PvIg97OyUcKxOpGmOHumm3RlL.jpg\",\"first_air_date\":\"2022-12-03\",\"name\":\"The
+      Idol Band: Boy's Battle\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/xg83zAm7p21tdKYRyjLJVJSfc2A.jpg\",\"genre_ids\":[35],\"id\":91535,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC,
+      \uC9C0\uAD6C\uB97C \uC9C0\uCF1C\uB77C\",\"overview\":\"Different from the others,
+      Sosa, Eco \\u0026 Bion were born with supernatural powers. Using individual
+      powers, they were told to protect the world. Now, not using their \\\"powers\\\",
+      but through \\\"songs\\\" they will save the world.\",\"popularity\":0.6,\"poster_path\":null,\"first_air_date\":\"2015-11-16\",\"name\":\"Idol,
+      Protect the World\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/599NlZCBY0xET73HH18DcyGZtoX.jpg\",\"genre_ids\":[16],\"id\":105902,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30DF\u30EA\u30AA\u30F3\u30E9\u30A4\u30D6\uFF01\",\"overview\":\"\",\"popularity\":1.126,\"poster_path\":\"/7tAB6EUlWQhzVXRdUK4KNvglHj6.jpg\",\"first_air_date\":\"\",\"name\":\"The
+      iDOLM@STER Million Live!\",\"vote_average\":0.0,\"vote_count\":0}],\"total_pages\":5,\"total_results\":93}"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Cache-Control:
+      - public, max-age=24046
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 17 Jun 2023 20:42:05 GMT
+      ETag:
+      - W/"047ff17a218b222395b89b614182ea90"
+      Server:
+      - openresty
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 cf04af0068b2a5085b05bea6fffb0856.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - DChHHA1cWoNdiHIMOg_3mU-efpA38kiUgxSjcqBGA-ZLZD0fdhQBMw==
+      X-Amz-Cf-Pop:
+      - CDG50-C1
+      X-Cache:
+      - Miss from cloudfront
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '23432'
+      X-Memc-Expires:
+      - '4949'
+      X-Memc-Key:
+      - 2ae2b06393e8fdb7f57ee695e4000c67
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.themoviedb.org
+      user-agent:
+      - python-httpx/0.24.1
+    method: GET
+    uri: https://api.themoviedb.org/3/search/tv?include_adult=False&query=The+Idol
+  response:
+    content: "{\"page\":1,\"results\":[{\"adult\":false,\"backdrop_path\":\"/boyxwftKk9NvsXBjmzJWrRveeYO.jpg\",\"genre_ids\":[18],\"id\":135251,\"origin_country\":[\"US\"],\"original_language\":\"en\",\"original_name\":\"The
+      Idol\",\"overview\":\"After a nervous breakdown derailed Jocelyn's last tour,
+      she\u2019s determined to claim her rightful status as the greatest and sexiest
+      pop star in America. Her passions are reignited by Tedros, a nightclub impresario
+      with a sordid past. Will her romantic awakening take her to glorious new heights
+      or the deepest and darkest depths of her soul?\",\"popularity\":386.804,\"poster_path\":\"/gO9k7t9jSdkkWVG0deMZDpELZGw.jpg\",\"first_air_date\":\"2023-06-04\",\"name\":\"The
+      Idol\",\"vote_average\":6.727,\"vote_count\":44},{\"adult\":false,\"backdrop_path\":\"/8l7JROm6XBAKT4RMJCjyJ0SfLNY.jpg\",\"genre_ids\":[10765,18],\"id\":202625,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC131\uC2A4\uB7EC\uC6B4
+      \uC544\uC774\uB3CC\",\"overview\":\"Pontifex Lembrary fights against a devil,
+      he gets transferred to a different world possessing the body of Woo Yeon-woo
+      who is a member of an unpopular idol group called Wild Animal. In an entertainment
+      business where overwhelming social skills, trendiness, and talents are highly
+      necessary, it is hard for solemn, holy Lembrary to adapt. Due to his inappropriate
+      says and dos as a celebrity, Lembrary is talked about from the public and receives
+      attention that he did not expect. Using his goodness and love, Lembrary heals
+      this twisted and barren world people live in while going this way and that way
+      to settle himself as an idol.\",\"popularity\":15.623,\"poster_path\":\"/glbtrvaluqaybHnQ7GV3ckHWmpt.jpg\",\"first_air_date\":\"2023-02-15\",\"name\":\"The
+      Heavenly Idol\",\"vote_average\":7.778,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/6ZTZAjlx52gImwbTjP2WqTSMQN2.jpg\",\"genre_ids\":[16],\"id\":216391,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA U149\",\"overview\":\"These
+      small girls are ready to make it big! All 12 or younger and under 149 centimeters
+      tall (4'11\\\"), these aspiring pop idols dream of performing for thousands
+      of people. But with zero experience, they've got a lot of work to do! With the
+      help of their rookie producer, who's almost just as short, can they stay focused
+      and make it to the top?\",\"popularity\":50.691,\"poster_path\":\"/lAMjJGd1Ojwkw7MGj7fWLClzo7q.jpg\",\"first_air_date\":\"2023-04-06\",\"name\":\"THE
+      IDOLM@STER CINDERELLA GIRLS U149\",\"vote_average\":10.0,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/ofw482PXwueS0odWyk6NtIwWzRi.jpg\",\"genre_ids\":[16,35],\"id\":112667,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u2605\u30C1\u30E5\u30A6
+      HALFWAY THROUGH THE IDOL\",\"overview\":\"Youths aiming to become full-fledged
+      idols enroll in the \xC9toile Vio School where the students are called IChu.
+      But soon after they begin, Kuma Kocho gets them off to a rocky start with a
+      single phrase...?! As they each work toward their individual goals, their activities
+      as idols make the IChu begin to wonder... \\\"What is an idol?\\\" In their
+      struggle to find an answer, the springtime of the IChu's lives is whittled out
+      in glittering moments and flashes of brilliance. Their story begins now!\",\"popularity\":7.635,\"poster_path\":\"/qiHi7A3ffLA4wzzlV0cpUJd7qba.jpg\",\"first_air_date\":\"2021-01-06\",\"name\":\"I\u2605Chu:
+      Halfway Through the Idol\",\"vote_average\":4.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/oLlsjeiQ9c7IG8EPr74HrT97lAH.jpg\",\"genre_ids\":[16,18],\"id\":63463,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC\",\"overview\":\"THE
+      IDOLM@STER follows 13 girls from the 765 Production Studio, whose sole goals
+      is to become the top idols in the Japanese entertainment industry. Along with
+      the laughs, struggles and tears that are inherently part of this journey, you
+      will cheer for the girls of iDOLM@STER as they climb their way to the top!\",\"popularity\":16.667,\"poster_path\":\"/q8f6reeyLpnH7EJG870phf4uJBx.jpg\",\"first_air_date\":\"2011-07-08\",\"name\":\"THE
+      iDOLM@STER\",\"vote_average\":5.5,\"vote_count\":11},{\"adult\":false,\"backdrop_path\":\"/pHKgnlIFkJ9IgZSTIHe5Ur1nvOa.jpg\",\"genre_ids\":[18,35],\"id\":71760,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"The
+      iDOLM@STER.KR\",\"overview\":\"THE IDOLM@STER.KR, set in the world of Korean
+      entertainment production, stars Korean idols of course, as well as other Japanese
+      and Thai hopefuls. Like the original game, the drama follows a group of young
+      women as they embark on a career in the entertainment industry, and depicts
+      their sweat and tears, their hopes and dreams.\",\"popularity\":4.429,\"poster_path\":\"/z92d2CK4UZbjmDjYyH3lKpHpU43.jpg\",\"first_air_date\":\"2017-04-28\",\"name\":\"THE
+      iDOLM@STER.KR\",\"vote_average\":6.5,\"vote_count\":6},{\"adult\":false,\"backdrop_path\":\"/hFo8WcMktlZasmnM0tScJVhAjHn.jpg\",\"genre_ids\":[16,35,18],\"id\":63406,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA\",\"overview\":\"There
+      are many idols with long-established talent agency 346 Production. And now the
+      company is starting a new program, the Cinderella Project! Girls leading normal
+      lives are chosen to be aspiring idols and see another world for the first time
+      in this Cinderella story. Can they all climb the stairs that lead to the palace?\\n\\nThe
+      magic begins now...\",\"popularity\":13.256,\"poster_path\":\"/lkItXUa5V2z1WGTBqp2Er1zsNpc.jpg\",\"first_air_date\":\"2015-01-10\",\"name\":\"THE
+      iDOLM@STER Cinderella Girls\",\"vote_average\":5.0,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/3Nshiwum4WKdbc66vkNls2kYO7e.jpg\",\"genre_ids\":[18],\"id\":137215,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"IDOL
+      [\uC544\uC774\uB3CC : The Coup]\",\"overview\":\"Portrays the last story of
+      \u201Cdoomed idols\u201D who need a single \u201Csuccess\u201D in order to \u201Cdisband.\u201D
+      The story of young people who confidently let go of their dreams as they grow
+      through their failures and take courageous steps towards their new goals.\",\"popularity\":2.396,\"poster_path\":\"/r7wfG1EjFVl57xM9MgqcRxBzuYN.jpg\",\"first_air_date\":\"2021-11-08\",\"name\":\"IDOL:
+      The Coup\",\"vote_average\":9.2,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":\"/yI7ryGLFfbE1b5yerR6KKG7hO3q.jpg\",\"genre_ids\":[16,35],\"id\":139551,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u795E\u30AF\u30BA\u2606\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Yuya
+      is part of the idol duo ZINGS, but his laziness and disdain for fans puts him
+      in danger of getting blacklisted. That is, until he meets Asahi, the ghost of
+      a former idol who\u2019s eager to stage her own comeback by possessing Yuya's
+      willing body!\",\"popularity\":5.046,\"poster_path\":\"/IdfV3itweGwvm8se5ct65qKhie.jpg\",\"first_air_date\":\"2022-07-02\",\"name\":\"Phantom
+      of the Idol\",\"vote_average\":5.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/kos8QXOgFQS89j9cR7SoEJtCjhB.jpg\",\"genre_ids\":[16,35],\"id\":91024,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u63A8\u3057\u304C\u6B66\u9053\u9928\u3044\u3063\u3066\u304F\u308C\u305F\u3089\u6B7B\u306C\",\"overview\":\"Passionate
+      music-lover Eripiyo only wants to see her favorite underground pop group, ChamJam,
+      make it to the big stage at Budokan. Because they've enriched her life by their
+      very existence, Eri is willing to dedicate everything she has to see this dream
+      fulfilled\u2014even her health. At their last performance she got a crazy nosebleed.
+      Hey, no one said being a super-fan was easy!\",\"popularity\":6.041,\"poster_path\":\"/kZN99JbpWKvt5Zot6nVmCFeiBJF.jpg\",\"first_air_date\":\"2020-01-09\",\"name\":\"If
+      My Favorite Pop Idol Made It to the Budokan, I Would Die\",\"vote_average\":8.333,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/gdxCwzL3NR2aFWMR7zj0ddxt1jh.jpg\",\"genre_ids\":[18,10765,16,10759],\"id\":46599,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30AD\u30A3\u30FB\u30B6\u30FB\u30E1\u30BF\u30EB\u30FB\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Tokiko
+      Mima, nicknamed \\\"Key,\\\" is a 17-year-old girl living in the Japanese countryside
+      who, despite her human-like appearance, is a robot. When Key's grandfather Dr.
+      Murao Mima passes away, he leaves her a dying message, telling her that she
+      can become a real girl if she is able to make thirty thousand friends. Thus,
+      Key moves from the quiet Mamio Valley to the busy streets of Tokyo, where she
+      soon runs into her childhood friend Sakura Kuriyagawa.\\n\\nKey quickly becomes
+      enamored with idol singer Miho Utsuse and wonders if becoming a singer will
+      allow her to make the amount of friends needed for her to become human. But
+      Miho carries a ominous secret: she is connected to Jinsaku Ajou, an old rival
+      of Dr. Mima trying to make new a breakthrough in robotic weaponry. As Key works
+      to become a real girl, Ajou sets a dangerous plan into action, and it turns
+      out there's much more to Key than meets the eye.\",\"popularity\":5.054,\"poster_path\":\"/nrVPEKGCEzg4mRqGXdRclLUmL0m.jpg\",\"first_air_date\":\"1994-12-16\",\"name\":\"Key
+      the Metal Idol\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/tb0w5OFohHZAv3h5GkT8ajYnanp.jpg\",\"genre_ids\":[10767],\"id\":52823,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC8FC\uAC04
+      \uC544\uC774\uB3CC\",\"overview\":\"Weekly Idol is back with all new hosts.
+      Cho Sae Ho, Hwang Kwang Hee and Nam Chang Hee are sticking together as a new
+      unit group for Weekly Idol, a.k.a CKN Trio, to turn the idol world upside down!
+      Get ready for their hot debut! Cho Sae Ho transforms himself into an idol expert.
+      The hottest entertainer in the show business is marching into the idol world
+      after taking over variety shows and he's more than ready to dominate the show
+      with his amazing look and talents. They say idols understand each other best!
+      As soon as being discharged from military service, Hwang Kwang Hee is reenlisted
+      in Weekly Idol as a senior and a mentor to cheer his fellow idol friends. And
+      lastly, the hidden card of the trio, Nam Chang Hee joins Weekly Idol. With his
+      irresistible charms and talents, Nam Chang Hee becomes the irreplaceable member
+      of Weekly Idol and shows off his amazing chemistry with idols.\",\"popularity\":62.339,\"poster_path\":\"/uZP58JwdBzCwPBh9h3ZbGsVKMAQ.jpg\",\"first_air_date\":\"2011-07-23\",\"name\":\"Weekly
+      Idol\",\"vote_average\":6.6,\"vote_count\":7},{\"adult\":false,\"backdrop_path\":\"/wDmdiHhppZpoF2jZyqf7FokfnCL.jpg\",\"genre_ids\":[10764],\"id\":74742,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC
+      \uB9AC\uBD80\uD305 \uD504\uB85C\uC81D\uD2B8 \uB354 \uC720\uB2DB\",\"overview\":\"Idols
+      who failed to impress the audience after their debut are given another chance
+      to be back on stage in The Unit. Korean top producers will give them a chance
+      to shine in a brand new unit with new members, concepts and content.\",\"popularity\":1.825,\"poster_path\":\"/aC8zjX9CjItauN3xVmG4BcJ3Ul9.jpg\",\"first_air_date\":\"2017-10-28\",\"name\":\"The
+      Unit: Idol Rebooting Project\",\"vote_average\":9.0,\"vote_count\":1},{\"adult\":false,\"backdrop_path\":\"/iC3CHwQGLeOhrARWgS4Ke3REGQH.jpg\",\"genre_ids\":[16],\"id\":82985,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      SideM \u7406\u7531\u3042\u3063\u3066Mini!\",\"overview\":\"\",\"popularity\":1.59,\"poster_path\":\"/c8R4CVY4M5Tfd0iOT7cx4g40qa8.jpg\",\"first_air_date\":\"2018-10-09\",\"name\":\"THE
+      IDOLM@STER SideM Wakeatte Mini!\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/oQdTbWBqRbzTwEFdSiLFv7RKJsq.jpg\",\"genre_ids\":[10764],\"id\":13700,\"origin_country\":[\"IN\"],\"original_language\":\"hi\",\"original_name\":\"Indian
+      Idol\",\"overview\":\"The Indian version of the Pop Idol format.\",\"popularity\":21.375,\"poster_path\":\"/igtVLnrSyMwPYtuWGFRSk3wlPel.jpg\",\"first_air_date\":\"2004-10-28\",\"name\":\"Indian
+      Idol\",\"vote_average\":5.9,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/AkOr6zM4n7XH1qwdh6djR0bW5ye.jpg\",\"genre_ids\":[16],\"id\":74186,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      Side M\",\"overview\":\"315 Production \u2013 a newly set up small talent agency
+      \u2013 has assembled a group of aspiring male idols from various occupational
+      fields. They include a former lawyer, a former doctor, former pilot and so on\u2026
+      Even though everyone hails from different backgrounds, they share a common dream:
+      to be the top idol. And so, the stories of these male idols at 315 Production
+      take centre stage\u2026\",\"popularity\":4.43,\"poster_path\":\"/ss5xyuQWeND2RlAJpJ0BqUEKzef.jpg\",\"first_air_date\":\"2017-10-07\",\"name\":\"THE
+      iDOLM@STER Side M\",\"vote_average\":6.6,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":null,\"genre_ids\":[],\"id\":137480,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uB3CC\uB77C\uC6D0\uC815\uB300
+      : \uB81B\uCE20\uB354\uBCF4\uC774\uC988\",\"overview\":\"The first guest of \u201CIdollive
+      Expedition\u201D is \u201CTHE BOYZ\u201D! THE BOYZ visited Buyeo, where is one
+      of the city in the Republic of Korea with the remains of ancient nation \u201CBaekje\u201D.
+      In Buyeo, How would they find the hint for getting the treasure that IDOLLIVE
+      prepared for?\",\"popularity\":1.208,\"poster_path\":\"/mAHUB2bH6a5tivcY3ZtrhFYczbQ.jpg\",\"first_air_date\":\"2021-08-06\",\"name\":\"IDOLLIVE
+      Expedition: Let\u2019s THE BOYZ\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/wrLfD1Cphjgs6tPtCKFSAJsq5Z.jpg\",\"genre_ids\":[],\"id\":216342,\"origin_country\":[\"JP\",\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uB354
+      \uC544\uC774\uB3CC \uBC34\uB4DC\",\"overview\":\"A survival audition program
+      featuring fierce competition and friendship between various boy bands! The winners
+      will have the chance to debut in a joint Korean/Japanese idol band under FNC
+      Entertainment. Co-produced by Japan/South Korea and featuring established artists
+      from Japan and South Korea as team producers.\",\"popularity\":1.356,\"poster_path\":\"/x6PvIg97OyUcKxOpGmOHumm3RlL.jpg\",\"first_air_date\":\"2022-12-03\",\"name\":\"The
+      Idol Band: Boy's Battle\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/xg83zAm7p21tdKYRyjLJVJSfc2A.jpg\",\"genre_ids\":[35],\"id\":91535,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC,
+      \uC9C0\uAD6C\uB97C \uC9C0\uCF1C\uB77C\",\"overview\":\"Different from the others,
+      Sosa, Eco \\u0026 Bion were born with supernatural powers. Using individual
+      powers, they were told to protect the world. Now, not using their \\\"powers\\\",
+      but through \\\"songs\\\" they will save the world.\",\"popularity\":0.6,\"poster_path\":null,\"first_air_date\":\"2015-11-16\",\"name\":\"Idol,
+      Protect the World\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/599NlZCBY0xET73HH18DcyGZtoX.jpg\",\"genre_ids\":[16],\"id\":105902,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30DF\u30EA\u30AA\u30F3\u30E9\u30A4\u30D6\uFF01\",\"overview\":\"\",\"popularity\":1.126,\"poster_path\":\"/7tAB6EUlWQhzVXRdUK4KNvglHj6.jpg\",\"first_air_date\":\"\",\"name\":\"The
+      iDOLM@STER Million Live!\",\"vote_average\":0.0,\"vote_count\":0}],\"total_pages\":5,\"total_results\":93}"
+    headers:
+      Age:
+      - '194'
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Cache-Control:
+      - public, max-age=24046
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 17 Jun 2023 20:40:26 GMT
+      ETag:
+      - W/"047ff17a218b222395b89b614182ea90"
+      Server:
+      - openresty
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 6fc439c8bc0a64a7ab978ce699795274.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - UMbg7W83f8Oc4YELit9dthX8n8v3MYJTt56xB4bj96PPbmgwzzfV3g==
+      X-Amz-Cf-Pop:
+      - FRA60-P3
+      X-Cache:
+      - Hit from cloudfront
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '23432'
+      X-Memc-Expires:
+      - '4949'
+      X-Memc-Key:
+      - 2ae2b06393e8fdb7f57ee695e4000c67
+    http_version: HTTP/1.1
+    status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.themoviedb.org
+      user-agent:
+      - python-httpx/0.24.1
+    method: GET
+    uri: https://api.themoviedb.org/3/search/tv?include_adult=False&query=The+Idol
+  response:
+    content: "{\"page\":1,\"results\":[{\"adult\":false,\"backdrop_path\":\"/boyxwftKk9NvsXBjmzJWrRveeYO.jpg\",\"genre_ids\":[18],\"id\":135251,\"origin_country\":[\"US\"],\"original_language\":\"en\",\"original_name\":\"The
+      Idol\",\"overview\":\"After a nervous breakdown derailed Jocelyn's last tour,
+      she\u2019s determined to claim her rightful status as the greatest and sexiest
+      pop star in America. Her passions are reignited by Tedros, a nightclub impresario
+      with a sordid past. Will her romantic awakening take her to glorious new heights
+      or the deepest and darkest depths of her soul?\",\"popularity\":386.804,\"poster_path\":\"/gO9k7t9jSdkkWVG0deMZDpELZGw.jpg\",\"first_air_date\":\"2023-06-04\",\"name\":\"The
+      Idol\",\"vote_average\":6.727,\"vote_count\":44},{\"adult\":false,\"backdrop_path\":\"/8l7JROm6XBAKT4RMJCjyJ0SfLNY.jpg\",\"genre_ids\":[10765,18],\"id\":202625,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC131\uC2A4\uB7EC\uC6B4
+      \uC544\uC774\uB3CC\",\"overview\":\"Pontifex Lembrary fights against a devil,
+      he gets transferred to a different world possessing the body of Woo Yeon-woo
+      who is a member of an unpopular idol group called Wild Animal. In an entertainment
+      business where overwhelming social skills, trendiness, and talents are highly
+      necessary, it is hard for solemn, holy Lembrary to adapt. Due to his inappropriate
+      says and dos as a celebrity, Lembrary is talked about from the public and receives
+      attention that he did not expect. Using his goodness and love, Lembrary heals
+      this twisted and barren world people live in while going this way and that way
+      to settle himself as an idol.\",\"popularity\":15.623,\"poster_path\":\"/glbtrvaluqaybHnQ7GV3ckHWmpt.jpg\",\"first_air_date\":\"2023-02-15\",\"name\":\"The
+      Heavenly Idol\",\"vote_average\":7.778,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/6ZTZAjlx52gImwbTjP2WqTSMQN2.jpg\",\"genre_ids\":[16],\"id\":216391,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA U149\",\"overview\":\"These
+      small girls are ready to make it big! All 12 or younger and under 149 centimeters
+      tall (4'11\\\"), these aspiring pop idols dream of performing for thousands
+      of people. But with zero experience, they've got a lot of work to do! With the
+      help of their rookie producer, who's almost just as short, can they stay focused
+      and make it to the top?\",\"popularity\":50.691,\"poster_path\":\"/lAMjJGd1Ojwkw7MGj7fWLClzo7q.jpg\",\"first_air_date\":\"2023-04-06\",\"name\":\"THE
+      IDOLM@STER CINDERELLA GIRLS U149\",\"vote_average\":10.0,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/ofw482PXwueS0odWyk6NtIwWzRi.jpg\",\"genre_ids\":[16,35],\"id\":112667,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u2605\u30C1\u30E5\u30A6
+      HALFWAY THROUGH THE IDOL\",\"overview\":\"Youths aiming to become full-fledged
+      idols enroll in the \xC9toile Vio School where the students are called IChu.
+      But soon after they begin, Kuma Kocho gets them off to a rocky start with a
+      single phrase...?! As they each work toward their individual goals, their activities
+      as idols make the IChu begin to wonder... \\\"What is an idol?\\\" In their
+      struggle to find an answer, the springtime of the IChu's lives is whittled out
+      in glittering moments and flashes of brilliance. Their story begins now!\",\"popularity\":7.635,\"poster_path\":\"/qiHi7A3ffLA4wzzlV0cpUJd7qba.jpg\",\"first_air_date\":\"2021-01-06\",\"name\":\"I\u2605Chu:
+      Halfway Through the Idol\",\"vote_average\":4.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/oLlsjeiQ9c7IG8EPr74HrT97lAH.jpg\",\"genre_ids\":[16,18],\"id\":63463,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC\",\"overview\":\"THE
+      IDOLM@STER follows 13 girls from the 765 Production Studio, whose sole goals
+      is to become the top idols in the Japanese entertainment industry. Along with
+      the laughs, struggles and tears that are inherently part of this journey, you
+      will cheer for the girls of iDOLM@STER as they climb their way to the top!\",\"popularity\":16.667,\"poster_path\":\"/q8f6reeyLpnH7EJG870phf4uJBx.jpg\",\"first_air_date\":\"2011-07-08\",\"name\":\"THE
+      iDOLM@STER\",\"vote_average\":5.5,\"vote_count\":11},{\"adult\":false,\"backdrop_path\":\"/pHKgnlIFkJ9IgZSTIHe5Ur1nvOa.jpg\",\"genre_ids\":[18,35],\"id\":71760,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"The
+      iDOLM@STER.KR\",\"overview\":\"THE IDOLM@STER.KR, set in the world of Korean
+      entertainment production, stars Korean idols of course, as well as other Japanese
+      and Thai hopefuls. Like the original game, the drama follows a group of young
+      women as they embark on a career in the entertainment industry, and depicts
+      their sweat and tears, their hopes and dreams.\",\"popularity\":4.429,\"poster_path\":\"/z92d2CK4UZbjmDjYyH3lKpHpU43.jpg\",\"first_air_date\":\"2017-04-28\",\"name\":\"THE
+      iDOLM@STER.KR\",\"vote_average\":6.5,\"vote_count\":6},{\"adult\":false,\"backdrop_path\":\"/hFo8WcMktlZasmnM0tScJVhAjHn.jpg\",\"genre_ids\":[16,35,18],\"id\":63406,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30B7\u30F3\u30C7\u30EC\u30E9\u30AC\u30FC\u30EB\u30BA\",\"overview\":\"There
+      are many idols with long-established talent agency 346 Production. And now the
+      company is starting a new program, the Cinderella Project! Girls leading normal
+      lives are chosen to be aspiring idols and see another world for the first time
+      in this Cinderella story. Can they all climb the stairs that lead to the palace?\\n\\nThe
+      magic begins now...\",\"popularity\":13.256,\"poster_path\":\"/lkItXUa5V2z1WGTBqp2Er1zsNpc.jpg\",\"first_air_date\":\"2015-01-10\",\"name\":\"THE
+      iDOLM@STER Cinderella Girls\",\"vote_average\":5.0,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/3Nshiwum4WKdbc66vkNls2kYO7e.jpg\",\"genre_ids\":[18],\"id\":137215,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"IDOL
+      [\uC544\uC774\uB3CC : The Coup]\",\"overview\":\"Portrays the last story of
+      \u201Cdoomed idols\u201D who need a single \u201Csuccess\u201D in order to \u201Cdisband.\u201D
+      The story of young people who confidently let go of their dreams as they grow
+      through their failures and take courageous steps towards their new goals.\",\"popularity\":2.396,\"poster_path\":\"/r7wfG1EjFVl57xM9MgqcRxBzuYN.jpg\",\"first_air_date\":\"2021-11-08\",\"name\":\"IDOL:
+      The Coup\",\"vote_average\":9.2,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":\"/yI7ryGLFfbE1b5yerR6KKG7hO3q.jpg\",\"genre_ids\":[16,35],\"id\":139551,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u795E\u30AF\u30BA\u2606\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Yuya
+      is part of the idol duo ZINGS, but his laziness and disdain for fans puts him
+      in danger of getting blacklisted. That is, until he meets Asahi, the ghost of
+      a former idol who\u2019s eager to stage her own comeback by possessing Yuya's
+      willing body!\",\"popularity\":5.046,\"poster_path\":\"/IdfV3itweGwvm8se5ct65qKhie.jpg\",\"first_air_date\":\"2022-07-02\",\"name\":\"Phantom
+      of the Idol\",\"vote_average\":5.5,\"vote_count\":2},{\"adult\":false,\"backdrop_path\":\"/kos8QXOgFQS89j9cR7SoEJtCjhB.jpg\",\"genre_ids\":[16,35],\"id\":91024,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u63A8\u3057\u304C\u6B66\u9053\u9928\u3044\u3063\u3066\u304F\u308C\u305F\u3089\u6B7B\u306C\",\"overview\":\"Passionate
+      music-lover Eripiyo only wants to see her favorite underground pop group, ChamJam,
+      make it to the big stage at Budokan. Because they've enriched her life by their
+      very existence, Eri is willing to dedicate everything she has to see this dream
+      fulfilled\u2014even her health. At their last performance she got a crazy nosebleed.
+      Hey, no one said being a super-fan was easy!\",\"popularity\":6.041,\"poster_path\":\"/kZN99JbpWKvt5Zot6nVmCFeiBJF.jpg\",\"first_air_date\":\"2020-01-09\",\"name\":\"If
+      My Favorite Pop Idol Made It to the Budokan, I Would Die\",\"vote_average\":8.333,\"vote_count\":9},{\"adult\":false,\"backdrop_path\":\"/gdxCwzL3NR2aFWMR7zj0ddxt1jh.jpg\",\"genre_ids\":[18,10765,16,10759],\"id\":46599,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30AD\u30A3\u30FB\u30B6\u30FB\u30E1\u30BF\u30EB\u30FB\u30A2\u30A4\u30C9\u30EB\",\"overview\":\"Tokiko
+      Mima, nicknamed \\\"Key,\\\" is a 17-year-old girl living in the Japanese countryside
+      who, despite her human-like appearance, is a robot. When Key's grandfather Dr.
+      Murao Mima passes away, he leaves her a dying message, telling her that she
+      can become a real girl if she is able to make thirty thousand friends. Thus,
+      Key moves from the quiet Mamio Valley to the busy streets of Tokyo, where she
+      soon runs into her childhood friend Sakura Kuriyagawa.\\n\\nKey quickly becomes
+      enamored with idol singer Miho Utsuse and wonders if becoming a singer will
+      allow her to make the amount of friends needed for her to become human. But
+      Miho carries a ominous secret: she is connected to Jinsaku Ajou, an old rival
+      of Dr. Mima trying to make new a breakthrough in robotic weaponry. As Key works
+      to become a real girl, Ajou sets a dangerous plan into action, and it turns
+      out there's much more to Key than meets the eye.\",\"popularity\":5.054,\"poster_path\":\"/nrVPEKGCEzg4mRqGXdRclLUmL0m.jpg\",\"first_air_date\":\"1994-12-16\",\"name\":\"Key
+      the Metal Idol\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/tb0w5OFohHZAv3h5GkT8ajYnanp.jpg\",\"genre_ids\":[10767],\"id\":52823,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC8FC\uAC04
+      \uC544\uC774\uB3CC\",\"overview\":\"Weekly Idol is back with all new hosts.
+      Cho Sae Ho, Hwang Kwang Hee and Nam Chang Hee are sticking together as a new
+      unit group for Weekly Idol, a.k.a CKN Trio, to turn the idol world upside down!
+      Get ready for their hot debut! Cho Sae Ho transforms himself into an idol expert.
+      The hottest entertainer in the show business is marching into the idol world
+      after taking over variety shows and he's more than ready to dominate the show
+      with his amazing look and talents. They say idols understand each other best!
+      As soon as being discharged from military service, Hwang Kwang Hee is reenlisted
+      in Weekly Idol as a senior and a mentor to cheer his fellow idol friends. And
+      lastly, the hidden card of the trio, Nam Chang Hee joins Weekly Idol. With his
+      irresistible charms and talents, Nam Chang Hee becomes the irreplaceable member
+      of Weekly Idol and shows off his amazing chemistry with idols.\",\"popularity\":62.339,\"poster_path\":\"/uZP58JwdBzCwPBh9h3ZbGsVKMAQ.jpg\",\"first_air_date\":\"2011-07-23\",\"name\":\"Weekly
+      Idol\",\"vote_average\":6.6,\"vote_count\":7},{\"adult\":false,\"backdrop_path\":\"/wDmdiHhppZpoF2jZyqf7FokfnCL.jpg\",\"genre_ids\":[10764],\"id\":74742,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC
+      \uB9AC\uBD80\uD305 \uD504\uB85C\uC81D\uD2B8 \uB354 \uC720\uB2DB\",\"overview\":\"Idols
+      who failed to impress the audience after their debut are given another chance
+      to be back on stage in The Unit. Korean top producers will give them a chance
+      to shine in a brand new unit with new members, concepts and content.\",\"popularity\":1.825,\"poster_path\":\"/aC8zjX9CjItauN3xVmG4BcJ3Ul9.jpg\",\"first_air_date\":\"2017-10-28\",\"name\":\"The
+      Unit: Idol Rebooting Project\",\"vote_average\":9.0,\"vote_count\":1},{\"adult\":false,\"backdrop_path\":\"/iC3CHwQGLeOhrARWgS4Ke3REGQH.jpg\",\"genre_ids\":[16],\"id\":82985,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      SideM \u7406\u7531\u3042\u3063\u3066Mini!\",\"overview\":\"\",\"popularity\":1.59,\"poster_path\":\"/c8R4CVY4M5Tfd0iOT7cx4g40qa8.jpg\",\"first_air_date\":\"2018-10-09\",\"name\":\"THE
+      IDOLM@STER SideM Wakeatte Mini!\",\"vote_average\":6.3,\"vote_count\":3},{\"adult\":false,\"backdrop_path\":\"/oQdTbWBqRbzTwEFdSiLFv7RKJsq.jpg\",\"genre_ids\":[10764],\"id\":13700,\"origin_country\":[\"IN\"],\"original_language\":\"hi\",\"original_name\":\"Indian
+      Idol\",\"overview\":\"The Indian version of the Pop Idol format.\",\"popularity\":21.375,\"poster_path\":\"/igtVLnrSyMwPYtuWGFRSk3wlPel.jpg\",\"first_air_date\":\"2004-10-28\",\"name\":\"Indian
+      Idol\",\"vote_average\":5.9,\"vote_count\":10},{\"adult\":false,\"backdrop_path\":\"/AkOr6zM4n7XH1qwdh6djR0bW5ye.jpg\",\"genre_ids\":[16],\"id\":74186,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      Side M\",\"overview\":\"315 Production \u2013 a newly set up small talent agency
+      \u2013 has assembled a group of aspiring male idols from various occupational
+      fields. They include a former lawyer, a former doctor, former pilot and so on\u2026
+      Even though everyone hails from different backgrounds, they share a common dream:
+      to be the top idol. And so, the stories of these male idols at 315 Production
+      take centre stage\u2026\",\"popularity\":4.43,\"poster_path\":\"/ss5xyuQWeND2RlAJpJ0BqUEKzef.jpg\",\"first_air_date\":\"2017-10-07\",\"name\":\"THE
+      iDOLM@STER Side M\",\"vote_average\":6.6,\"vote_count\":5},{\"adult\":false,\"backdrop_path\":null,\"genre_ids\":[],\"id\":137480,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uB3CC\uB77C\uC6D0\uC815\uB300
+      : \uB81B\uCE20\uB354\uBCF4\uC774\uC988\",\"overview\":\"The first guest of \u201CIdollive
+      Expedition\u201D is \u201CTHE BOYZ\u201D! THE BOYZ visited Buyeo, where is one
+      of the city in the Republic of Korea with the remains of ancient nation \u201CBaekje\u201D.
+      In Buyeo, How would they find the hint for getting the treasure that IDOLLIVE
+      prepared for?\",\"popularity\":1.208,\"poster_path\":\"/mAHUB2bH6a5tivcY3ZtrhFYczbQ.jpg\",\"first_air_date\":\"2021-08-06\",\"name\":\"IDOLLIVE
+      Expedition: Let\u2019s THE BOYZ\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/wrLfD1Cphjgs6tPtCKFSAJsq5Z.jpg\",\"genre_ids\":[],\"id\":216342,\"origin_country\":[\"JP\",\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uB354
+      \uC544\uC774\uB3CC \uBC34\uB4DC\",\"overview\":\"A survival audition program
+      featuring fierce competition and friendship between various boy bands! The winners
+      will have the chance to debut in a joint Korean/Japanese idol band under FNC
+      Entertainment. Co-produced by Japan/South Korea and featuring established artists
+      from Japan and South Korea as team producers.\",\"popularity\":1.356,\"poster_path\":\"/x6PvIg97OyUcKxOpGmOHumm3RlL.jpg\",\"first_air_date\":\"2022-12-03\",\"name\":\"The
+      Idol Band: Boy's Battle\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/xg83zAm7p21tdKYRyjLJVJSfc2A.jpg\",\"genre_ids\":[35],\"id\":91535,\"origin_country\":[\"KR\"],\"original_language\":\"ko\",\"original_name\":\"\uC544\uC774\uB3CC,
+      \uC9C0\uAD6C\uB97C \uC9C0\uCF1C\uB77C\",\"overview\":\"Different from the others,
+      Sosa, Eco \\u0026 Bion were born with supernatural powers. Using individual
+      powers, they were told to protect the world. Now, not using their \\\"powers\\\",
+      but through \\\"songs\\\" they will save the world.\",\"popularity\":0.6,\"poster_path\":null,\"first_air_date\":\"2015-11-16\",\"name\":\"Idol,
+      Protect the World\",\"vote_average\":0.0,\"vote_count\":0},{\"adult\":false,\"backdrop_path\":\"/599NlZCBY0xET73HH18DcyGZtoX.jpg\",\"genre_ids\":[16],\"id\":105902,\"origin_country\":[\"JP\"],\"original_language\":\"ja\",\"original_name\":\"\u30A2\u30A4\u30C9\u30EB\u30DE\u30B9\u30BF\u30FC
+      \u30DF\u30EA\u30AA\u30F3\u30E9\u30A4\u30D6\uFF01\",\"overview\":\"\",\"popularity\":1.126,\"poster_path\":\"/7tAB6EUlWQhzVXRdUK4KNvglHj6.jpg\",\"first_air_date\":\"\",\"name\":\"The
+      iDOLM@STER Million Live!\",\"vote_average\":0.0,\"vote_count\":0}],\"total_pages\":5,\"total_results\":93}"
+    headers:
+      Age:
+      - '663'
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Cache-Control:
+      - public, max-age=24046
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 17 Jun 2023 20:40:26 GMT
+      ETag:
+      - W/"047ff17a218b222395b89b614182ea90"
+      Server:
+      - openresty
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 0f34c0d3b0e50b8875bcbb7d41684a58.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - yE7wbKIAkRmH12RHXmBq9p9vpfGeS6g-jQOqNCT43gjjRYDpdJB4zw==
+      X-Amz-Cf-Pop:
+      - AMS54-C1
+      X-Cache:
+      - Hit from cloudfront
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '23432'
+      X-Memc-Expires:
+      - '4949'
+      X-Memc-Key:
+      - 2ae2b06393e8fdb7f57ee695e4000c67
+    http_version: HTTP/1.1
+    status_code: 200
+version: 1

@@ -7,6 +7,9 @@ compile: compile-prod compile-dev
 
 upgrade: upgrade-prod upgrade-dev
 
+dockershell:
+	docker compose run --rm rbot bash
+
 compile-dev:
 	$(PIP_COMPILE) --extra=dev pyproject.toml --output-file requirements-dev.txt
 

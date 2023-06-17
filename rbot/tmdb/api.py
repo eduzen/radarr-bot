@@ -6,7 +6,7 @@ from decouple import config
 
 from rbot.storage.models import (
     Movie,
-    Serie,
+    Series,
     process_movie_search_result,
     process_movie_search_results,
     process_serie_search_results,
@@ -35,7 +35,8 @@ async def search_movie(query: str) -> list[Movie]:
     return movies
 
 
-async def search_serie(query: str) -> list[Serie]:
+async def search_series(query: str) -> list[Series]:
+    log.info(f"### Searching for series: {query}")
     query_params_dict = {
         "query": query,
         "api_key": TMDB_API_KEY,
