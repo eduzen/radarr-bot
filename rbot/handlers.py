@@ -12,10 +12,8 @@ from rbot.conf import settings
 from rbot.utils import (
     accepted_movie,
     accepted_series,
-    send_buttons,
     send_message,
     send_movie,
-    send_photo,
     send_series,
     show_next_movie,
 )
