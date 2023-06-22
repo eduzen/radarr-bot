@@ -15,57 +15,38 @@ interactions:
       user-agent:
       - python-httpx/0.24.1
     method: GET
-    uri: http://radarr.huis/api/v3/movie/lookup/tmdb?tmdbId=715931
+    uri: http://radarr.huis/movie/lookup/tmdb?tmdbId=715931
   response:
-    content: "{\n  \"title\": \"Emancipation\",\n  \"originalTitle\": \"Emancipation\",\n
-      \ \"originalLanguage\": {\n    \"id\": 1,\n    \"name\": \"English\"\n  },\n
-      \ \"alternateTitles\": [\n    {\n      \"sourceType\": \"tmdb\",\n      \"movieMetadataId\":
-      0,\n      \"title\": \"Hacia la libertad\",\n      \"sourceId\": 0,\n      \"votes\":
-      0,\n      \"voteCount\": 0,\n      \"language\": {\n        \"id\": 3,\n        \"name\":
-      \"Spanish\"\n      }\n    },\n    {\n      \"sourceType\": \"tmdb\",\n      \"movieMetadataId\":
-      0,\n      \"title\": \"Emancipa\xE7\xE3o: Uma Hist\xF3ria de Liberdade\",\n
-      \     \"sourceId\": 0,\n      \"votes\": 0,\n      \"voteCount\": 0,\n      \"language\":
-      {\n        \"id\": 1,\n        \"name\": \"English\"\n      }\n    },\n    {\n
-      \     \"sourceType\": \"tmdb\",\n      \"movieMetadataId\": 0,\n      \"title\":
-      \"\u0631\u0647\u0627\u06CC\u06CC\",\n      \"sourceId\": 0,\n      \"votes\":
-      0,\n      \"voteCount\": 0,\n      \"language\": {\n        \"id\": 33,\n        \"name\":
-      \"Persian\"\n      }\n    },\n    {\n      \"sourceType\": \"tmdb\",\n      \"movieMetadataId\":
-      0,\n      \"title\": \"\uD574\uBC29\",\n      \"sourceId\": 0,\n      \"votes\":
-      0,\n      \"voteCount\": 0,\n      \"language\": {\n        \"id\": 21,\n        \"name\":
-      \"Korean\"\n      }\n    },\n    {\n      \"sourceType\": \"tmdb\",\n      \"movieMetadataId\":
-      0,\n      \"title\": \"\u041E\u0441\u0432\u043E\u0431\u043E\u0436\u0434\u0435\u043D\u0438\u0435\",\n
-      \     \"sourceId\": 0,\n      \"votes\": 0,\n      \"voteCount\": 0,\n      \"language\":
-      {\n        \"id\": 11,\n        \"name\": \"Russian\"\n      }\n    }\n  ],\n
-      \ \"secondaryYearSourceId\": 0,\n  \"sortTitle\": \"emancipation\",\n  \"sizeOnDisk\":
-      0,\n  \"status\": \"released\",\n  \"overview\": \"Inspired by the gripping
-      true story of a man who would do anything for his family\u2014and for freedom.
-      When Peter, an enslaved man, risks his life to escape and return to his family,
-      he embarks on a perilous journey of love and endurance.\",\n  \"inCinemas\":
-      \"2022-12-02T00:00:00Z\",\n  \"digitalRelease\": \"2022-12-09T00:00:00Z\",\n
-      \ \"images\": [\n    {\n      \"coverType\": \"poster\",\n      \"url\": \"https://image.tmdb.org/t/p/original/s9sUK1vAaOcxJfKzNTszrNkPhkH.jpg\"\n
-      \   },\n    {\n      \"coverType\": \"fanart\",\n      \"url\": \"https://image.tmdb.org/t/p/original/ypFD4TJ3nLJesou76V59CnweaT0.jpg\"\n
-      \   }\n  ],\n  \"website\": \"https://tv.apple.com/movie/umc.cmc.1j6fdxookwtqml3bd8ivvcbbv\",\n
-      \ \"year\": 2022,\n  \"hasFile\": false,\n  \"youTubeTrailerId\": \"C3yHUpR7yv8\",\n
-      \ \"studio\": \"Westbrook Studios\",\n  \"qualityProfileId\": 0,\n  \"monitored\":
-      false,\n  \"minimumAvailability\": \"tba\",\n  \"isAvailable\": true,\n  \"folderName\":
-      \"\",\n  \"runtime\": 132,\n  \"cleanTitle\": \"emancipation\",\n  \"imdbId\":
-      \"tt12530246\",\n  \"tmdbId\": 715931,\n  \"titleSlug\": \"715931\",\n  \"certification\":
-      \"R\",\n  \"genres\": [\n    \"Drama\"\n  ],\n  \"tags\": [],\n  \"added\":
-      \"0001-01-01T00:00:00Z\",\n  \"ratings\": {\n    \"imdb\": {\n      \"votes\":
-      23177,\n      \"value\": 6.1,\n      \"type\": \"user\"\n    },\n    \"tmdb\":
-      {\n      \"votes\": 881,\n      \"value\": 7.953,\n      \"type\": \"user\"\n
-      \   },\n    \"metacritic\": {\n      \"votes\": 0,\n      \"value\": 53,\n      \"type\":
-      \"user\"\n    },\n    \"rottenTomatoes\": {\n      \"votes\": 0,\n      \"value\":
-      45,\n      \"type\": \"user\"\n    }\n  },\n  \"popularity\": 46.064\n}"
+    content: "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta
+      name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"mobile-web-app-capable\"
+      content=\"yes\"/><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/><meta
+      name=\"theme-color\" content=\"#3a3f51\"/><meta name=\"msapplication-navbutton-color\"
+      content=\"#3a3f51\"/><meta name=\"description\" content=\"Radarr\"/><link rel=\"apple-touch-icon\"
+      sizes=\"180x180\" href=\"/Content/Images/Icons/apple-touch-icon.png?h=QMW7w5FhldXR090sP7kDlQ\"/><link
+      rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/Content/Images/Icons/favicon-32x32.png?h=bUxyGU7P9+rZb2XbRYUb6Q\"/><link
+      rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/Content/Images/Icons/favicon-16x16.png?h=GmD3+SimWfdjIE1SWzz5DQ\"/><link
+      rel=\"manifest\" href=\"/Content/Images/Icons/manifest.json?h=ohuo6hJigkcQv3FKGxqqjg\"
+      crossorigin=\"use-credentials\"/><link rel=\"mask-icon\" href=\"/Content/Images/Icons/safari-pinned-tab.svg?h=TVr3+MxG/7RUCZrNbIolsA\"
+      color=\"#00ccff\"/><link rel=\"shortcut icon\" type=\"image/ico\" href=\"/favicon.ico\"/><meta
+      name=\"msapplication-config\" content=\"/Content/Images/Icons/browserconfig.xml\"/><link
+      rel=\"stylesheet\" href=\"/Content/Fonts/fonts.css?h=mBv1x1/yHnvphLclzeQIBA\"><title>Radarr</title><style>.root
+      {\r\n        overflow: hidden;\r\n        height: 100%; /* needed for proper
+      layout */\r\n      }\r\n\r\n      @media only screen and (max-width: 768px)
+      {\r\n        .root {\r\n          display: flex;\r\n          flex-direction:
+      column;\r\n          min-height: 100%;\r\n          height: auto;\r\n        }\r\n
+      \     }</style><script defer=\"defer\" src=\"/vendors.js?h=9mSLzC5RmxaByXN+Ki3RqA\"></script><script
+      defer=\"defer\" src=\"/index.js?h=TvZdX12JRhyuBDjdSGl6bg\"></script><link href=\"/Content/styles.css?h=pYDY4EUj9rBRPHzOivIaVA\"
+      rel=\"stylesheet\"></head><body><div id=\"portal-root\"></div><div id=\"root\"
+      class=\"root\"></div></body><script src=\"/initialize.js\"></script></html>"
     headers:
       Cache-Control:
       - no-cache, no-store
       Content-Encoding:
       - gzip
       Content-Type:
-      - application/json; charset=utf-8
+      - text/html
       Date:
-      - Fri, 16 Jun 2023 20:25:20 GMT
+      - Thu, 22 Jun 2023 13:00:12 GMT
       Expires:
       - '-1'
       Pragma:
@@ -76,51 +57,6 @@ interactions:
       - chunked
       Vary:
       - Accept-Encoding
-      X-Application-Version:
-      - 4.5.2.7388
     http_version: HTTP/1.1
     status_code: 200
-- request:
-    body: '{"title": "Emancipation", "tmdbId": 715931, "QualityProfileId": 1, "RootFolderPath":
-      "/media-center/movies/", "folder": "Emancipation (2022)", "monitored": true}'
-    headers:
-      accept:
-      - '*/*'
-      accept-encoding:
-      - gzip, deflate
-      connection:
-      - keep-alive
-      content-length:
-      - '161'
-      content-type:
-      - application/json
-      host:
-      - radarr.huis
-      user-agent:
-      - python-httpx/0.24.1
-    method: POST
-    uri: http://radarr.huis/api/v3/movie
-  response:
-    content: "[\n  {\n    \"propertyName\": \"TmdbId\",\n    \"errorMessage\": \"This
-      movie has already been added\",\n    \"attemptedValue\": 715931,\n    \"severity\":
-      \"error\",\n    \"errorCode\": \"MovieExistsValidator\",\n    \"formattedMessageArguments\":
-      [],\n    \"formattedMessagePlaceholderValues\": {\n      \"propertyName\": \"Tmdb
-      Id\",\n      \"propertyValue\": 715931\n    }\n  }\n]"
-    headers:
-      Cache-Control:
-      - no-cache,no-store
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 16 Jun 2023 20:25:20 GMT
-      Expires:
-      - '-1'
-      Pragma:
-      - no-cache
-      Server:
-      - Kestrel
-      Transfer-Encoding:
-      - chunked
-    http_version: HTTP/1.1
-    status_code: 400
 version: 1

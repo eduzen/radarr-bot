@@ -15,20 +15,38 @@ interactions:
       user-agent:
       - python-httpx/0.24.1
     method: GET
-    uri: http://radarr.huis/api/v3/movie/lookup/tmdb?tmdbId=champagne
+    uri: http://radarr.huis/movie/lookup/tmdb?tmdbId=champagne
   response:
-    content: "{\n  \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n
-      \ \"title\": \"One or more validation errors occurred.\",\n  \"status\": 400,\n
-      \ \"traceId\": \"00-48182c8aeefa20e91a4c1f1f4e393b6f-53ee01644d5ae11d-00\",\n
-      \ \"errors\": {\n    \"tmdbId\": [\n      \"The value 'champagne' is not valid.\"\n
-      \   ]\n  }\n}"
+    content: "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta
+      name=\"viewport\" content=\"width=device-width,initial-scale=1\"/><meta name=\"mobile-web-app-capable\"
+      content=\"yes\"/><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/><meta
+      name=\"theme-color\" content=\"#3a3f51\"/><meta name=\"msapplication-navbutton-color\"
+      content=\"#3a3f51\"/><meta name=\"description\" content=\"Radarr\"/><link rel=\"apple-touch-icon\"
+      sizes=\"180x180\" href=\"/Content/Images/Icons/apple-touch-icon.png?h=QMW7w5FhldXR090sP7kDlQ\"/><link
+      rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/Content/Images/Icons/favicon-32x32.png?h=bUxyGU7P9+rZb2XbRYUb6Q\"/><link
+      rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/Content/Images/Icons/favicon-16x16.png?h=GmD3+SimWfdjIE1SWzz5DQ\"/><link
+      rel=\"manifest\" href=\"/Content/Images/Icons/manifest.json?h=ohuo6hJigkcQv3FKGxqqjg\"
+      crossorigin=\"use-credentials\"/><link rel=\"mask-icon\" href=\"/Content/Images/Icons/safari-pinned-tab.svg?h=TVr3+MxG/7RUCZrNbIolsA\"
+      color=\"#00ccff\"/><link rel=\"shortcut icon\" type=\"image/ico\" href=\"/favicon.ico\"/><meta
+      name=\"msapplication-config\" content=\"/Content/Images/Icons/browserconfig.xml\"/><link
+      rel=\"stylesheet\" href=\"/Content/Fonts/fonts.css?h=mBv1x1/yHnvphLclzeQIBA\"><title>Radarr</title><style>.root
+      {\r\n        overflow: hidden;\r\n        height: 100%; /* needed for proper
+      layout */\r\n      }\r\n\r\n      @media only screen and (max-width: 768px)
+      {\r\n        .root {\r\n          display: flex;\r\n          flex-direction:
+      column;\r\n          min-height: 100%;\r\n          height: auto;\r\n        }\r\n
+      \     }</style><script defer=\"defer\" src=\"/vendors.js?h=9mSLzC5RmxaByXN+Ki3RqA\"></script><script
+      defer=\"defer\" src=\"/index.js?h=TvZdX12JRhyuBDjdSGl6bg\"></script><link href=\"/Content/styles.css?h=pYDY4EUj9rBRPHzOivIaVA\"
+      rel=\"stylesheet\"></head><body><div id=\"portal-root\"></div><div id=\"root\"
+      class=\"root\"></div></body><script src=\"/initialize.js\"></script></html>"
     headers:
       Cache-Control:
       - no-cache, no-store
+      Content-Encoding:
+      - gzip
       Content-Type:
-      - application/problem+json; charset=utf-8
+      - text/html
       Date:
-      - Fri, 16 Jun 2023 20:25:20 GMT
+      - Thu, 22 Jun 2023 13:00:12 GMT
       Expires:
       - '-1'
       Pragma:
@@ -37,8 +55,8 @@ interactions:
       - Kestrel
       Transfer-Encoding:
       - chunked
-      X-Application-Version:
-      - 4.5.2.7388
+      Vary:
+      - Accept-Encoding
     http_version: HTTP/1.1
-    status_code: 400
+    status_code: 200
 version: 1
