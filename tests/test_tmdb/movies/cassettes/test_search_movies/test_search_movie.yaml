@@ -126,7 +126,7 @@ interactions:
       and the Matrix\",\"video\":false,\"vote_average\":7.0,\"vote_count\":4}],\"total_pages\":3,\"total_results\":51}"
     headers:
       Age:
-      - '694'
+      - '8048'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
@@ -149,11 +149,11 @@ interactions:
       - Accept-Encoding
       - Origin
       Via:
-      - 1.1 1b575b46b9e4dd6b829accb4ea728b00.cloudfront.net (CloudFront)
+      - 1.1 a668b79ea8c4f6f5d611c57b44351ff0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - P6mzdn4Rfn68MpR6RMnMT0aAxcmOR3JWN1r0n3vuN88pZwu-RYAycQ==
+      - GbWC4E4aPb8NUPy77oZYGA2MpQJsYbqCOnUhkK7pNQ3qSiRblUgn3w==
       X-Amz-Cf-Pop:
-      - AMS1-P2
+      - AMS54-C1
       X-Cache:
       - Hit from cloudfront
       X-Memc:
