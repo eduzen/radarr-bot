@@ -7,7 +7,7 @@ from telegram.constants import ChatAction
 from telegram.ext import Application
 
 from rbot.conf import settings
-from rbot.storage.models import Movie, Serie
+from rbot.storage.models import Movie, Series
 from rbot.storage.redis import read_one_movie_from_redis
 
 log = logging.getLogger(__name__)
@@ -23,7 +23,7 @@ async def accepted_movie(data: dict[str, str]) -> str:
     return response
 
 
-async def accepted_serie(data: dict[str, str]) -> str:
+async def accepted_series(data: dict[str, str]) -> str:
     serie_id = data["serie_id"]
     response = await radarr_api.add_serie_to_radarr(serie_id)
     return response
@@ -45,22 +45,27 @@ async def send_buttons(
     bot: Bot,
     chat_id: int,
     text: str,
-    idx: int,
+    idx: int = 0,
     movie_id: str | None = None,
-    serie_id: str | None = None,
+    series_id: str | None = None,
     buttons: list[list[InlineKeyboardButton]] | None = None,
 ) -> None:
     if not buttons:
         if movie_id:
             callback_data_confirm = json.dumps({"movie_id": movie_id})
         else:
-            callback_data_confirm = json.dumps({"serie_id": serie_id})
-        callback_data_next = json.dumps({"idx": idx + 1})
+            callback_data_confirm = json.dumps({"series_id": series_id})
+
         confirm_button = InlineKeyboardButton(
             "Confirm", callback_data=callback_data_confirm
         )
-        next_button = InlineKeyboardButton("Next", callback_data=callback_data_next)
-        buttons = [[confirm_button, next_button]]
+        if idx != 0:
+            callback_data_next = json.dumps({"idx": idx + 1})
+            next_button = InlineKeyboardButton("Next", callback_data=callback_data_next)
+            buttons = [[confirm_button, next_button]]
+        else:
+            buttons = [[confirm_button]]
+
     reply_markup = InlineKeyboardMarkup(buttons)
 
     await bot.send_message(
@@ -75,7 +80,7 @@ async def send_photo(
     bot: Bot,
     chat_id: int,
     photo: str | bytes,
-    caption: str,
+    caption: str | bytes,
 ) -> None:
     await bot.send_photo(
         chat_id=chat_id, photo=photo, caption=caption, disable_notification=True
@@ -97,19 +102,19 @@ async def send_movie(bot: Bot, chat_id: int, movie: Movie, idx: int = 0) -> None
     await send_buttons(bot, chat_id, "Is this the movie?", movie_id=movie.id, idx=idx)
 
 
-async def send_serie(bot: Bot, chat_id: int, serie: Serie, idx: int = 0) -> None:
+async def send_series(bot: Bot, chat_id: int, series: Series, idx: int = 0) -> None:
     try:
         await send_photo(
             bot,
             chat_id,
-            serie.poster,
-            caption=str(serie),
+            series.poster,
+            caption=str(series),
         )
     except Exception:
         log.exception("Error while sending photo")
-        await send_message(bot, chat_id, str(serie))
+        await send_message(bot, chat_id, str(series))
 
-    await send_buttons(bot, chat_id, "Is this the serie?", serie_id=serie.id, idx=idx)
+    await send_buttons(bot, chat_id, "Is this the serie?", serie_id=series.id, idx=idx)
 
 
 async def post_init(application: Application) -> None:

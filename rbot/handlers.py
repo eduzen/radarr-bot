@@ -11,12 +11,10 @@ from tmdb import api as tmdb_api
 from rbot.conf import settings
 from rbot.utils import (
     accepted_movie,
-    accepted_serie,
-    send_buttons,
+    accepted_series,
     send_message,
     send_movie,
-    send_photo,
-    send_serie,
+    send_series,
     show_next_movie,
 )
 
@@ -38,13 +36,13 @@ async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
 
         log.info("Callback query answered, data: %s", query.data)
-        dict_data = json.loads(query.data)
+        dict_data = json.loads(query.data)  # type: ignore
 
         if "movie_id" in dict_data.keys():
             response = await accepted_movie(dict_data)
             await query.edit_message_text(text=response)
         elif "serie_id" in dict_data.keys():
-            response = await accepted_serie(dict_data)
+            response = await accepted_series(dict_data)
             await query.edit_message_text(text=response)
         else:
             data = await show_next_movie(dict_data)
@@ -108,15 +106,14 @@ async def movie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     try:
         movie = await tmdb_api.get_movie_detail(movie_id)
-        await send_photo(bot, chat_id, movie.poster, caption=str(movie))
-        await send_buttons(bot, chat_id, "Is this the movie?", callback_data=movie.id)
+        await send_movie(bot, chat_id, movie)
     except Exception:
         log.exception("Error while getting movie detail")
         await send_message(bot, chat_id, "Something went wrong")
 
 
 @restricted
-async def serie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+async def series(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id  # type: ignore
     bot = context.bot
 
@@ -124,25 +121,25 @@ async def serie(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     args: list[str] | None = context.args
     if not args:
-        error_msg = "Please write the name of the serie you want to search"
+        error_msg = "Please write the name of the series you want to search"
         await send_message(bot, chat_id, error_msg)
         return
 
-    query_serie = " ".join(args)
-    log.debug(query_serie)
+    query_series = " ".join(args)
+    log.debug(query_series)
 
     try:
-        data = await tmdb_api.search_serie(query_serie)
+        data = await tmdb_api.search_serie(query_series)
         if not data:
-            await send_message(bot, chat_id, "No serie found")
+            await send_message(bot, chat_id, "No series found")
             return
 
-        serie = data[0]
+        series = data[0]
         await write_movies_to_redis(data)
-        await send_serie(bot, chat_id, serie)
+        await send_series(bot, chat_id, series)
 
     except Exception:
-        log.exception("Error while searching movie")
+        log.exception("Error while searching series")
         await send_message(bot, chat_id, "Something went wrong")
 
 
@@ -156,7 +153,7 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         "Hello, I'm RadarrBot. I have the following commands:\n"
         "- /search <name of the movie>: search for a movie in tmdb \n"
         "- /movie <id of the movie>: search a movie based on ids \n"
-        "- /serie <name of the serie>: search for a serie in tmdb \n"
+        "- /series <name of the serie>: search for a series in tmdb \n"
     )
     await send_message(bot, chat_id, help_text)
     help_text = "So if you know the id of the movie, use /movie and id of the movie"
