@@ -6,14 +6,15 @@ from decouple import config
 
 from rbot.storage.models import (
     Movie,
-    Serie,
+    Series,
     process_movie_search_result,
     process_movie_search_results,
-    process_serie_search_results,
+    process_series_search_results,
 )
 
 client = httpx.Client()
 log = logging.getLogger(__name__)
+
 TMDB_API_KEY = config("TMDB_API_KEY")
 TMDB_BASE_URL = "https://api.themoviedb.org/3/"
 
@@ -35,7 +36,7 @@ async def search_movie(query: str) -> list[Movie]:
     return movies
 
 
-async def search_serie(query: str) -> list[Serie]:
+async def search_series(query: str) -> list[Series]:
     query_params_dict = {
         "query": query,
         "api_key": TMDB_API_KEY,
@@ -48,7 +49,7 @@ async def search_serie(query: str) -> list[Serie]:
     response = client.get(TMDB_SEARCH_URL)
     response.raise_for_status()
 
-    movies = await process_serie_search_results(response.json()["results"])
+    movies = await process_series_search_results(response.json()["results"])
     log.debug(f"Found {len(movies)} movies")
     return movies
 

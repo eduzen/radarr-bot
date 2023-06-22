@@ -58,4 +58,61 @@ interactions:
       - 6f488b9f4c984c039cf3b57836f057f6
     http_version: HTTP/1.1
     status_code: 200
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      host:
+      - api.themoviedb.org
+      user-agent:
+      - python-httpx/0.24.1
+    method: GET
+    uri: https://api.themoviedb.org/3/search/movie?query=das12ad9ds3asdd0d8sda
+  response:
+    content: '{"page":1,"results":[],"total_pages":1,"total_results":0}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      Cache-Control:
+      - public, max-age=25469
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 22 Jun 2023 15:17:07 GMT
+      ETag:
+      - W/"0e23279b004381f72a34159d5c7dfd1f"
+      Server:
+      - openresty
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      - Origin
+      Via:
+      - 1.1 1557bb1095d8a4a6e7c25ddbf3b48cec.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 9_1ekOEzuKMBoylt5fp8I2bq2NpP2VRYtzLbinKLWuL_WLw7p6gSQg==
+      X-Amz-Cf-Pop:
+      - LHR50-P2
+      X-Cache:
+      - Miss from cloudfront
+      X-Memc:
+      - HIT
+      X-Memc-Age:
+      - '8283'
+      X-Memc-Expires:
+      - '16077'
+      X-Memc-Key:
+      - 6f488b9f4c984c039cf3b57836f057f6
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1
