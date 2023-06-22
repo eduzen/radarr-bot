@@ -14,7 +14,6 @@ logging.basicConfig(
     handlers=[RichHandler()],
 )
 
-
 log = logging.getLogger(__name__)
 
 

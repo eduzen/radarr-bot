@@ -41,3 +41,12 @@ test:
 
 mypy:
 	mypy rbot
+
+dockershell:
+	docker compose run --rm rbot bash
+
+test-record-all:
+	docker compose run --rm rbot pytest --record-mode=all
+
+test-record-updates:
+	docker compose run --rm rbot pytest --record-mode=new_episodes

@@ -18,11 +18,11 @@ interactions:
     content: '{"page":1,"results":[],"total_pages":1,"total_results":0}'
     headers:
       Age:
-      - '21'
+      - '7422'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
-      - public, max-age=28286
+      - public, max-age=24360
       Connection:
       - keep-alive
       Content-Encoding:
@@ -30,7 +30,7 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Fri, 16 Jun 2023 20:24:58 GMT
+      - Thu, 22 Jun 2023 12:59:04 GMT
       ETag:
       - W/"0e23279b004381f72a34159d5c7dfd1f"
       Server:
@@ -41,9 +41,9 @@ interactions:
       - Accept-Encoding
       - Origin
       Via:
-      - 1.1 4b28b963946514dd2cf9a90f74a8034a.cloudfront.net (CloudFront)
+      - 1.1 a668b79ea8c4f6f5d611c57b44351ff0.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - Zoez6oC26yp4c7N_PfzN1dTJ0huqM1q0qv5FlEz31sxMv7a85zai9w==
+      - NF0W8oIVWvnDXnZXuuMccXlUC29BHsPFaXdOnNr_UiasEIzn1DSSOA==
       X-Amz-Cf-Pop:
       - AMS54-C1
       X-Cache:
@@ -53,7 +53,7 @@ interactions:
       X-Memc-Age:
       - '0'
       X-Memc-Expires:
-      - '28286'
+      - '24360'
       X-Memc-Key:
       - 6f488b9f4c984c039cf3b57836f057f6
     http_version: HTTP/1.1
