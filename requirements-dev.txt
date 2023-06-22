@@ -125,7 +125,7 @@ traitlets==5.9.0
     # via
     #   ipython
     #   matplotlib-inline
-types-pyopenssl==23.2.0.0
+types-pyopenssl==23.2.0.1
     # via types-redis
 types-redis==4.5.5.2
     # via rbot (pyproject.toml)
