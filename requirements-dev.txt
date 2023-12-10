@@ -55,7 +55,7 @@ ipython==8.14.0
     #   rbot (pyproject.toml)
 jedi==0.18.2
     # via ipython
-markdown-it-py==2.2.0
+markdown-it-py==3.0.0
     # via rich
 matplotlib-inline==0.1.6
     # via ipython
@@ -91,7 +91,7 @@ pygments==2.15.1
     # via
     #   ipython
     #   rich
-pytest==7.3.1
+pytest==7.3.2
     # via
     #   pytest-asyncio
     #   pytest-recording
@@ -108,7 +108,7 @@ pyyaml==6.0
     # via vcrpy
 redis==4.5.5
     # via rbot (pyproject.toml)
-rich==13.4.1
+rich==13.4.2
     # via rbot (pyproject.toml)
 six==1.16.0
     # via

@@ -13,13 +13,13 @@ interactions:
       host:
       - radarr.huis
       user-agent:
-      - python-httpx/0.23.3
+      - python-httpx/0.24.1
     method: GET
     uri: http://radarr.huis/api/v3/movie/lookup/tmdb?tmdbId=champagne
   response:
     content: "{\n  \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.1\",\n
       \ \"title\": \"One or more validation errors occurred.\",\n  \"status\": 400,\n
-      \ \"traceId\": \"00-297eee65b6c0974d10516bb8e9247439-a77698c0750c22f5-00\",\n
+      \ \"traceId\": \"00-48182c8aeefa20e91a4c1f1f4e393b6f-53ee01644d5ae11d-00\",\n
       \ \"errors\": {\n    \"tmdbId\": [\n      \"The value 'champagne' is not valid.\"\n
       \   ]\n  }\n}"
     headers:
@@ -28,7 +28,7 @@ interactions:
       Content-Type:
       - application/problem+json; charset=utf-8
       Date:
-      - Fri, 13 Jan 2023 20:54:01 GMT
+      - Fri, 16 Jun 2023 20:25:20 GMT
       Expires:
       - '-1'
       Pragma:
@@ -38,7 +38,7 @@ interactions:
       Transfer-Encoding:
       - chunked
       X-Application-Version:
-      - 4.3.2.6857
+      - 4.5.2.7388
     http_version: HTTP/1.1
     status_code: 400
 version: 1

@@ -18,6 +18,7 @@ services:
       target: development
       args:
         BUILDKIT_INLINE_CACHE: 1
+    restart: unless-stopped
     tty: true
     restart: unless-stopped
     links:

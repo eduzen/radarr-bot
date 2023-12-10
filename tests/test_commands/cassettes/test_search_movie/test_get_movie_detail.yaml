@@ -11,7 +11,7 @@ interactions:
       host:
       - api.themoviedb.org
       user-agent:
-      - python-httpx/0.23.3
+      - python-httpx/0.24.1
     method: GET
     uri: https://api.themoviedb.org/3/movie/79026
   response:
@@ -20,14 +20,16 @@ interactions:
       drug dealer. Impressed by his extravagant lifestyle and prowess, his young son,
       Kilo, yearns to follow in his footsteps. Kilo resolves to learn how to prosper
       in the drug world, and his new life as a dealer begins. In a world where a man
-      wants everything, he may end up with nothing.","popularity":10.091,"poster_path":"/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg","production_companies":[],"production_countries":[{"iso_3166_1":"US","name":"United
+      wants everything, he may end up with nothing.","popularity":6.621,"poster_path":"/10J7EQ8WvMYku8lcZrLewV2Ko4I.jpg","production_companies":[],"production_countries":[{"iso_3166_1":"US","name":"United
       States of America"}],"release_date":"2004-09-27","revenue":0,"runtime":128,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"","title":"El
-      padrino: The Latin Godfather","video":false,"vote_average":6.806,"vote_count":31}'
+      padrino: The Latin Godfather","video":false,"vote_average":6.864,"vote_count":33}'
     headers:
+      Age:
+      - '22'
       Alt-Svc:
       - h3=":443"; ma=86400
       Cache-Control:
-      - public, max-age=28800
+      - public, max-age=27525
       Connection:
       - keep-alive
       Content-Encoding:
@@ -35,32 +37,32 @@ interactions:
       Content-Type:
       - application/json;charset=utf-8
       Date:
-      - Fri, 13 Jan 2023 20:54:00 GMT
+      - Fri, 16 Jun 2023 20:24:57 GMT
       ETag:
-      - W/"7d49a1e0a888a1ba1211a6f18676a4b7"
+      - W/"54ed28ea71cc2ff61be3b69a2975825a"
       Server:
       - openresty
       Transfer-Encoding:
       - chunked
       Vary:
-      - Accept-Encoding,Accept-Encoding,Accept-Encoding
+      - Accept-Encoding
       - Origin
       Via:
-      - 1.1 df4167ab0949b4d2c15466bdfdc05f94.cloudfront.net (CloudFront)
+      - 1.1 4b28b963946514dd2cf9a90f74a8034a.cloudfront.net (CloudFront)
       X-Amz-Cf-Id:
-      - AvNdCIXTBJ6EldGUvoKIvntFHlnQTedIaMjleLtEicIRWaYwkMo8-Q==
+      - tD2eq982JCVVnNdeKiYI8-sWFDov1n3R8KHQOMVSF5hfk4sKf70RdA==
       X-Amz-Cf-Pop:
       - AMS54-C1
       X-Cache:
-      - Miss from cloudfront
+      - Hit from cloudfront
       X-Memc:
       - HIT
       X-Memc-Age:
-      - '15695'
+      - '1693'
       X-Memc-Expires:
-      - '184'
+      - '24093'
       X-Memc-Key:
-      - ba78d135326d9e8eed8eca3bda509abc30ba3a6a
+      - 0c7f3e05da1a55ddd5df737bf827abd7
     http_version: HTTP/1.1
     status_code: 200
 version: 1
