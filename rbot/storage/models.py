@@ -28,18 +28,33 @@ class Movie(BaseModel):
     def __str__(self) -> str:
         return f"{self.title} ({self.year})\nRating: {self.rating}\nLink: {self.link}"
 
-    def build_vote_average(self) -> float | None:
+    @property
+    def imdb_rating(self) -> float:
+        try:
+            value = self.ratings["imdb"]["value"]  # type: ignore
+        except KeyError:
+            return 0.0
+        return value
+
+    @property
+    def alternative_rating(self) -> float:
+        try:
+            value = round(self.vote_average, 1)
+        except KeyError:
+            return 0.0
+        return value
+
+    def build_vote_average(self) -> float:
         if not self.vote_average and not self.ratings:
             raise ValueError("vote_average is required")
 
         if self.ratings:
-            try:
-                return self.ratings["imdb"]["value"]
-            except KeyError:
-                return None
+            return self.imdb_rating
 
         if self.vote_average:
-            return round(self.vote_average, 1)
+            return self.alternative_rating
+
+        return 0.0
 
     def build_year(self) -> int | str:
         if self.year:

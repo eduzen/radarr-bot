@@ -75,7 +75,7 @@ profile = "black"
 ignore_missing_imports = true
 
 [tool.ruffus]
-ignore = ["E501"]
+line_length = 88
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
