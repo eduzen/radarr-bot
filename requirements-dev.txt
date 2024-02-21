@@ -22,7 +22,7 @@ cffi==1.15.1
     # via cryptography
 coverage==7.2.7
     # via rbot (pyproject.toml)
-cryptography==41.0.1
+cryptography==42.0.4
     # via
     #   types-pyopenssl
     #   types-redis
