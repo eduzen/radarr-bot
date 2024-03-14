@@ -36,7 +36,7 @@ python-decouple==3.8
     # via rbot (pyproject.toml)
 python-telegram-bot==20.3
     # via rbot (pyproject.toml)
-redis==4.5.5
+redis==5.0.3
     # via rbot (pyproject.toml)
 rich==13.4.2
     # via rbot (pyproject.toml)
