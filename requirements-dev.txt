@@ -61,7 +61,7 @@ matplotlib-inline==0.1.6
     # via ipython
 mdurl==0.1.2
     # via markdown-it-py
-multidict==6.0.4
+multidict==6.0.5
     # via yarl
 mypy==1.9.0
     # via rbot (pyproject.toml)
