@@ -98,7 +98,7 @@ pytest==7.4.2
     #   rbot (pyproject.toml)
 pytest-asyncio==0.21.0
     # via rbot (pyproject.toml)
-pytest-recording==0.12.2
+pytest-recording==0.13.1
     # via rbot (pyproject.toml)
 python-decouple==3.8
     # via rbot (pyproject.toml)
