@@ -18,15 +18,21 @@ headers = {"Content-Type": "application/json", "X-Api-Key": settings.RADARR_API_
 
 async def movie_loookup(tmdb_id: str) -> dict[str, Any]:
     url = f"{settings.RADARR_BASE_URL}movie/lookup/tmdb?tmdbId={tmdb_id}"
-    try:
-        async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient() as client:
+        try:
             response = await client.get(url, headers=headers)
             response.raise_for_status()
+        except Exception as e:
+            log.exception(e)
+            raise Exception("Could not get movies from Radarr") from e
+        try:
             movie_json = response.json()
             return movie_json
-    except Exception as e:
-        log.exception(e)
-        raise Exception("Could not get movies from Radarr") from e
+        except Exception as e:
+            log.exception(e)
+            raise Exception(
+                f"Could parse response from Radarr. Response: {response}"
+            ) from e
 
 
 async def add_movie_to_radarr(tmdb_id: str) -> str:
@@ -59,16 +65,20 @@ async def add_movie_to_radarr(tmdb_id: str) -> str:
 
 async def get_movies_from_radarr() -> list[Movie]:
     url = f"{settings.RADARR_BASE_URL}movie"
-    try:
-        async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient() as client:
+        try:
             response = await client.get(url, headers=headers)
             response.raise_for_status()
+        except Exception as e:
+            log.exception(e)
+            raise Exception("Could not get movies from Radarr") from e
+        try:
             data = response.json()
             movies = await process_movie_search_results(data)
             return movies
-    except Exception as e:
-        log.exception(e)
-        raise Exception("Could not get movies from Radarr") from e
+        except Exception as e:
+            log.exception(e)
+            raise Exception("Could not parse response from Radarr") from e
 
 
 async def serie_lookup(tmdb_id: str) -> dict[str, Any]:

@@ -11,10 +11,6 @@ on:
 
 jobs:
   tests:
-    strategy:
-      matrix:
-        python-version: ['3.11']
-
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +18,7 @@ jobs:
 
     - uses: actions/setup-python@v5.0.0
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: 3.12
 
     - name: pre-commit
       run: |
@@ -48,7 +44,7 @@ jobs:
         TMDB_API_KEY: blah
         RADARR_API_KEY: blah
       run: |
-        coverage run -m pytest --record-mode=none
+        coverage run -m pytest
         python -m coverage combine
         python -m coverage report -m --skip-covered
         python -m coverage json
@@ -70,7 +66,7 @@ jobs:
 
       - uses: actions/setup-python@v5.0.0
         with:
-          python-version: ${{ matrix.python-version }}
+            python-version: 3.12
 
       - uses: actions/cache@v4.0.1
         id: cache

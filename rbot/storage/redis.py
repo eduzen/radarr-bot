@@ -15,10 +15,12 @@ async def write_movies_to_redis(movies: list[Movie]) -> None:
 
     async with client.pipeline(transaction=True) as pipe:
         for idx, movie in enumerate(movies):
-            await pipe.set(idx, movie.json()).execute()
+            i = str(idx)
+            json = movie.model_dump()
+            await pipe.set(i, json).execute()
 
 
-async def read_one_movie_from_redis(idx: int) -> Movie | None:
+async def read_one_movie_from_redis(idx: str) -> Movie | None:
     try:
         client = await redis.from_url(settings.REDIS_URL)
         movie = await client.get(idx)

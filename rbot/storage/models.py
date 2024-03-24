@@ -2,22 +2,22 @@ import datetime
 import logging
 from typing import Any
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ValidationError
 
 log = logging.getLogger(__name__)
 
 
 class Movie(BaseModel):
-    id: int | None
-    tmdbId: int | None
+    id: int | None = None
+    tmdbId: int | None = None
     title: str
-    release_date: str | None
-    backdrop_path: str | None
-    poster_path: str | None
-    vote_average: float | None
-    poster: str | None
-    year: int | str | None
-    ratings: dict[str, dict[str, Any]] | None
+    release_date: str | None = None
+    backdrop_path: str | None = None
+    poster_path: str | None = None
+    vote_average: float | None = None
+    poster: str | None = None
+    year: int | str | None = None
+    ratings: dict[str, dict[str, Any]] | None = None
 
     def __init__(self, **data: dict[str, Any]) -> None:
         super().__init__(**data)
@@ -87,17 +87,17 @@ class Movie(BaseModel):
 
 
 class Serie(BaseModel):
-    id: int | None
-    tmdbId: int | None
+    id: int | None = None
+    tmdbId: int | None = None
     name: str
-    first_air_date: str | None
-    backdrop_path: str | None
-    poster_path: str | None
-    vote_average: float | None
-    poster: str | None
-    ratings: dict[str, dict[str, Any]] | None
-    vote_count: int | None
-    year: int | str | None
+    first_air_date: str | None = None
+    backdrop_path: str | None = None
+    poster_path: str | None = None
+    vote_average: float | None = None
+    poster: str | None = None
+    ratings: dict[str, dict[str, Any]] | None = None
+    vote_count: int | None = None
+    year: int | str | None = None
 
     def __init__(self, **data: dict[str, Any]) -> None:
         super().__init__(**data)
@@ -174,13 +174,17 @@ async def process_movie_search_result(result: dict[str, Any]) -> Movie:
 
 
 async def process_movie_search_results(
-    search_results: list[dict[Any, Any]]
+    search_results: list[dict[Any, Any]],
 ) -> list[Movie]:
     movies = []
     for result in search_results:
         try:
             movie = await process_movie_search_result(result)
             movies.append(movie)
+        except ValidationError as e:
+            errors = e.errors()
+            log.error(f"{repr(errors)}")
+            log.error("Not valid movie... skipping it: %s", e)
         except ValueError as e:
             log.error("Not valid movie... skipping it: %s", e)
     return movies
@@ -192,7 +196,7 @@ async def process_serie_search_result(result: dict[str, Any]) -> Serie:
 
 
 async def process_serie_search_results(
-    search_results: list[dict[Any, Any]]
+    search_results: list[dict[Any, Any]],
 ) -> list[Serie]:
     series = []
     for result in search_results:

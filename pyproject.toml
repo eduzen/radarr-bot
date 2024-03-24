@@ -41,7 +41,6 @@ dev = [
   "mypy",
   "pytest",
   "pytest-asyncio",
-  "pytest-recording",
   "types-redis",
 ]
 

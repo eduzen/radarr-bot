@@ -22,31 +22,15 @@ repos:
       - id: pretty-format-json
         args: [--autofix]
 
-  - repo: https://github.com/psf/black
-    rev: 24.2.0
-    hooks:
-      - id: black
-        args: [--safe, --quiet]
-
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.13.2
-    hooks:
-      - id: isort
-        args: [--profile=black]
-
-  - repo: https://github.com/asottile/blacken-docs
-    rev: 1.16.0
-    hooks:
-      - id: blacken-docs
-
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.15.1
     hooks:
       - id: pyupgrade
-        args: [--py311-plus]
+        args: [--py312-plus]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.3.2'
+    rev: 'v0.3.4'
     hooks:
       - id: ruff
         args: ["--fix"]
+      - id: ruff-format

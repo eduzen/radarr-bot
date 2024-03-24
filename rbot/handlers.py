@@ -32,8 +32,8 @@ async def callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     # CallbackQueries need to be answered, even if no notification to the user is needed
     # Some clients may have trouble otherwise. See https://core.telegram.org/bots/api#callbackquery
     try:
-        await query.answer()
-        chat_id = query.message.chat_id
+        await query.answer()  # type: ignore
+        chat_id = query.message.chat_id  # type: ignore
 
         await bot.send_chat_action(action=ChatAction.TYPING, chat_id=chat_id)
 

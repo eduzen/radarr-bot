@@ -29,8 +29,8 @@ async def accepted_serie(data: dict[str, str]) -> str:
     return response
 
 
-async def show_next_movie(data: dict[str, str]) -> tuple[int, Movie] | None:
-    idx = int(data["idx"])
+async def show_next_movie(data: dict[str, str]) -> tuple[str, Movie] | None:
+    idx = data["idx"]
     movie = await read_one_movie_from_redis(idx)
     if movie:
         return idx + 1, movie
@@ -82,7 +82,7 @@ async def send_photo(
     )
 
 
-async def send_movie(bot: Bot, chat_id: int, movie: Movie, idx: int = 0) -> None:
+async def send_movie(bot: Bot, chat_id: int, movie: Movie, idx: str = 0) -> None:
     try:
         await send_photo(
             bot,

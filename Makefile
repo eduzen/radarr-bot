@@ -1,4 +1,4 @@
-PIP_COMPILE = pip-compile
+PIP_COMPILE = uv pip compile
 
 # Define a .PHONY rule to avoid conflict with file names
 .PHONY: compile upgrade install start fmt test mypy
@@ -41,3 +41,12 @@ test:
 
 mypy:
 	mypy rbot
+
+docker-build:
+	docker compose build rbot
+
+docker-up:
+	docker compose up rbot
+
+docker-bash:
+	docker compose run --rm rbot bash
