@@ -16,8 +16,8 @@ async def write_movies_to_redis(movies: list[Movie]) -> None:
     async with client.pipeline(transaction=True) as pipe:
         for idx, movie in enumerate(movies):
             i = str(idx)
-            json = movie.model_dump()
-            await pipe.set(i, json).execute()
+            movie_json = movie.model_dump_json()
+            await pipe.set(i, movie_json).execute()
 
 
 async def read_one_movie_from_redis(idx: str) -> Movie | None:
