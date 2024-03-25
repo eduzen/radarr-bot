@@ -23,7 +23,7 @@ repos:
         args: [--autofix]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.1
+    rev: v3.15.2
     hooks:
       - id: pyupgrade
         args: [--py312-plus]
