@@ -36,7 +36,7 @@ idna==3.6
 iniconfig==2.0.0
     # via pytest
 ipdb==0.13.13
-ipython==8.22.2
+ipython==8.23.0
     # via ipdb
 jedi==0.19.1
     # via ipython
