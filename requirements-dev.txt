@@ -76,7 +76,7 @@ pytest==8.1.1
     # via pytest-asyncio
 pytest-asyncio==0.23.6
 python-decouple==3.8
-python-telegram-bot==21.0.1
+python-telegram-bot==21.3
 redis==5.0.3
 rich==13.7.1
 six==1.16.0
