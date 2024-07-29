@@ -23,13 +23,13 @@ repos:
         args: [--autofix]
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.2
+    rev: v3.17.0
     hooks:
       - id: pyupgrade
         args: [--py312-plus]
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 'v0.3.5'
+    rev: 'v0.5.5'
     hooks:
       - id: ruff
         args: ["--fix"]
